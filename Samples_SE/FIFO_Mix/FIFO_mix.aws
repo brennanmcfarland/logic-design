@@ -1,0 +1,14 @@
+[Version]
+Version=8.3
+[Designs]
+FIFO_mix=FIFO_mix.adf
+[Settings]
+Active=FIFO_mix
+[Expand]
+fifo_mix=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

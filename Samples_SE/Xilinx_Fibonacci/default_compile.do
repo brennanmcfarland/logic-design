@@ -1,0 +1,6 @@
+acom -dbg "$dsn/src/functional/fib.vhd"
+acom -dbg "$dsn/src/functional/top.vhd"
+acom -dbg "$dsn/src/timing/top_routed.vhd"
+acom -dbg "$dsn/src/timing/timing_cfg.vhd"
+acom -dbg "$dsn/src/testbench.vhd"
+acom -dbg "$dsn/src/functional/functional_cfg.vhd"

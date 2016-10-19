@@ -1,0 +1,134 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+modified=33
+Current Config=compile
+
+[Configurations]
+compile=modulator_vhpi
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FAMILY=
+SYNTH_TOOL=<none>
+FLOWTOOLS=ONLY_IMPL
+IMPL_TOOL=<none>
+SYNTH_STATUS=NONE
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+UseCeloxica=0
+REFRESH_FLOW=1
+WireDelay=2
+NoTchkMsg=0
+NoTimingChecks=0
+HESPrepare=0
+StackMemorySize=32
+RetvalMemorySize=32
+EnableCallbacks=1
+VitalAccel=1
+DisableVitalMsg=0
+CDebugMacro=$dsn\compile\run_cdebug.do
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+VerilogDirsChanged=1
+CDebugWatchList=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[ORDER]
+autorefresh=0
+macro_path=
+macro_name=
+modified=1
+Synchronize=1
+
+[Library]
+modulator_vhpi=.\modulator_vhpi.LIB
+
+[$LibMap$]
+modulator_vhpi=.
+
+[Groups]
+VHPI=1
+C-debug=1
+TestBench=1
+
+[LocalVhdlSets]
+CompileWithDebug=0
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+
+[LocalVerilogSets]
+EnableDebug=0
+EnableSLP=1
+EnableExpressionCoverage=0
+VerilogLanguage=5
+Strict=0
+Strict2001=
+SystemVerilog3=
+StrictLRMMode=
+VerilogNoSpecify=0
+WarningPrnLevel=1
+ErrorOutputLimit=0
+OptimizationLevel=2
+ProtectLevel=0
+AdditionalOptions=
+
+[Files]
+/multiplier.vhd=-1
+/modulator.bde=-1
+/Modulator.tcl=-1
+/runme.do=-1
+VHPI/vhpiuser_aldec.cpp=-1
+VHPI/modulator_vhpi.dlm=-1
+VHPI/utilities.h=-1
+VHPI/utilities.cpp=-1
+VHPI/generator_user.cpp=-1
+VHPI/generator_vhpi.h=-1
+VHPI/generator_vhpi.cpp=-1
+VHPI/generator_vhpi.vhd=-1
+C-debug/Initialize_c_code_debug.do=-1
+TestBench/modulator_TB.vhd=-1
+
+[Files.Data]
+.\src\multiplier.vhd=VHDL Source Code
+.\src\modulator.bde=Block Diagram
+.\src\Modulator.tcl=Tcl Script
+.\src\runme.do=Macro
+.\src\VHPI\vhpiuser_aldec.cpp=C++ Source Code
+.\src\VHPI\modulator_vhpi.dlm=C/C++ Configuration
+.\src\VHPI\utilities.h=C++ Source Code
+.\src\VHPI\utilities.cpp=C++ Source Code
+.\src\VHPI\generator_user.cpp=C++ Source Code
+.\src\VHPI\generator_vhpi.h=C++ Source Code
+.\src\VHPI\generator_vhpi.cpp=C++ Source Code
+.\src\VHPI\generator_vhpi.vhd=VHDL Source Code
+.\src\C-debug\Initialize_c_code_debug.do=Macro
+.\src\TestBench\modulator_TB.vhd=VHDL Source Code
+

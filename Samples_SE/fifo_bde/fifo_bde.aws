@@ -1,0 +1,14 @@
+[Version]
+Version=8.3
+[Designs]
+fifo_bde=fifo_bde.adf
+[Settings]
+Active=fifo_bde
+[Expand]
+fifo_bde=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

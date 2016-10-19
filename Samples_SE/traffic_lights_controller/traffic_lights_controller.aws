@@ -1,0 +1,16 @@
+[Version]
+Version=8.3
+[Designs]
+traffic_verilog=.\traffic_Verilog\traffic_Verilog.adf
+traffic_vhdl=.\traffic_VHDL\traffic_VHDL.adf
+[Expand]
+traffic_verilog=1
+traffic_vhdl=0
+[Settings]
+Active=traffic_verilog
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

@@ -1,0 +1,5 @@
+acom -dbg "$dsn/src/counters.vhd"
+acom -dbg "$dsn/src/automachine.asf"
+acom -dbg "$dsn/src/press.bde"
+acom -dbg "$dsn/src/press_top.bde"
+acom -dbg "$dsn/src/press_top_tb.vhd"

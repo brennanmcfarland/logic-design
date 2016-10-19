@@ -1,0 +1,128 @@
+[Library]
+traffic_VHDL=.\traffic_VHDL.LIB
+
+[$LibMap$]
+traffic_VHDL=.
+
+[Configurations]
+compile=traffic_VHDL
+
+[Project]
+Current Config=compile
+version=3
+Current Flow=Multivendor
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+IMPL_TOOL=
+SYNTH_TOOL=
+REFRESH_FLOW=1
+VerilogDirsChanged=1
+NoTchkMsg=0
+NoTimingChecks=0
+HESPrepare=0
+ASDBDatabaseRefresh=0
+ENABLE_ADV_DATAFLOW=1
+EnableXtrace=0
+SplitNetVectors=0
+StackMemorySize=32
+ASDBREFTESHTIME=1
+RetvalMemorySize=32
+VsimAdditionalOptions=
+SDFErrorLimit=0
+EnableSDFErrorLimit=0
+ChangeSDFErrorToWarning=0
+DisableVitalMsg=0
+VitalAccel=1
+DisableIEEEWarnings=1
+SimulationAccessReadModules=
+SimulationAccessReadWriteModules=
+SimulationAccessReadPaths=
+SimulationAccessReadWritePaths=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
+AccessRead=1
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=0
+
+[LocalVerilogSets]
+VerilogLanguage=5
+Strict=0
+Strict2001=
+SystemVerilog3=
+StrictLRMMode=
+VerilogNoSpecify=0
+WarningPrnLevel=1
+ErrorOutputLimit=0
+OptimizationLevel=2
+EnableDebug=1
+ProtectLevel=0
+AdditionalOptions=
+
+[LocalVhdlSets]
+CompileWithDebug=1
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=tb|tb_verbose|1
+ShowHide=ShowTopLevel
+Selected=
+
+[DefineMacro]
+Global=
+
+[sdf.ea.tb-correct]
+SdfNoWarn=0
+IVG=0
+
+[Files]
+/readme.html=-1
+/runme.do=-1
+/runme_no_bug.do=-1
+/runme_verbose.do=-1
+/runme_verbose_debug.do=-1
+/counter.vhd=-1
+/ffd.vhd=-1
+/traffic_control_entity.vhd=-1
+/traffic_control_no_bug.vhd=-1
+/traffic_control.vhd=-1
+/traffic_control_vhd_vunit.psl=-1
+/testbench_entity.vhd=-1
+/testbench_no_bug.vhd=-1
+/testbench.vhd=-1
+/testbench_verbose.vhd=-1
+
+[Files.Data]
+.\src\readme.html=HTML Document
+.\src\runme.do=Macro
+.\src\runme_no_bug.do=Macro
+.\src\runme_verbose.do=Macro
+.\src\runme_verbose_debug.do=Macro
+.\src\counter.vhd=VHDL Source Code
+.\src\ffd.vhd=VHDL Source Code
+.\src\traffic_control_entity.vhd=VHDL Source Code
+.\src\traffic_control_no_bug.vhd=VHDL Source Code
+.\src\traffic_control.vhd=VHDL Source Code
+.\src\traffic_control_vhd_vunit.psl=PSL Source Code
+.\src\testbench_entity.vhd=VHDL Source Code
+.\src\testbench_no_bug.vhd=VHDL Source Code
+.\src\testbench.vhd=VHDL Source Code
+.\src\testbench_verbose.vhd=VHDL Source Code
+

@@ -1,0 +1,312 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+modified=32
+Current Config=compile
+
+[Configurations]
+compile=fifo_bde
+
+[Library]
+fifo_bde=.\fifo_bde.LIB
+
+[Groups]
+TB_verilog=1
+TB_vhd=1
+
+[Settings]
+FLOW_TYPE=Schematic
+LANGUAGE=VHDL
+FAMILY=
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FLOWTOOLS=ONLY_IMPL
+SYNTH_STATUS=NONE
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+UseCeloxica=0
+CSYNTH_TOOL=<none>
+Celoxica=0
+REFRESH_FLOW=1
+PHYSSYNTH_TOOL=<none>
+PHYSSYNTH_STATUS=NONE
+IMPL_STATUS=NONE
+FUNC_LIB=fifo_bde
+RUN_MODE_IMPL=0
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+VerilogDirsChanged=1
+
+[$LibMap$]
+Active_lib=VIRTEX4
+xilinxun=VIRTEX4
+fifo_bde=.
+UnlinkedDesignLibrary=VIRTEX4
+DESIGNS=VIRTEX4
+
+[SYNTHESIS]
+FAMILY=
+CeloxicaPath=
+DEVICE=
+SPEED=
+
+[IMPLEMENTATION]
+FAMILY=
+ISE_STEPS_RESET=1
+DEVICE=
+SPEED=
+IS_BAT_MODE=0
+BAT_FILE=
+NETLIST=C:\My_Designs\Samples_73\fifo_bde\compile\fifo.edn
+UCF=C:\Program Files\Aldec\Active-HDL 8.3\Dat\Template.ucf
+DEF_UCF=0
+OLD_FAMILY=Xilinx7x VIRTEX4
+wasChanged_Change_Device_Speed=0
+JOB_DESCRIPTION=ImplementationJob1
+SERVERFARM_INCLUDE_INPUT_FILES=*.*
+SERVERFARM_EXCLUDE_INPUT_FILES=log\*.*
+SYNTH_TOOL_RESET=0
+LAST_RUN=1128161358
+OUTPUT_NETLIST=IMPLEMENT\TIME_SIM.VHD
+OUTPUT_SDF=IMPLEMENT\TIME_SIM.SDF
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[ORDER]
+autorefresh=0
+macro_path=
+macro_name=
+modified=1
+Synchronize=1
+
+[IMPLEMENTATION_XILINX7]
+impl_opt(dont_run_translate)=0
+impl_opt(dont_run_map)=0
+impl_opt(dont_run_place)=0
+impl_opt(dont_run_trace)=0
+impl_opt(dont_run_simulation)=0
+impl_opt(dont_run_fit)=0
+impl_opt(dont_run_bitgen)=1
+impl_opt(edif_str)=C:\My_Designs\Samples_73\fifo_bde\compile\fifo.edn
+impl_opt(_family_sel)=Xilinx7x VIRTEX4
+impl_opt(_device_sel)=4vfx12sf363
+impl_opt(_speed_sel)=-12
+impl_opt(Effort_Level)=Standard
+impl_opt(netlist_format)=1
+impl_opt(auto_close)=0
+impl_opt(override_existing_project)=1
+impl_opt(bat_file_name)=
+impl_opt(is_bat_mode)=0
+impl_opt(def_ucf)=Always use Aldec constraint template
+impl_opt(ucf_str)=C:\Program Files\Aldec\Active-HDL 8.3\Dat\Template.ucf
+impl_opt(version_sel)=ver1
+impl_opt(revision_sel)=rev1
+impl_opt(insert_pads)=0
+impl_opt(xon)=0
+impl_opt(CLB_Packing_Strategy)=100
+impl_opt(pack_clb_registers_for)=0
+impl_opt(Pack_IO_Registers_Latches)=For Inputs and Outputs
+impl_opt(ignore_rloc_constraints)=1
+impl_opt(create_detailed_report)=0
+impl_opt(ngdbuild_file_str)=
+impl_opt(use_ngdbuild_file)=0
+impl_opt(map_file_str)=
+impl_opt(use_map_file)=0
+impl_opt(par_file_str)=
+impl_opt(use_par_file)=0
+impl_opt(trace_file_str)=
+impl_opt(use_trace_file)=0
+impl_opt(netgen_file_str)=
+impl_opt(use_netgen_file)=0
+impl_opt(bitgen_file_str)=
+impl_opt(use_bitgen_file)=0
+impl_opt(Allow_Unmatched_LOC_Constraint)=0
+impl_opt(Show_Trim_Unconnected_Signals)=1
+impl_opt(Show_Map_Guide_Design_File)=
+impl_opt(Map_Guide_Mode)=None
+impl_opt(Starting_Placer_Cost_Table)=1
+impl_opt(Place_And_Route_Mode)=Normal
+impl_opt(Show_Par_Guide_Design_File)=
+impl_opt(Par_Guide_Mode)=None
+impl_opt(Show_Use_Timing_Constraint)=1
+impl_opt(Show_Use_Bonded_IOs)=0
+impl_opt(Show_Generate_Multiple_Hierarchical_Netlist_Files)=0
+impl_opt(Show_Bring_Out_Global_Trisate_Net_As_Ports)=
+impl_opt(Use_Show_Bring_Out_Global_Trisate_Net_As_Ports)=0
+impl_opt(Show_Bring_Out_Global_Set_Reset_Net_As_Ports)=
+impl_opt(Use_Show_Bring_Out_Global_Set_Reset_Net_As_Ports)=0
+impl_opt(Show_Generate_Testbench_File)=UUT
+impl_opt(Use_Show_Generate_Testbench_File)=0
+impl_opt(Preseve_Hier_Sub_Module)=0
+impl_opt(Netlist_Translation_Type)=Timestamp
+impl_opt(Allow_Unexpanded_Blocks)=0
+impl_opt(Other_Ngdbuild_Options)=
+impl_opt(Perform_Timing_Driven_Packing_Placement)=0
+impl_opt(Map_Effort_Level)=Medium
+impl_opt(Replicate_Logic_Allow_Logic_Level_Red)=1
+impl_opt(Allow_Logic_Opt_Across_Hier)=0
+impl_opt(Map_Input_Functions_4_8)=4
+impl_opt(Optimization_Strategy)=Area
+impl_opt(Use_Rloc_Constraints)=1
+impl_opt(Show_Map_Slice_Logic_Into_Unused_Blocks)=0
+impl_opt(Other_Map_Options)=
+impl_opt(Placer_Effort_Level)=None
+impl_opt(Router_Effort_Level)=None
+impl_opt(Extra_Effort)=None
+impl_opt(Retain_Hiearchy)=1
+impl_opt(Change_Device_Speed)=12
+impl_opt(Tristate_Configuration_Pulsee)=0
+impl_opt(Reset_Configuration_Pulsee)=100
+impl_opt(Generate_Architecture_Only)=0
+impl_opt(Include_Uselib_Directive)=0
+impl_opt(Do_Not_Escape_Signal)=0
+impl_opt(Other_Netgen_Command)=
+impl_opt(Show_Other_Place_Route_Command)=
+impl_opt(Macro_Search_Path)=
+impl_opt(Use_Rules_File_For_Nelist)=
+impl_opt(Path_Used_In_Sdf)=c:/My_Designs/Samples_73/fifo_bde/implement
+impl_opt(Insert_ChipScope_Core)=0
+impl_opt(Run_ChipScope_Core_Inserter_GUI)=1
+impl_opt(ChipScope_Core_Inserter_Project_File)=
+impl_opt(_use_filter_messages)=0
+impl_opt(_filter_messages)=
+impl_opt(AdvMap_Extra_Effort)=None
+impl_opt(Map_Starting_Placer_Cost_Table)=1
+impl_opt(Show_Register_Duplication)=0
+impl_opt(Include_Function_In_Verilog_File)=1
+impl_opt(Include_Simprim_Models_In_Verilog_File)=0
+impl_opt(Show_Global_Optimization)=0
+impl_opt(Show_Retiming)=0
+impl_opt(Show_Equivalent_Register_Removal)=1
+impl_opt(run_design_rules_checker)=1
+impl_opt(create_bit_file)=1
+impl_opt(create_binary_config_file)=0
+impl_opt(create_ascii_config_file)=0
+impl_opt(create_ieee_1532_config_file_fpga)=0
+impl_opt(enable_bitstream_compression)=0
+impl_opt(enable_debugging_of_serial_mode_bitstream)=0
+impl_opt(enable_cyclic_redundancy_checking)=1
+impl_opt(other_bitgen_command_line_options)=
+impl_opt(security)=Enable Readback and Reconfiguration
+impl_opt(create_readback_data_files)=0
+impl_opt(allow_selectmap_pins_to_persist)=0
+impl_opt(create_logic_allocation_file)=0
+impl_opt(create_mask_file)=0
+impl_opt(encrypt_bitstream)=0
+impl_opt(input_encryption_key_file)=
+impl_opt(starting_key)=None
+impl_opt(starting_cbc_value)=
+impl_opt(fpga_start_up_clock)=CCLK
+impl_opt(enable_internal_done_pipe)=0
+impl_opt(done_output_events)=4
+impl_opt(enable_outputs)=5
+impl_opt(release_write_enable)=6
+impl_opt(release_dll)=NoWait
+impl_opt(match_cycle)=Auto
+impl_opt(drive_done_pin_high)=0
+impl_opt(configuration_rate)=4
+impl_opt(configuration_clk)=Pull Up
+impl_opt(configuration_pin_m0)=Pull Up
+impl_opt(configuration_pin_m1)=Pull Up
+impl_opt(configuration_pin_m2)=Pull Up
+impl_opt(configuration_pin_program)=Pull Up
+impl_opt(configuration_pin_done)=Pull Up
+impl_opt(configuration_pin_init)=Pull Up
+impl_opt(configuration_pin_cs)=Pull Up
+impl_opt(configuration_pin_din)=Pull Up
+impl_opt(configuration_pin_busy)=Pull Up
+impl_opt(configuration_pin_rdwr)=Pull Up
+impl_opt(jtag_pin_tck)=Pull Up
+impl_opt(jtag_pin_tdi)=Pull Up
+impl_opt(jtag_pin_tdo)=Pull Up
+impl_opt(jtag_pin_tms)=Pull Up
+impl_opt(unused_iob_pins)=Pull Down
+impl_opt(userid_code)=0xFFFFFFFF
+impl_opt(reset_dcm_if_shutdown)=0
+impl_opt(dci_update_mode)=As Required
+
+[PHYS_SYNTHESIS]
+SCRIPTS_COPIED=0
+FAMILY=
+
+[sdf.vm.fifo_tb]
+SdfNoWarn=0
+IVG=0
+
+[SIM.TIME]
+SDF_PATH=IMPLEMENT\TIME_SIM.SDF
+
+[LocalVhdlSets]
+CompileWithDebug=0
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+
+[LocalVerilogSets]
+EnableDebug=0
+EnableSLP=1
+EnableExpressionCoverage=0
+VerilogLanguage=5
+Strict=0
+Strict2001=
+SystemVerilog3=
+StrictLRMMode=
+VerilogNoSpecify=0
+WarningPrnLevel=1
+ErrorOutputLimit=0
+OptimizationLevel=2
+ProtectLevel=0
+AdditionalOptions=
+
+[Files]
+/readme.txt=-1
+/fd16d.bde=-1
+/c4u.bde=-1
+/c4ud.bde=-1
+/fifod.bde=-1
+/rm16x32.bde=-1
+/rm16x16.bde=-1
+/fifo.bde=-1
+TB_verilog/fifo_TB.v=-1
+TB_verilog/fifo_TB_runtest.do=-1
+TB_vhd/fifo_TB.vhd=-1
+TB_vhd/fifo_TB_runtest.do=-1
+
+[Files.Data]
+.\src\readme.txt=Text File
+.\src\fd16d.bde=Block Diagram
+.\src\c4u.bde=Block Diagram
+.\src\c4ud.bde=Block Diagram
+.\src\fifod.bde=Block Diagram
+.\src\rm16x32.bde=Block Diagram
+.\src\rm16x16.bde=Block Diagram
+.\src\fifo.bde=Block Diagram
+.\src\TB_verilog\fifo_TB.v=Verilog Source Code
+.\src\TB_verilog\fifo_TB_runtest.do=Macro
+.\src\TB_vhd\fifo_TB.vhd=VHDL Source Code
+.\src\TB_vhd\fifo_TB_runtest.do=Macro
+

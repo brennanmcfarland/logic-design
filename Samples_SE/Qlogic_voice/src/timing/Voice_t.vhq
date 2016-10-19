@@ -1,0 +1,250 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.VITAL_TIMING.all;
+use IEEE.VITAL_PRIMITIVES.all;
+library PASIC;
+
+entity voice_t is
+Port (
+	clk : In STD_LOGIC;
+	rst : In STD_LOGIC;
+	key_entered : In STD_LOGIC_VECTOR (3 downto 0);
+	play : Out STD_LOGIC;
+	rec : Out STD_LOGIC;
+	erase : Out STD_LOGIC;
+	save : Out STD_LOGIC;
+	addr : Out STD_LOGIC
+);
+end voice_t;
+
+
+architecture ARCH_voice of voice_t is
+component P_AND6
+port(A,B,C,D,E,F : in std_logic; Z : out std_logic);
+end component;
+
+component P_MUX2
+port(A, B, C, D, S : in std_logic; Z : out std_logic);
+end component;
+
+component P_MUX3
+port(A, B, C, D, E, S, T : in std_logic; Z : out std_logic);
+end component;
+
+component P_BUF
+port(A : in std_logic; Z : out std_logic);
+end component;
+
+component P_FF
+port(D, C, S, R : in std_logic; Q : out std_logic);
+end component;
+
+component P_OUT
+port(A, B, E : in std_logic; Z : out std_logic);
+end component;
+
+signal VCC : std_logic := '1';
+signal GND : std_logic := '0';
+signal qldummy_wire : std_logic;
+signal \IO54-IZI_\, \IO52-IZI_\, \IO50-IZI_\, \IO47-IZI_\, \T24-QD_\, \T24-MC_\, 
+   \T24-AI_\, \S24-QD_\, \S24-MC_\, \S24-NC_\, \S24-FI_\, \S24-AI_\, \R24-QD_\, 
+   \R24-MC_\, \R24-NC_\, \R24-FI_\, \R24-AI_\, \Q24-QD_\, \Q24-MC_\, \T23-QD_\, 
+   \T23-MC_\, \S23-QD_\, \S23-OC_\, \S23-MC_\, \S23-O1_\, \S23-NC_\, \S23-FI_\, 
+   \S23-AI_\, \R23-QD_\, \R23-OC_\, \R23-MC_\, \R23-O1_\, \R23-NC_\, \R23-FI_\, 
+   \R23-AI_\, \Q23-QD_\, \Q23-OC_\, \Q23-MC_\, \Q23-O1_\, \Q23-NC_\, \Q23-AI_\, 
+   \T22-QD_\, \T22-MC_\, \S22-QD_\, \S22-MC_\, \S22-NC_\, \S22-FI_\, \R22-QD_\, 
+   \R22-OC_\, \R22-MC_\, \R22-O1_\, \R22-NC_\, \R22-FI_\, \R22-AI_\, \Q22-OC_\, 
+   \Q22-AI_\, \key_enteredz[2]_LRBUF19\, \current_state[8]_LRBUF18\, NET_LR17, 
+   NET_LR16, NET_LR15, NET_LR14, NET_LR13, NET_LR12, NET_LR11, NET_LR10, 
+   NET_LR9, NET_LR8, NET_LR7, NET_LR6, NET_LR5, NET_LR4, NET_LR3, NET_LR2, 
+   NET_LR1, NET_LR0, \key_enteredzVH0(3)\, \key_enteredzVH0(2)\, 
+   \key_enteredzVH0(1)\, \key_enteredzVH0(0)\, rstz, clkz, N_14_i, 
+   \key_entered_i(2)\, N_32_i, N_131_i, \current_state_i_iVH1(6)\, 
+   \current_state_i_iVH1(5)\, N_141, N_50, N_140, N_39, N_138, 
+   \current_state_nsVH2(8)\, N_33, N_29, \current_state_nsVH2(6)\, 
+   \current_state_nsVH2(5)\, \current_state_nsVH2(4)\, \current_state_nsVH2(3)\, 
+   N_22, \current_state_nsVH2(2)\, N_20, N_17, N_16, N_133_i, N_13, 
+   \current_state_nsVH2(0)\, N_131, N_129, N_128, N_127, N_125, N_124, 
+   \current_stateVH3(0)\, \current_stateVH3(2)\, \current_stateVH3(4)\, 
+   \current_stateVH3(8)\, \current_stateVH3(9)\, \current_stateVH3(3)\, 
+   \current_stateVH3(1)\, \current_stateVH3(7)\ : std_logic;
+
+begin
+rstz_p_IO177QFRAG_IC : P_BUF port map ( A => rst, Z => rstz);
+current_state_pQ5Q_IO59QFRAG_BP : P_OUT port map ( A => VCC,
+ B => \current_state_i_iVH1(5)\, E => VCC, Z => erase);
+current_state_pQ7Q_IO57QFRAG_BP : P_OUT port map ( A => VCC,
+ B => \current_stateVH3(7)\, E => VCC, Z => play);
+current_state_pQ6Q_IO56QFRAG_BP : P_OUT port map ( A => VCC,
+ B => \current_state_i_iVH1(6)\, E => VCC, Z => save);
+key_entered_pQ0Q_IO54QFRAG_IZB : P_BUF port map ( A => \IO54-IZI_\,
+ Z => \key_enteredzVH0(0)\);
+key_entered_pQ0Q_IO54QFRAG_BZ : P_BUF port map ( A => key_entered(0),
+ Z => \IO54-IZI_\);
+key_entered_pQ3Q_IO52QFRAG_IZB : P_BUF port map ( A => \IO52-IZI_\,
+ Z => \key_enteredzVH0(3)\);
+key_entered_pQ3Q_IO52QFRAG_BZ : P_BUF port map ( A => key_entered(3),
+ Z => \IO52-IZI_\);
+key_entered_pQ1Q_IO50QFRAG_IZB : P_BUF port map ( A => \IO50-IZI_\,
+ Z => \key_enteredzVH0(1)\);
+key_entered_pQ1Q_IO50QFRAG_BZ : P_BUF port map ( A => key_entered(1),
+ Z => \IO50-IZI_\);
+current_state_pQ1Q_IO49QFRAG_BP : P_OUT port map ( A => VCC,
+ B => \current_stateVH3(1)\, E => VCC, Z => rec);
+key_entered_pQ2Q_IO47QFRAG_IZB : P_BUF port map ( A => \IO47-IZI_\,
+ Z => \key_enteredzVH0(2)\);
+key_entered_pQ2Q_IO47QFRAG_BZ : P_BUF port map ( A => key_entered(2),
+ Z => \IO47-IZI_\);
+current_state_pQ3Q_IO46QFRAG_BP : P_OUT port map ( A => VCC,
+ B => \current_stateVH3(3)\, E => VCC, Z => addr);
+clkz_p_IO40QFRAG_IC : P_BUF port map ( A => clk, Z => clkz);
+current_stateQ6Q_T24QFRAG_LQ : P_FF port map ( D => \T24-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_state_i_iVH1(6)\);
+T24QFRAG_LO : P_MUX3 port map ( A => GND, B => GND,
+ C => \current_state[8]_LRBUF18\, D => GND, S => \T24-MC_\, T => GND, E => VCC,
+ Z => \T24-QD_\);
+T24QFRAG_LMS : P_MUX2 port map ( A => N_22, B => GND, C => VCC, D => GND,
+ S => GND, Z => \T24-MC_\);
+T24QFRAG_AB : P_BUF port map ( A => \T24-AI_\, Z => NET_LR16);
+T24QFRAG_LA : P_AND6 port map ( A => VCC, B => \current_state_i_iVH1(6)\,
+ C => VCC, D => \current_stateVH3(7)\, E => VCC,
+ F => \current_state_i_iVH1(5)\, Z => \T24-AI_\);
+current_stateQ0Q_S24QFRAG_LQ : P_FF port map ( D => \S24-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_stateVH3(0)\);
+S24QFRAG_LO : P_MUX3 port map ( A => \current_stateVH3(0)\, B => N_131_i,
+ C => VCC, D => GND, S => \S24-MC_\, T => GND, E => VCC, Z => \S24-QD_\);
+S24QFRAG_LMS : P_MUX2 port map ( A => \current_stateVH3(1)\, B => GND,
+ C => \S24-FI_\, D => GND, S => GND, Z => \S24-MC_\);
+S24QFRAG_LNS : P_MUX2 port map ( A => VCC, B => GND, C => \S24-FI_\, D => GND,
+ S => VCC, Z => \S24-NC_\);
+S24QFRAG_FB : P_BUF port map ( A => \S24-FI_\, Z => NET_LR15);
+S24QFRAG_LF : P_AND6 port map ( A => VCC, B => \current_stateVH3(0)\, C => VCC,
+ D => \current_stateVH3(8)\, E => VCC, F => \current_stateVH3(4)\,
+ Z => \S24-FI_\);
+S24QFRAG_AB : P_BUF port map ( A => \S24-AI_\, Z => \current_state[8]_LRBUF18\);
+S24QFRAG_LA : P_AND6 port map ( A => \current_stateVH3(8)\, B => GND, C => VCC,
+ D => GND, E => VCC, F => GND, Z => \S24-AI_\);
+current_stateQ3Q_R24QFRAG_LQ : P_FF port map ( D => \R24-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_stateVH3(3)\);
+R24QFRAG_LO : P_MUX3 port map ( A => \current_stateVH3(4)\, B => N_131_i,
+ C => VCC, D => N_131_i, S => \R24-MC_\, T => GND, E => VCC, Z => \R24-QD_\);
+R24QFRAG_LMS : P_MUX2 port map ( A => \current_stateVH3(3)\, B => GND,
+ C => \R24-FI_\, D => GND, S => GND, Z => \R24-MC_\);
+R24QFRAG_LNS : P_MUX2 port map ( A => VCC, B => GND, C => \R24-FI_\, D => GND,
+ S => VCC, Z => \R24-NC_\);
+R24QFRAG_FB : P_BUF port map ( A => \R24-FI_\, Z => N_131_i);
+R24QFRAG_LF : P_AND6 port map ( A => \key_enteredzVH0(3)\, B => GND,
+ C => N_124, D => GND, E => \key_enteredzVH0(0)\, F => GND, Z => \R24-FI_\);
+R24QFRAG_AB : P_BUF port map ( A => \R24-AI_\, Z => N_124);
+R24QFRAG_LA : P_AND6 port map ( A => \key_enteredzVH0(1)\,
+ B => \key_enteredzVH0(2)\, C => VCC, D => GND, E => VCC, F => GND,
+ Z => \R24-AI_\);
+current_stateQ1Q_Q24QFRAG_LQ : P_FF port map ( D => \Q24-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_stateVH3(1)\);
+Q24QFRAG_LO : P_MUX3 port map ( A => GND, B => GND, C => \current_stateVH3(2)\,
+ D => GND, S => \Q24-MC_\, T => GND, E => VCC, Z => \Q24-QD_\);
+Q24QFRAG_LMS : P_MUX2 port map ( A => N_32_i, B => GND, C => VCC, D => GND,
+ S => GND, Z => \Q24-MC_\);
+current_stateQ4Q_T23QFRAG_LQ : P_FF port map ( D => \T23-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_stateVH3(4)\);
+T23QFRAG_LO : P_MUX3 port map ( A => GND, B => GND, C => \current_stateVH3(9)\,
+ D => GND, S => \T23-MC_\, T => GND, E => VCC, Z => \T23-QD_\);
+T23QFRAG_LMS : P_MUX2 port map ( A => N_22, B => GND, C => VCC, D => GND,
+ S => GND, Z => \T23-MC_\);
+current_stateQ8Q_S23QFRAG_LQ : P_FF port map ( D => \S23-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_stateVH3(8)\);
+S23QFRAG_LO : P_MUX3 port map ( A => VCC, B => GND, C => VCC, D => GND,
+ S => \S23-MC_\, T => \S23-OC_\, E => \S23-O1_\, Z => \S23-QD_\);
+S23QFRAG_LOS : P_MUX2 port map ( A => NET_LR16, B => GND, C => \S23-AI_\,
+ D => GND, S => GND, Z => \S23-OC_\);
+S23QFRAG_LMS : P_MUX2 port map ( A => \current_state[8]_LRBUF18\, B => GND,
+ C => \S23-FI_\, D => GND, S => GND, Z => \S23-MC_\);
+S23QFRAG_LN : P_MUX2 port map ( A => N_14_i, B => GND, C => VCC, D => N_16,
+ S => \S23-NC_\, Z => \S23-O1_\);
+S23QFRAG_LNS : P_MUX2 port map ( A => \current_state[8]_LRBUF18\, B => GND,
+ C => \S23-FI_\, D => GND, S => GND, Z => \S23-NC_\);
+S23QFRAG_FB : P_BUF port map ( A => \S23-FI_\, Z => N_14_i);
+S23QFRAG_LF : P_AND6 port map ( A => N_13, B => GND,
+ C => \current_stateVH3(9)\, D => GND, E => VCC, F => GND, Z => \S23-FI_\);
+S23QFRAG_AB : P_BUF port map ( A => \S23-AI_\, Z => N_22);
+S23QFRAG_LA : P_AND6 port map ( A => N_125, B => \key_enteredzVH0(0)\,
+ C => VCC, D => GND, E => VCC, F => GND, Z => \S23-AI_\);
+R23QFRAG_OB : P_BUF port map ( A => \R23-QD_\, Z => N_16);
+R23QFRAG_LO : P_MUX3 port map ( A => N_125, B => GND, C => VCC,
+ D => \key_enteredz[2]_LRBUF19\, S => \R23-MC_\, T => \R23-OC_\,
+ E => \R23-O1_\, Z => \R23-QD_\);
+R23QFRAG_LOS : P_MUX2 port map ( A => \key_enteredzVH0(3)\, B => GND,
+ C => \R23-AI_\, D => GND, S => GND, Z => \R23-OC_\);
+R23QFRAG_LMS : P_MUX2 port map ( A => \key_enteredzVH0(0)\, B => GND,
+ C => \R23-FI_\, D => GND, S => GND, Z => \R23-MC_\);
+R23QFRAG_LN : P_MUX2 port map ( A => N_125, B => GND, C => N_124, D => GND,
+ S => \R23-NC_\, Z => \R23-O1_\);
+R23QFRAG_LNS : P_MUX2 port map ( A => \key_enteredzVH0(0)\, B => GND,
+ C => \R23-FI_\, D => GND, S => GND, Z => \R23-NC_\);
+R23QFRAG_FB : P_BUF port map ( A => \R23-FI_\, Z => N_125);
+R23QFRAG_LF : P_AND6 port map ( A => N_124, B => \key_enteredzVH0(3)\,
+ C => VCC, D => GND, E => VCC, F => GND, Z => \R23-FI_\);
+R23QFRAG_AB : P_BUF port map ( A => \R23-AI_\, Z => N_39);
+R23QFRAG_LA : P_AND6 port map ( A => VCC, B => \key_enteredzVH0(3)\, C => VCC,
+ D => \key_enteredzVH0(1)\, E => VCC, F => GND, Z => \R23-AI_\);
+current_stateQ2Q_Q23QFRAG_LQ : P_FF port map ( D => \Q23-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_stateVH3(2)\);
+Q23QFRAG_LO : P_MUX3 port map ( A => GND, B => GND, C => VCC, D => N_32_i,
+ S => \Q23-MC_\, T => \Q23-OC_\, E => \Q23-O1_\, Z => \Q23-QD_\);
+Q23QFRAG_LOS : P_MUX2 port map ( A => \current_stateVH3(3)\, B => GND,
+ C => \Q23-AI_\, D => GND, S => GND, Z => \Q23-OC_\);
+Q23QFRAG_LMS : P_MUX2 port map ( A => \current_stateVH3(2)\, B => GND,
+ C => VCC, D => GND, S => GND, Z => \Q23-MC_\);
+Q23QFRAG_LN : P_MUX2 port map ( A => N_131_i, B => GND, C => VCC, D => N_32_i,
+ S => \Q23-NC_\, Z => \Q23-O1_\);
+Q23QFRAG_LNS : P_MUX2 port map ( A => \current_stateVH3(2)\, B => GND,
+ C => VCC, D => GND, S => GND, Z => \Q23-NC_\);
+Q23QFRAG_AB : P_BUF port map ( A => \Q23-AI_\, Z => N_32_i);
+Q23QFRAG_LA : P_AND6 port map ( A => \key_enteredzVH0(2)\, B => GND, C => N_39,
+ D => GND, E => \key_enteredzVH0(0)\, F => GND, Z => \Q23-AI_\);
+current_stateQ7Q_T22QFRAG_LQ : P_FF port map ( D => \T22-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_stateVH3(7)\);
+T22QFRAG_LO : P_MUX3 port map ( A => GND, B => GND,
+ C => \current_state[8]_LRBUF18\, D => GND, S => \T22-MC_\, T => GND, E => VCC,
+ Z => \T22-QD_\);
+T22QFRAG_LMS : P_MUX2 port map ( A => N_13, B => GND, C => VCC, D => GND,
+ S => GND, Z => \T22-MC_\);
+current_stateQ5Q_S22QFRAG_LQ : P_FF port map ( D => \S22-QD_\, C => clkz,
+ S => GND, R => rstz, Q => \current_state_i_iVH1(5)\);
+S22QFRAG_LO : P_MUX3 port map ( A => GND, B => GND, C => VCC, D => GND,
+ S => \S22-MC_\, T => GND, E => VCC, Z => \S22-QD_\);
+S22QFRAG_LMS : P_MUX2 port map ( A => VCC, B => GND, C => \S22-FI_\, D => GND,
+ S => VCC, Z => \S22-MC_\);
+S22QFRAG_LNS : P_MUX2 port map ( A => VCC, B => GND, C => \S22-FI_\, D => GND,
+ S => VCC, Z => \S22-NC_\);
+S22QFRAG_LF : P_AND6 port map ( A => \key_enteredzVH0(0)\, B => GND,
+ C => \current_stateVH3(8)\, D => GND, E => N_125, F => GND, Z => \S22-FI_\);
+current_stateQ9Q_R22QFRAG_LQ : P_FF port map ( D => \R22-QD_\, C => clkz,
+ S => rstz, R => GND, Q => \current_stateVH3(9)\);
+R22QFRAG_LO : P_MUX3 port map ( A => N_131_i, B => GND, C => N_131_i, D => GND,
+ S => \R22-MC_\, T => \R22-OC_\, E => \R22-O1_\, Z => \R22-QD_\);
+R22QFRAG_LOS : P_MUX2 port map ( A => NET_LR15, B => GND, C => \R22-AI_\,
+ D => GND, S => GND, Z => \R22-OC_\);
+R22QFRAG_LMS : P_MUX2 port map ( A => \key_enteredzVH0(0)\, B => GND,
+ C => \R22-FI_\, D => GND, S => GND, Z => \R22-MC_\);
+R22QFRAG_LN : P_MUX2 port map ( A => \current_stateVH3(9)\, B => N_125,
+ C => \current_stateVH3(9)\, D => N_127, S => \R22-NC_\, Z => \R22-O1_\);
+R22QFRAG_LNS : P_MUX2 port map ( A => \key_enteredzVH0(0)\, B => GND,
+ C => \R22-FI_\, D => GND, S => GND, Z => \R22-NC_\);
+R22QFRAG_FB : P_BUF port map ( A => \R22-FI_\, Z => N_13);
+R22QFRAG_LF : P_AND6 port map ( A => \key_enteredzVH0(0)\, B => GND,
+ C => N_127, D => GND, E => VCC, F => GND, Z => \R22-FI_\);
+R22QFRAG_AB : P_BUF port map ( A => \R22-AI_\, Z => N_127);
+R22QFRAG_LA : P_AND6 port map ( A => N_39, B => \key_enteredz[2]_LRBUF19\,
+ C => VCC, D => GND, E => VCC, F => GND, Z => \R22-AI_\);
+Q22QFRAG_LOS : P_MUX2 port map ( A => VCC, B => GND, C => \Q22-AI_\, D => GND,
+ S => VCC, Z => \Q22-OC_\);
+Q22QFRAG_AB : P_BUF port map ( A => \Q22-AI_\, Z => \key_enteredz[2]_LRBUF19\);
+Q22QFRAG_LA : P_AND6 port map ( A => \key_enteredzVH0(2)\, B => GND, C => VCC,
+ D => GND, E => VCC, F => GND, Z => \Q22-AI_\);
+end ARCH_voice;
+
+configuration CONFIG_voice of voice_t is
+for ARCH_voice
+end for;
+end CONFIG_voice;

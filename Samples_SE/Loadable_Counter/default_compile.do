@@ -1,0 +1,8 @@
+acom -dbg "$dsn/src/counter.vhd"
+acom -dbg "$dsn/src/waves/counter_tb_pins.vhd"
+acom -dbg "$dsn/src/waves/waves_objects.vhd"
+acom -dbg "$dsn/src/waves/counter_tb_declaration.vhd"
+acom -dbg "$dsn/src/waves/waves_generator.vhd"
+acom -dbg "$dsn/src/waves/counter_tb.vhd"
+acom -dbg "$dsn/src/waves/counter_tb_tim_cfg.vhd"
+acom -dbg "$dsn/src/waves/monitor_utilities.vhd"

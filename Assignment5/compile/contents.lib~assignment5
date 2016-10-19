@@ -1,0 +1,9 @@
+44
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 1 "./../src/adder.v" 13 OAO
+~A 1 "./../src/adder.v" 13 OAO
+~M 1 "./../src/adder.v" 1 adder
+~A 1 "./../src/adder.v" 1 adder
+~M 3 "./../src/testbench.v" 3 testbench
+~A 1 "./../src/testbench.v" 3 testbench

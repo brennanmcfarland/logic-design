@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+  
+  <title>Readme File for 'Memory with Protected Type' Project</title>
+</head>
+
+
+<body>
+
+
+<h1>'Memory_PT' Project Demonstrating Protected Types in VHDL</h1>
+
+
+<h2>Introduction</h2>
+
+
+This design demonstrates the usage of protected types in VHDL 2002 to
+create model of memory.<br>
+
+
+To ensure efficient use of workstation physical memory during
+simulation, dynamic memory allocation and sparse arrays are used for
+modeling.<br>
+
+
+The use of access types is totally encapsulated within protected type
+to allow easy model creation by simple calls of protected type methods.<br>
+
+
+<br>
+
+
+<h2>List of Project Files</h2>
+
+
+<br>
+
+
+<table border="1" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td width="150">Readme.html</td>
+
+
+      <td width="450">this file</td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td width="150">sparse.vhdl</td>
+
+
+      <td width="450">file with&nbsp;<i>sparse</i>
+package and&nbsp;<i>sparse_arr_type</i> protected type
+declaration</td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td width="150">memory.vhdl</td>
+
+
+      <td width="450">file with&nbsp;<i>memory</i>
+unit using&nbsp;<i>sparse</i> package to model variable size
+memory</td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td width="150">memory_tb.vhdl</td>
+
+
+      <td width="450">file with testbench for&nbsp;<i>memory</i>
+unit</td>
+
+
+    </tr>
+
+
+    
+
+    <tr>
+
+
+      <td width="150">run_sim.do</td>
+
+
+      <td width="450">macro file compiling and simulating
+the project</td>
+
+
+    </tr>
+
+
+  
+  </tbody>
+</table>
+
+
+<h2>Description</h2>
+
+<h3>'sparse' Package</h3>
+
+This package contains just one element: protected type <i><b>sparse_arr_type</b></i> with 4 methods:<br>
+
+<ul>
+
+  <li>init</li>
+
+  <li>store</li>
+
+  <li>recall</li>
+  <li>dump</li>
+
+</ul>
+
+The <i>init</i> method has one boolean parameter <i>memdmp</i> and should be called once
+during simulation to initialize memory object (create dynamic linked
+list&nbsp;structure representing memory). If <i>memdmp</i> is set to <i>True</i>, memory contents can be dumped into console by calling <i>dump</i> method.<br>
+
+The <i>store</i> method with <i>address</i> and <i>value</i> parameters allows storing given value at given address in the memory structure. Cells are created dynamically as needed.<br>
+
+The <i>recall</i> method with <i>address</i> parameter retrieves
+contents of the cell with given address. If the cell was not previously
+accessed, it is created with default value inside.<br>
+The <i>dump</i> method without parameters should be called to dump the
+entire memory contents (all dynamically created&nbsp;cells) into the
+console. Memory contents is printed using the following format: <i><font color="#3333ff"><b>time</b></font>; HEAD=&gt; <font color="#3333ff"><b>addr1</b></font>:<font color="#3333ff"><b>contents</b></font> -&gt;<font color="#3333ff"><b>addr2</b></font>:<font color="#3333ff"><b>contents</b></font>&nbsp; ... -&gt;TAIL.</i><br>
+
+<br>
+
+Record type representing one cell and matching pointer type are defined
+in the protected type body, which also declares two pointers (one for
+remembering beginning of the list structure, the other for storing
+location of currently processed cell) and two internal subprograms (one
+for finding cell with given address, the other for inserting new cell
+at given location).<br>
+
+<h3>'memory' Unit</h3>
+
+The <i>memory</i> entity with <i>behavior</i> architecture use <i>sparse</i> package to declare <i>mem</i> shared variable of <i>sparse_arr_type</i> type to model memory structure.<br>
+
+The architecture contains two processes:<br>
+
+<ul>
+
+  <li><b>memini</b> - initializing memory via <i>mem.init</i> call and suspending;</li>
+
+  <li><b>synch</b> - performing memory read (<i>mem.recall</i>) or memory write (<i>mem.store</i>) on rising clock edge, and optional memory dump on falling clock edge.</li>
+
+</ul>
+
+<h3>Testbench</h3>
+
+The testbench for the project (<i>memory_tb.vhdl</i>) instantiates
+memory component and then writes values to 5 memory cells in
+non-sequential order. After last write testbench switches to reading:
+all previously written cells are read in sequential order, then read
+from the address that was not previously written is attempted.<br>
+
+<br>
+
+<h2>Simulation</h2>
+Use <i>run_sim.do</i> to compile and simulate the project. In addition
+to interface signals, waveform created by the macro will also display
+internal SIZE field of the memory structure to let the operator see how
+memory cells are crated as needed during simulation.<br>
+
+<br>
+
+<br>
+
+
+</body>
+</html>

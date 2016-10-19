@@ -1,0 +1,55 @@
+$date
+Wed Oct 12 21:41:27 2016
+$end
+$version
+Aldec HDL Simulator Version 213806480.00.0000
+$end
+$timescale
+10 ps
+$end
+
+$scope module testbench $end
+$var wire 1 ! a $end
+$var wire 1 " cout $end
+$var wire 1 # sum $end
+$var wire 1 $ cin $end
+$var wire 1 % b $end
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+$end
+#1000
+1$
+1#
+#2000
+0$
+1%
+0#
+1#
+#3000
+1$
+1"
+0#
+#4000
+0$
+0%
+1!
+0"
+1#
+#5000
+1$
+1"
+0#
+#6000
+0$
+1%
+#7000
+1$
+1#
+#8000

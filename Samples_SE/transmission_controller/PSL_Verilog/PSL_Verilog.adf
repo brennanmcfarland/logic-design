@@ -1,0 +1,77 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=PSL_Verilog
+
+[Library]
+PSL_Verilog=.\PSL_Verilog.LIB
+
+[$LibMap$]
+PSL_Verilog=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+IMPL_TOOL=
+SYNTH_TOOL=
+NoTchkMsg=0
+NoTimingChecks=0
+HESPrepare=0
+ASDBDatabaseRefresh=0
+ENABLE_ADV_DATAFLOW=1
+EnableXtrace=0
+SplitNetVectors=0
+StackMemorySize=32
+ASDBREFTESHTIME=1
+RetvalMemorySize=32
+VsimAdditionalOptions=
+resolution=1 ps
+WireDelay=2
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+
+[LocalVerilogSets]
+MonitoringOfEventsUDP=0
+DisablePulseError=0
+HasInitialRegsValue=0
+InitialRegsValue=X
+EnableSLP=1
+EnableDebug=1
+EnableExpressionCoverage=0
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/readme.html=-1
+/machine.asf=-1
+/machine_TB.v=-1
+/run_all.do=-1
+/run_debug.do=-1
+
+[Files.Data]
+.\src\readme.html=HTML Document
+.\src\machine.asf=State Diagram
+.\src\machine_TB.v=Verilog Source Code
+.\src\run_all.do=Macro
+.\src\run_debug.do=Macro
+

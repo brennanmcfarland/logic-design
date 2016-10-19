@@ -1,0 +1,14 @@
+[Version]
+Version=8.3
+[Designs]
+QLOGIC_VOICE=QLOGIC_VOICE.adf
+[Settings]
+Active=QLOGIC_VOICE
+[Browser]
+sort=order
+mode=none
+[Expand]
+qlogic_voice=1
+[Order]
+order=1
+macro=

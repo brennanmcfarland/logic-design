@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>PSL Assertions Embedded in VHDL</title>
+
+
+</head>
+
+
+<body>
+
+<h2><font color="#3333ff">PSL Assertions Embedded in VHDL State Machine Code</font></h2>
+
+<br>
+
+This sample designs shows variety of
+assertions and covers testing the
+VHDL state machine design performance.<br>
+<h3>Design Files</h3>
+<ul>
+  <li><i>readme.html</i> - this file</li>
+  <li><i>machine.asf</i> - state diagram of the transmission controller design</li>
+  <li><i>machine_TB.vhd</i> - testbench for the design</li>
+  <li><i>run_all.do</i>, <i>run_debug.do</i> - scripts for compiling and running simulation</li>
+</ul>
+<h3>Design Description</h3>
+The design described by the diagram shown below receives 8-bit data via
+DATA input and sends it out (after validity check) to the Y output.<br>
+The machine is ready to accept data when IDL line is high. The machine
+responds to attention request (REQ input going high) by lowering IDL
+and listening to the data ready (DRDY) input: when DRDY goes high the
+analysis of data begins.<br>
+If received data is valid, the machine sends it out, sets acknowledge
+line (ACK output) to high for one clock cycle and returns to idle state.<br>
+If received data is invalid, the machine enters exception handling
+procedure by activating EXC output, waiting for end of current transfer
+(DRDY low) and then repeated transfer of data (DRDY high). <br>
+<br>
+<div align="left">&nbsp;<img alt="State Diagram of the tested design" title="State Diagram of the tested design" src="./../readme_files/machine_cr.png" height="866" hspace="10" vspace="10" width="682"><br>
+
+</div>
+
+To better use Active-HDL features, PSL properties, asserts and covers
+are added directly to the FSM diagram and later automatically embedded
+in the VHDL code generated from the diagram.<br>
+
+First part of PSL code is added as <i><b>Diagram Actions,</b></i>
+the second part as <i><b>Machine Comment</b></i>.
+<br>
+
+<h3>Tested properties</h3>
+
+<ol>
+
+  <li>RESET and ENA should never be active simultaneously (for
+ASSERT).</li>
+
+  <li>Activation of REQ should&nbsp;be eventually followed by
+its deactivation (for ASSERT).</li>
+
+  <li>Activation of REQ should be followed by activation of ACK
+within 6 cycles (for ASSERT).</li>
+
+  <li>There should be activation of exception handling (for
+COVER).</li>
+
+  <li>There should be completion of exception handling (for
+COVER).</li>
+
+  <li>The sequence of states <i>init</i>-&gt;<i>idle</i>-&gt;<i>act1</i>-&gt;<i>act2</i>-&gt;<i>act3</i>-&gt;<i>idle</i>
+should be executed with at most 2 cycle delays (for COVER).</li>
+
+  <li>The sequence of states <i>init</i>-&gt;<i>idle</i>-&gt;<i>act1</i>-&gt;<i>act2</i>-&gt;<i>act3</i>-&gt;<i>idle</i>
+should be executed with at most 4 cycle delays (for COVER).</li>
+
+</ol>
+
+<h3>PSL implementation</h3>
+
+This section presents pure PSL implementation of the properties,
+asserts and covers; please note that in the VHDL code generated from
+the diagram all PSL statement lines are preceded with '--psl' prefix.<br>
+
+<br>
+
+<small><font color="#006600" face="Courier New, Courier, monospace">
+-- ASSERT directive using unclocked property (clock with period equal
+simulation resolution will be used);
+<br>
+
+-- error message will be displayed when RESET and ENA active at the
+same time.
+</font><font face="Courier New, Courier, monospace"><br>
+
+rst_check: <b><font color="#3333ff">assert</font></b>
+(<b><font color="#3333ff">never</font></b>
+((RESET='1') <b><font color="#3333ff">and</font></b>
+(ENA='1'))) <b><font color="#3333ff">report</font></b>
+"Simultaneous RESET and ENABLE!";
+<br>
+
+<br>
+
+<font color="#006600">-- CLOCKED PROPERTY defined: REQ
+should eventually be deactivated after each activation;</font><br>
+
+<b><font color="#3333ff">property</font></b>
+req_nreq <b><font color="#3333ff">is always</font></b>
+((REQ='1')-&gt; <b><font color="#3333ff">eventually!</font></b>
+(REQ='0'))@rising_edge(CLK);<br>
+
+<font color="#006600">-- Previously defined property used
+in ASSERT directive;<br>
+
+-- failure of the property will trigger the error message</font><br>
+
+<b><font color="#3333ff">assert</font></b>
+(req_nreq) <b><font color="#3333ff">report</font></b>
+"REQ signal not deactivated!";<br>
+
+<br>
+
+<font color="#006600">-- CLOCKED PROPERTY defined: ACK
+should be activated 1 to 6 cycles after REQ</font><br>
+
+<b><font color="#3333ff">property</font></b>
+req_ack <b><font color="#3333ff">is always</font></b>
+(<b><font color="#3333ff">rose</font></b>(REQ)-&gt;
+<b><font color="#3333ff">next_e!</font></b>[1
+<b><font color="#3333ff">to</font></b>
+6] (<b><font color="#3333ff">rose</font></b>(ACK)))@rising_edge(CLK);<br>
+
+<font color="#006600">-- Previously defined property used
+in ASSERT directive;<br>
+
+-- failure of the property will trigger the error message</font><br>
+
+<b><font color="#3333ff">assert</font></b>
+(req_ack) <b><font color="#3333ff">report</font></b>
+"No timely ACK after REQ activation";<br>
+
+<br>
+
+<font color="#006600">-- ADVANCED PROPERTIES: we start
+with parametrized seqence definition (states changing in the order <br>
+
+--
+'init-&gt;idle-&gt;act1-&gt;act2-&gt;act3-&gt;idle'
+with longest posible number of cycles in one state being 'max'); </font><br>
+
+<b><font color="#3333ff">sequence</font></b>
+std_seq(<b><font color="#3333ff">const</font></b>
+max) <b><font color="#3333ff">is</font></b>
+{(M1=init);(M1=idle)[*1 <b><font color="#3333ff">to</font></b>
+max];(M1=act1)[*1 <b><font color="#3333ff">to</font></b>
+max];(M1=act2);(M1=act3)[*1 <b><font color="#3333ff">to</font></b>
+max];(M1=idle)};<br>
+
+<font color="#006600">-- NOW we define fast and slow
+execution path properties using 'std_seq' sequence; </font><br>
+
+<b><font color="#3333ff">property</font></b>
+fast_path <b><font color="#3333ff">is</font></b>
+std_seq(2)@falling_edge(CLK);<br>
+
+<b><font color="#3333ff">property</font></b>
+slow_path <b><font color="#3333ff">is</font></b>
+std_seq(4)@falling_edge(CLK);<br>
+
+<font color="#006600">-- PROPERTIES are now used in COVER
+directives; messages are printed when given path is covered:</font><br>
+
+<b><font color="#3333ff">cover</font></b>
+(fast_path) <b><font color="#3333ff">report</font></b>
+"Fast execution path covered!";<br>
+
+<b><font color="#3333ff">cover</font></b>
+(slow_path) <b><font color="#3333ff">report</font></b>
+"Slow execution path covered!";<br>
+
+<br>
+
+<font color="#006600">-- COVER directive using unnamed
+(immediate) property testing exception condition in the machine;<br>
+
+-- transition from ACT2 to EXC1 means that exception condition was
+covered and message should be printed</font><br>
+
+exc_tst: <b><font color="#3333ff">cover</font></b>
+({(M1=ACT2);(M1=EXC1)}@falling_edge(CLK)) <b><font color="#3333ff">report</font></b> "Exception
+condition successfuly tested!";&nbsp;&nbsp;&nbsp; <br>
+
+<br>
+
+<font color="#006600">-- CLOCKED PROPERTY defined: there
+should be transition from EXC2 to ACT2 (exit from an exception)</font><br>
+
+<b><font color="#3333ff">property</font></b>
+exc_exit <b><font color="#3333ff">is</font></b>
+({(M1=EXC2);(M1=ACT2)}@falling_edge(CLK));<br>
+
+<font color="#006600">-- Previously defined property used
+in COVER Directive;<br>
+
+-- only if property covered the message will be printed.</font><br>
+
+<b><font color="#3333ff">cover</font></b>
+(exc_exit) <b><font color="#3333ff">report</font></b>
+"Successful exit from exception condition covered!";</font></small><br>
+
+<h3>Simulation</h3>
+
+Run one of provided scripts to compile the design with its testbench
+and simulate:<br>
+
+<ul>
+
+  <li><b><i>run_debug.do</i></b> compiles
+design, sets signal breakpoint on the state register and assertion
+breakpoint on <i>req_ack</i>
+assertion, then starts simulation; use run button to proceed through
+the simulation (divide document area vertically and keep diagram in one
+window and waveform in the other).</li>
+
+  <li><i><b>run_all.do</b></i>&nbsp;compiles
+design and runs simulation without waveforms or breakpoints, allowing
+operator to see different messages reported in the console. </li>
+
+</ul>
+
+</body>
+</html>

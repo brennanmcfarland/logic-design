@@ -1,0 +1,14 @@
+[Version]
+Version=8.4
+[Designs]
+bjack=bjack.adf
+[Settings]
+Active=bjack
+[Browser]
+sort=order
+mode=none
+[Expand]
+bjack=1
+[Order]
+order=1
+macro=

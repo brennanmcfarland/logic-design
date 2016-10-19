@@ -1,0 +1,5 @@
+acom -dbg "$dsn/src/sinegenerator.vhd"
+acom -dbg "$dsn/src/cosinegenerator.vhd"
+acom -dbg "$dsn/src/sawgenerator.vhd"
+acom -dbg "$dsn/src/multiplier.vhd"
+acom -dbg "$dsn/src/modulator.bde"

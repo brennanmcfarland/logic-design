@@ -1,0 +1,73 @@
+V 000034 13 129 1128161327897 c4u
+E C4U EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P Q _out std_logic_vector[3:0]
+P CE _in std_logic
+P CLK _in std_logic
+X C4U
+V 000035 13 153 1128161327004 c4ud
+E C4UD EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P Q _out std_logic_vector[3:0]
+P CLK _in std_logic
+P DOWN _in std_logic
+P UP _in std_logic
+X C4UD
+V 000036 13 144 1128161329117 fd16d
+E FD16D EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P D _in std_logic_vector[15:0]
+P Q _out std_logic_vector[15:0]
+P C _in std_logic
+X FD16D
+V 000035 13 267 1128161329446 fifo
+E fifo EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P DIP _in std_logic_vector[31:0]
+P DOP _out std_logic_vector[31:0]
+P CLKP _in std_logic
+P EMPTYP _out std_logic
+P FULLP _out std_logic
+P LASTP _out std_logic
+P POPP _in std_logic
+P PUSHP _in std_logic
+X fifo
+V 000036 13 261 1128161328210 fifod
+E FIFOD EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P DI _in std_logic_vector[31:0]
+P DO _out std_logic_vector[31:0]
+P CLK _in std_logic
+P EMPTY _out std_logic
+P FULL _out std_logic
+P LAST _out std_logic
+P POP _in std_logic
+P PUSH _in std_logic
+X FIFOD
+V 000038 13 238 1128161325658 rm16x16
+E RM16X16 EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P A _in std_logic_vector[3:0]
+P DI _in std_logic_vector[15:0]
+P DO _out std_logic_vector[15:0]
+P DPRA _in std_logic_vector[3:0]
+P WCLK _in std_logic
+P WE _in std_logic
+X RM16X16
+V 000038 13 238 1128161325940 rm16x32
+E RM16X32 EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P A _in std_logic_vector[3:0]
+P DI _in std_logic_vector[31:0]
+P DO _out std_logic_vector[31:0]
+P DPRA _in std_logic_vector[3:0]
+P WCLK _in std_logic
+P WE _in std_logic
+X RM16X32

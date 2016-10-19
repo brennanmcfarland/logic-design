@@ -1,0 +1,1514 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 7614
+ VARIABLES
+ {
+  #ARCHITECTURE="TB_ARCHITECTURE"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #BLOCKTABLE_INCLUDED="1"
+  #ENTITY="top_fft_tb"
+  #LANGUAGE="VHDL"
+  AUTHOR="Aldec"
+  COMPANY="s"
+  CREATIONDATE="10/03/2005"
+  PAGECOUNT="2"
+  SOURCE=".\\src\\testbench.vhd"
+  TITLE="No Title"
+ }
+ SYMBOL "#default" "top_fft" "top_fft"
+ {
+  HEADER
+  {
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #GENERIC0="WIDTH:NATURAL:=16"
+    #GENERIC1="POINT:NATURAL:=1024"
+    #GENERIC2="STAGE:NATURAL:=5"
+    #HDL_ENTRIES=
+"library STD,IEEE;\n"+
+"use STD.STANDARD.all,ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1123250569"
+   }
+  }
+  PAGE "" 
+  {
+   PAGEHEADER
+   {
+    RECT (0,0,480,420)
+    FREEID 23
+   }
+   
+   BODY
+   {
+    RECT  1, -1, 0
+    {
+     VARIABLES
+     {
+      #OUTLINE_FILLING="1"
+     }
+     AREA (20,0,460,420)
+    }
+    TEXT  3, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,30,97,54)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 2
+    }
+    TEXT  5, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (371,30,455,54)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 4
+    }
+    TEXT  7, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,70,106,94)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 6
+    }
+    TEXT  9, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (425,270,455,294)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 8
+    }
+    TEXT  11, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,150,48,174)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 10
+    }
+    TEXT  13, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (362,70,455,94)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 12
+    }
+    TEXT  15, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,190,50,214)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 14
+    }
+    TEXT  17, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,110,50,134)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 16
+    }
+    TEXT  19, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,270,48,294)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 18
+    }
+    TEXT  21, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (25,230,63,254)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 20
+    }
+    PIN  2, 0, 0
+    {
+     COORD (0,40)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="Iin(15:0)"
+      #NUMBER="0"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  4, 0, 0
+    {
+     COORD (480,40)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="Iout(17:0)"
+      #NUMBER="0"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+    PIN  6, 0, 0
+    {
+     COORD (0,80)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="Qin(15:0)"
+      #NUMBER="0"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  8, 0, 0
+    {
+     COORD (480,280)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="OE"
+      #NUMBER="0"
+      #SIDE="right"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+    PIN  10, 0, 0
+    {
+     COORD (0,160)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="ce"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  12, 0, 0
+    {
+     COORD (480,80)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #DOWNTO="1"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="Qout(17:0)"
+      #NUMBER="0"
+      #SIDE="right"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (-20,0), (0,0) )
+     }
+    }
+    PIN  14, 0, 0
+    {
+     COORD (0,200)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="clk"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  16, 0, 0
+    {
+     COORD (0,120)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="inv"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  18, 0, 0
+    {
+     COORD (0,280)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="rst"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+    PIN  20, 0, 0
+    {
+     COORD (0,240)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #LENGTH="20"
+      #MDA_RECORD_TOKEN="OTHER"
+      #NAME="start"
+      #NUMBER="0"
+      #SIDE="left"
+     }
+     LINE  2, 0, 0
+     {
+      POINTS ( (0,0), (20,0) )
+     }
+    }
+   }
+  }
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (4400,3400)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"\tuse ieee.std_logic_1164.all;\n"+
+"\tuse ieee.std_logic_arith.all;\n"+
+"library aldec;\n"+
+"    use aldec.matlab.all;"
+   RECT (620,340,1100,618)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  ARCHITECTUREDECLARATIONS  2, 0, 0
+  {
+   LABEL "Architecture Declaration"
+   TEXT 
+"shared variable Qin_Id : INTEGER := 0;\n"+
+"shared variable Iout_Id : INTEGER := 0;\n"+
+"shared variable Qout_Id : INTEGER := 0;\n"+
+"constant clk_period : TIME := 22727272ps;\n"+
+"constant in_period : TIME := 500us;\n"+
+"constant window_type : integer := 4;"
+   RECT (1180,340,1760,620)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="top_fft"
+    #GENERIC0="STAGE:NATURAL:="
+    #GENERIC1="POINT:NATURAL:="
+    #GENERIC2="WIDTH:NATURAL:="
+    #LIBRARY="#default"
+    #REFERENCE="UUT"
+    #SYMBOL="top_fft"
+   }
+   COORD (2340,1260)
+   VERTEXES ( (6,6832), (4,6831), (12,6836), (8,6834) )
+   PINPROP 2,"#PORTVALUE","(others => '0')"
+   PINPROP 2,"#PIN_STATE","2"
+   PINPROP 10,"#PORTVALUE","'1'"
+   PINPROP 10,"#PIN_STATE","2"
+   PINPROP 12,"#PIN_STATE","0"
+   PINPROP 16,"#PORTVALUE","'0'"
+   PINPROP 16,"#PIN_STATE","2"
+  }
+  PROCESS  6, 0, 0
+  {
+   LABEL "CLOCK"
+   TEXT 
+"CLOCK : process\n"+
+"begin\n"+
+"\tif end_sim = false then\n"+
+"\t\tclk <= '0';\n"+
+"\t\twait for clk_period / 2;\n"+
+"\t\tclk <= '1';\n"+
+"\t\twait for clk_period / 2;\n"+
+"\telse \n"+
+"\t\twait;\n"+
+"\tend if;\n"+
+"end process;\n"+
+"                      "
+   RECT (980,720,1580,1140)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  7319, 7397 )
+   VARIABLES
+   {
+    #DIRECTION_LIST="7319 "
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  7319 )
+  }
+  PROCESS  7, 0, 0
+  {
+   LABEL "ANALYSE_FFT"
+   TEXT 
+"ANALYSE_FFT :\n"+
+"process (clk)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"variable dim_constr : TDims(1 to 2) := (1,1);\n"+
+"begin\n"+
+"\tif rising_edge(clk) then\n"+
+"\t\tif start = '1' then\n"+
+"\t\t\tdim_constr(2) := 1;\n"+
+"\t\tend if;\n"+
+"\t\tif OE = '1' then\n"+
+"\t\t\tput_item(Iout,0,Iout_Id,dim_constr);\n"+
+"\t\t\tput_item(Qout,0,Qout_Id,dim_constr);\n"+
+"\t\t\tdim_constr(2) := dim_constr(2) + 1;\n"+
+"\t\tend if;\n"+
+"\t\tif (dim_constr(2) = 1025) then\n"+
+"\t\t\tdim_constr(2) := 1;\t\n"+
+"\t\t\tend_sim <= true;\n"+
+"\t\t\thdl2ml(Iout_Id);\n"+
+"\t\t\thdl2ml(Qout_Id);\n"+
+"\t\t\teval_string(\"analyse\");\n"+
+"\t\t\teval_string(\"display_output\");\n"+
+"\t\tend if;\n"+
+"\tend if;\n"+
+"end process;"
+   RECT (3120,1240,3960,2060)
+   FILL (0,(255,240,223),0)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  6830, 6833, 6835, 7150, 7423 )
+   VARIABLES
+   {
+    #COMMENT=
+"Process ANALYSE_FFT: \n"+
+"1. Collects each sample of FFT output signals in temporary arrays referenced by \n"+
+"Qout_Id, Iout_Id:\n"+
+"\t\tput_item(Iout,0,Iout_Id,dim_constr);\n"+
+"\t\tput_item(Qout,0,Qout_Id,dim_constr);\n"+
+"2. Transfers whole arrays to MATLAB workspace in one transaction per array:\n"+
+"\t\thdl2ml(Iout_Id);\n"+
+"\t\thdl2ml(Qout_Id);\n"+
+"3. Calculates mathematical FFT of input buffer and plots magnitude spectra of both \n"+
+"input and output buffers by executing \"analyse.m\" M-File: \n"+
+"\t\teval_string(\"analyse\");\n"+
+"4. Plots comparison of mathematical and hardware FFT by executing \n"+
+"\"display_output.m\" M-File:\n"+
+"\t\teval_string(\"display_output\");"
+    #DIRECTION_LIST="6830 6833 6835 7423 "
+    #UPDATE_SENS_LIST="1"
+   }
+   LIST (  7423 )
+  }
+  PROCESS  8, 0, 0
+  {
+   LABEL "MATLAB_WINDOW"
+   TEXT 
+"MATLAB_WINDOW :\n"+
+"process (clk)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"variable Qin_var : std_logic_vector(15 downto 0);\n"+
+"variable i : integer;\t\t\t \n"+
+"variable frame_active : boolean;\n"+
+"begin\n"+
+"\tif rising_edge(clk) then\n"+
+"\t\tif start = '1' then\n"+
+"\t\t\tframe_active := true;\n"+
+"\t\t\ti := 1;\n"+
+"\t\tend if;\n"+
+"\t\tif frame_active then\n"+
+"\t\t\tput_variable(\"input\",in_wave);\n"+
+"\t\t\tput_variable(\"index\",i);\n"+
+"\t\t\teval_string(\"windowed_input = input * windows1024(w).coeff(index);\");\n"+
+"\t\t\tget_variable(\"windowed_input\",Qin_var);\n"+
+"\t\t\tQin <= Qin_var;\t\n"+
+"\t\t\ti := i + 1;\n"+
+"\t\tend if;\n"+
+"\t\tif i = 1025 and frame_active  then\n"+
+"\t\t\tframe_active := false;\n"+
+"\t\tend if;\n"+
+"\tend if;\n"+
+"end process;"
+   RECT (1080,1280,1900,2100)
+   FILL (0,(255,240,223),0)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  6759, 6760, 7407 )
+   VARIABLES
+   {
+    #COMMENT=
+"Process MATLAB_WINDOW:\n"+
+"1. Transfers each sample of input square wave into MATLAB workspace:\n"+
+"\t\tput_variable(\"index\",i);\n"+
+"\t\tput_variable(\"input\",in_wave);\n"+
+"2. Multiplies input sample by selected window function coefficient:\n"+
+"\t\teval_string(\"windowed_input = input *windows1024(w).coeff(index);\")\n"+
+"3. Transfers calculated value of sample back to Active-HDL simulator:\n"+
+"\t\tget_variable(\"windowed_input\",Qin_var);"
+    #DIRECTION_LIST="6759 7407 "
+    #UPDATE_SENS_LIST="1"
+   }
+   LIST (  7407 )
+  }
+  PROCESS  9, 0, 0
+  {
+   LABEL "SQUARE_WAVE"
+   TEXT 
+"SQUARE_WAVE : process\n"+
+"begin\n"+
+"\tif end_sim = false then\n"+
+"\t\tin_wave <= \"0000100011110101\";\n"+
+"\t\twait for in_period / 2;\n"+
+"\t\tin_wave <= \"1111011100001010\";\n"+
+"\t\twait for in_period / 2;\n"+
+"\telse       \n"+
+"\t\twait;\n"+
+"\tend if;\n"+
+"end process;\n"+
+"                      "
+   RECT (360,1280,900,1740)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  6758, 7244 )
+   VARIABLES
+   {
+    #DIRECTION_LIST="7244 "
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  7244 )
+  }
+  PROCESS  10, 0, 0
+  {
+   LABEL "CONTROL"
+   TEXT 
+"CONTROL : process\n"+
+"begin\n"+
+"\trst <= '1';\n"+
+"\tstart <= '0';\n"+
+"\twait for 1000us;\n"+
+"\trst <= '0';\n"+
+"\tstart <= '1';\n"+
+"\twait for 22.6us;\n"+
+"\tstart <= '0';\n"+
+"\twait;\n"+
+"end process;\n"+
+""
+   RECT (360,720,780,1140)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  7274, 7277 )
+   VARIABLES
+   {
+    #DIRECTION_LIST=""
+    #UPDATE_SENS_LIST="0"
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2340,1227,2401,1260)
+   ALIGN 8
+   PARENT 5
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#COMPONENT"
+   RECT (2340,1680,2420,1713)
+   PARENT 5
+  }
+  NET BUS  16, 0, 0
+  {
+   VARIABLES
+   {
+    #DOWNTO="1"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="in_wave(15:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET BUS  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Iout(17:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET BUS  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Qout(17:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET WIRE  21, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="OE"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  NET BUS  22, 0, 0
+  {
+   VARIABLES
+   {
+    #DOWNTO="1"
+    #MDA_RECORD_TOKEN="OTHER"
+    #NAME="Qin(15:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  TEXT  32, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1910,1338,2010,1365)
+   ALIGN 9
+   PARENT 6762
+  }
+  TEXT  36, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (2699,1313,2801,1340)
+   ALIGN 9
+   PARENT 6837
+  }
+  TEXT  40, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (2803,1313,2918,1340)
+   ALIGN 9
+   PARENT 6840
+  }
+  TEXT  64, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (2910,1273,3012,1300)
+   ALIGN 9
+   PARENT 6837
+  }
+  TEXT  68, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (2835,1313,2950,1340)
+   ALIGN 9
+   PARENT 6840
+  }
+  TEXT  76, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (3138,1893,3173,1920)
+   ALIGN 9
+   PARENT 6839
+  }
+  TEXT  100, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1910,1873,2010,1900)
+   ALIGN 9
+   PARENT 6838
+  }
+  TEXT  3540, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (906,1313,1054,1340)
+   ALIGN 9
+   PARENT 6761
+  }
+  PROCESS  3824, 0, 0
+  {
+   LABEL "DISPLAY_INPUT"
+   TEXT 
+"DISPLAY_INPUT :\n"+
+"process (clk)\n"+
+"-- Section above this comment may be overwritten according to\n"+
+"-- \"Update sensitivity list automatically\" option status\n"+
+"variable dim_constr : TDims(1 to 2) := (1,1);\n"+
+"variable frame_active : boolean;\n"+
+"begin\n"+
+"\tif rising_edge(clk) then\n"+
+"\t\tif start = '1' then\n"+
+"\t\t\tframe_active := true;\n"+
+"\t\t\tdim_constr(2) := 1;\n"+
+"\t\tend if;\n"+
+"\tend if;\n"+
+"\tif falling_edge(clk) then\t\t\n"+
+"\t\tif frame_active then\n"+
+"\t\t\tput_item(Qin,0,Qin_Id,dim_constr);\n"+
+"\t\t\tdim_constr(2) := dim_constr(2) + 1;\n"+
+"\t\tend if;\n"+
+"\t\tif (dim_constr(2) = 1025 and frame_active) then\n"+
+"\t\t\tframe_active := false;\n"+
+"\t\t\thdl2ml(Qin_Id);\n"+
+"\t\t\teval_string(\"display_input\");\n"+
+"\t\t\tdim_constr(2) := 1;\n"+
+"\t\tend if;\n"+
+"\tend if;\n"+
+"end process;"
+   RECT (2200,1920,2920,2720)
+   FILL (0,(255,240,223),0)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWTEXT
+   CORNER 10
+   VTX (  5905, 7415 )
+   VARIABLES
+   {
+    #COMMENT=
+"Process DISPLAY_INPUT: \n"+
+"1. Collects each sample of FFT input signal in temporary array referenced by Qin_Id:\n"+
+"\t\tput_item(Qin,0,Qin_Id,dim_constr);\n"+
+"2. Transfers whole array to MATLAB workspace in one transaction:\n"+
+"\t\thdl2ml(Qin_Id);\n"+
+"3. Plots input buffer by executing \"display_input.m\" M-File:\n"+
+"\t\teval_string(\"display_input\");"
+    #DIRECTION_LIST="7415 "
+    #UPDATE_SENS_LIST="1"
+   }
+   LIST (  7415 )
+  }
+  TEXT  3941, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1929,1311,2031,1340)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 5913
+  }
+  PROCESS  4648, 0, 0
+  {
+   LABEL "MATLAB_INIT"
+   TEXT 
+"MATLAB_INIT : process\n"+
+"variable dim_constr : TDims(1 to 2) := (1,1024);\n"+
+"begin\n"+
+"   --ml_setup(desktop=>true); -- uncomment this line in order to\n"+
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t-- invoke MATLAB Desktop instead of\n"+
+"\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t-- MATLAB Command Window\n"+
+"\teval_string(\"prepare_workspace\");\n"+
+"\tput_variable(\"w\",window_type);\n"+
+"\tQin_Id := create_array(\"fft_Qin\",2,dim_constr);\n"+
+"\tIout_Id := create_array(\"fft_Iout\",2,dim_constr);\n"+
+"\tQout_Id := create_array(\"fft_Qout\",2,dim_constr);\n"+
+"\twait;\n"+
+"end process;\n"+
+""
+   RECT (1740,720,2660,1140)
+   FILL (0,(255,240,223),0)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VARIABLES
+   {
+    #COMMENT=
+"Process MATLAB_INIT: \n"+
+"1. Loads coefficients, sets up plots etc. by executing \"prepare_workspace.m\" M-File: \n"+
+"\t\teval_string(\"prepare_workspace\");\n"+
+"2. Selects window function by transferring its index (1 to 6):\n"+
+"\t\tput_variable(\"w\",window_type);\n"+
+"3. Creates temporary arrays for input and output buffers used in DISPLAY_INPUT and ANALYSE_FFT processes:\n"+
+"\t\tQin_Id := create_array(\"fft_Qin\",2,dim_constr);\n"+
+"\t\tIout_Id := create_array(\"fft_Iout\",2,dim_constr);\n"+
+"\t\tQout_Id := create_array(\"fft_Qout\",2,dim_constr);"
+    #DIRECTION_LIST=""
+    #UPDATE_SENS_LIST="0"
+   }
+  }
+  INSTANCE  5262, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Global"
+    #LIBRARY="#connectors"
+    #REFERENCE="clk"
+    #SYMBOL="Global"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (360,380)
+  }
+  TEXT  5263, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (375,363,413,398)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 5262
+  }
+  INSTANCE  5267, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Global"
+    #LIBRARY="#connectors"
+    #REFERENCE="start"
+    #SYMBOL="Global"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (360,440)
+  }
+  TEXT  5268, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (375,423,434,458)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 5267
+  }
+  INSTANCE  5272, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Global"
+    #INITIAL_VALUE="FALSE"
+    #LIBRARY="#connectors"
+    #REFERENCE="end_sim"
+    #SYMBOL="Global"
+    #VHDL_TYPE="BOOLEAN"
+   }
+   COORD (360,560)
+  }
+  TEXT  5273, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (375,543,488,578)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 5272
+  }
+  INSTANCE  5520, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Global"
+    #LIBRARY="#connectors"
+    #REFERENCE="rst"
+    #SYMBOL="Global"
+   }
+   COORD (360,500)
+  }
+  TEXT  5521, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (375,483,410,518)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 5520
+  }
+  VTX  5896, 0, 0
+  {
+   COORD (2100,1340)
+  }
+  VTX  5905, 0, 0
+  {
+   COORD (2200,1980)
+  }
+  VTX  5912, 0, 0
+  {
+   COORD (2100,1980)
+  }
+  BUS  5913, 0, 0
+  {
+   NET 22
+   VTX 5896, 5912
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  BUS  5914, 0, 0
+  {
+   NET 22
+   VTX 5912, 5905
+  }
+  TEXT  6555, 0, 0
+  {
+   TEXT 
+"Available window_type constant values:\n"+
+"1 = Bartlett\n"+
+"2 = Hanning\n"+
+"3 = Blackman\n"+
+"4 = Hamming\n"+
+"5 = Kaiser\n"+
+"6 = Rectangular"
+   RECT (1860,360,2370,593)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,400,0,238,0,"Arial")
+   MULTILINE
+  }
+  TEXT  6593, 0, 0
+  {
+   TEXT "@COMMENT()"
+   RECT (1080,2100,2018,2364)
+   PARENT 8
+   FILL (0,(255,255,255),0)
+  }
+  TEXT  6597, 0, 0
+  {
+   TEXT "@COMMENT()"
+   RECT (2720,720,4184,1017)
+   PARENT 4648
+   FILL (0,(255,255,255),0)
+  }
+  TEXT  6601, 0, 0
+  {
+   TEXT "@COMMENT()"
+   RECT (2200,2720,3289,2951)
+   PARENT 3824
+   FILL (0,(255,255,255),0)
+  }
+  TEXT  6605, 0, 0
+  {
+   TEXT "@COMMENT()"
+   RECT (3120,2060,4198,2522)
+   PARENT 7
+   FILL (0,(255,255,255),0)
+  }
+  VTX  6758, 0, 0
+  {
+   COORD (900,1340)
+  }
+  VTX  6759, 0, 0
+  {
+   COORD (1080,1340)
+  }
+  VTX  6760, 0, 0
+  {
+   COORD (1900,1340)
+  }
+  BUS  6761, 0, 0
+  {
+   NET 16
+   VTX 6758, 6759
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  BUS  6762, 0, 0
+  {
+   NET 22
+   VTX 5896, 6760
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  6830, 0, 0
+  {
+   COORD (3120,1300)
+  }
+  VTX  6831, 0, 0
+  {
+   COORD (2820,1300)
+  }
+  VTX  6832, 0, 0
+  {
+   COORD (2340,1340)
+  }
+  VTX  6833, 0, 0
+  {
+   COORD (3120,1540)
+  }
+  VTX  6834, 0, 0
+  {
+   COORD (2820,1540)
+  }
+  VTX  6835, 0, 0
+  {
+   COORD (3120,1340)
+  }
+  VTX  6836, 0, 0
+  {
+   COORD (2820,1340)
+  }
+  BUS  6837, 0, 0
+  {
+   NET 17
+   VTX 6830, 6831
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  BUS  6838, 0, 0
+  {
+   NET 22
+   VTX 5896, 6832
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  WIRE  6839, 0, 0
+  {
+   NET 21
+   VTX 6833, 6834
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  BUS  6840, 0, 0
+  {
+   NET 18
+   VTX 6835, 6836
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  NET WIRE  7117, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rst"
+   }
+  }
+  TEXT  7118, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (818,1010,847,1039)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7276
+  }
+  NET WIRE  7129, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="start"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  TEXT  7130, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (820,1051,869,1080)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7279
+  }
+  VTX  7150, 0, 0
+  {
+   COORD (3960,1300)
+  }
+  VTX  7151, 0, 0
+  {
+   COORD (4080,1300)
+  }
+  WIRE  7152, 0, 0
+  {
+   NET 7153
+   VTX 7150, 7151
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  NET WIRE  7153, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="FALSE"
+    #NAME="end_sim"
+    #VHDL_TYPE="BOOLEAN"
+   }
+  }
+  TEXT  7154, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (3974,1270,4067,1299)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7152
+  }
+  TEXT  7196, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (243,1350,336,1379)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7246
+  }
+  VTX  7244, 0, 0
+  {
+   COORD (360,1380)
+  }
+  VTX  7245, 0, 0
+  {
+   COORD (240,1380)
+  }
+  WIRE  7246, 0, 0
+  {
+   NET 7153
+   VTX 7244, 7245
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  7247, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (863,790,956,819)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7320
+  }
+  VTX  7274, 0, 0
+  {
+   COORD (780,1040)
+  }
+  VTX  7275, 0, 0
+  {
+   COORD (880,1040)
+  }
+  WIRE  7276, 0, 0
+  {
+   NET 7117
+   VTX 7274, 7275
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  7277, 0, 0
+  {
+   COORD (780,1080)
+  }
+  VTX  7278, 0, 0
+  {
+   COORD (880,1080)
+  }
+  WIRE  7279, 0, 0
+  {
+   NET 7129
+   VTX 7277, 7278
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  7318, 0, 0
+  {
+   COORD (860,820)
+  }
+  VTX  7319, 0, 0
+  {
+   COORD (980,820)
+  }
+  WIRE  7320, 0, 0
+  {
+   NET 7153
+   VTX 7318, 7319
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  VTX  7397, 0, 0
+  {
+   COORD (1580,820)
+  }
+  VTX  7398, 0, 0
+  {
+   COORD (1680,820)
+  }
+  WIRE  7400, 0, 0
+  {
+   NET 7401
+   VTX 7397, 7398
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  NET WIRE  7401, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="clk"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  TEXT  7402, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1614,790,1646,819)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7400
+  }
+  VTX  7406, 0, 0
+  {
+   COORD (980,1400)
+  }
+  VTX  7407, 0, 0
+  {
+   COORD (1080,1400)
+  }
+  WIRE  7409, 0, 0
+  {
+   NET 7401
+   VTX 7406, 7407
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  7410, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1014,1370,1046,1399)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7409
+  }
+  VTX  7414, 0, 0
+  {
+   COORD (2100,2040)
+  }
+  VTX  7415, 0, 0
+  {
+   COORD (2200,2040)
+  }
+  WIRE  7417, 0, 0
+  {
+   NET 7401
+   VTX 7414, 7415
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  7418, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (2134,2010,2166,2039)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7417
+  }
+  VTX  7422, 0, 0
+  {
+   COORD (3000,1500)
+  }
+  VTX  7423, 0, 0
+  {
+   COORD (3120,1500)
+  }
+  WIRE  7425, 0, 0
+  {
+   NET 7401
+   VTX 7422, 7423
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  7426, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (3044,1470,3076,1499)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 7425
+  }
+ }
+ 
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (4400,3400)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #BLOCKTABLE_PAGE="1"
+   #BLOCKTABLE_TEMPL="1"
+   #BLOCKTABLE_VISIBLE="0"
+   #MODIFIED="1273165278"
+   PAGENAME=""
+   PAGENUMBER="1"
+   REVISION="1.0"
+  }
+ }
+ 
+ BODY
+ {
+  TEXT  7597, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "Created:"
+   RECT (3340,2966,3457,3019)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  7598, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$CREATIONDATE"
+   RECT (3514,2962,4184,3022)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  TEXT  7599, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Title:"
+   RECT (3338,3026,3409,3079)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  7600, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$TITLE"
+   RECT (3511,3022,4181,3082)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  TEXT  7601, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT 
+"(C)ALDEC. Inc\n"+
+"2260 Corporate Circle\n"+
+"Henderson, NV 89074"
+   RECT (3540,2840,3835,2941)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+   MULTILINE
+  }
+  TEXT  7602, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Page:"
+   RECT (3338,3144,3417,3197)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  7603, 0, 0
+  {
+   PAGEALIGN 10
+   OUTLINE 5,1, (0,0,0)
+   TEXT "$PAGENUMBER / $PAGECOUNT     $PAGENAME"
+   RECT (3510,3140,4180,3200)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,128,0,"Arial")
+   UPDATE 0
+  }
+  TEXT  7604, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "Revision:"
+   RECT (3336,3084,3464,3137)
+   ALIGN 4
+   MARGINS (1,10)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,0,0,"Arial")
+  }
+  TEXT  7605, 0, 0
+  {
+   PAGEALIGN 10
+   TEXT "$Revision"
+   RECT (3510,3094,4170,3129)
+   ALIGN 4
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (12,0,0,700,0,204,0,"Arial")
+   UPDATE 0
+  }
+  BMPPICT  7606, 0, 0
+  {
+   PAGEALIGN 10
+   RECT (3340,2840,3460,2940)
+   TEXT
+   "KAAAADAAAAAsAAAAAQAYAAAAAADCGAAAEgsAABILAAAAAAAAAAAAAP////////////////////////////////////////////////////////////////////////38+fXt1e3gtufWoN/Hfta2WNKxSdGvP9KwQdS0S9i6Wt7GderapfXu1v79+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////379+3guuHIi97BgeHFjeTLmuXNnuXMnOLIkt/ChNm5bdKtTcujLMWaEMKVAMedFNW3TuXTkvjy4P/////////////////////////////////////////////////////////////////////////////////////////////////////////////+/fHlxufSouzaufPo1ffu4vnz6fv27vv27/v27vr17Pnw5fXr2vDgx+jUrN/Ch9OvU8ieIMKWAcKVAMmhGd/Iefr26P////////////////////////////////////////////////////////////////////////////////////////////////z58u3eufXq2Pz38f78+v/////////////////////////////////////+/vz59fjw5PDgxubOoda0YsieH8KWAMKWAMymJevdrP////////////////////////////////////////////////////////////////////////////////////////z58/fu3/36+f/////////////////////////////////////////////+/fz48v////////n06fXq2PLkzOLJltGrScSZC8KVAMOXAd7GdP79+/////////////////////////////////////////////////////////////////////////////379/z48f///v////////////////////////////////79+vnz6Pjy5f38+P///vfv4fjv4v////7+/fjx4/z69fjw4+vXtNi3a8acGMKVAMOXANi7Wfz68/////////////////////////////////////////////////////////////////////79+/78+f///////////////////////////vv37/jv4f379/379vTo0/fu3vbs2v////37+Pjx5f///v////////////////v28PDhx97AgcmgI8KVAMOXANe5U/389////////////////////////////////////////////////////////////////v/+/v///////////////////vv48P/+/f78+vPo0ffx4/Tp1f////v37/fu3vv38P///////////////////////////////v////789/Pm0uDEjMuhJ8KVAMOXANq/Y//+/f///////////////////////////////////////////////////////////v/////////////////+/vfw4fXr2Pfu3v////fw4fTp1fjw4v////////////////////////////////78+v79/P////z69Pfv4v////78+fPn0d7ChcedG8KVAMOXAOXTkv/////////////////////////////////////////////////////////////////+/vnz6Pv37////vTp1Pnx5vTo1P/+/v////379/////////////////////////////////z59PTo0vXr2P78+f/+/vbt3fz38P////379/Hiytm6csWZDMKWAMeeEPTs0P////////////////////////////////////////////////////////////r06vbt3PXq1f79+/v38PXq2Pz48v////////////////////////////////n06Pv38P////v48vXq1vr16ffu3v////r17PXq2P////////z48+3bvdOvU8OWAcOXANS1Sv/+/f////////////////////////////////////////////7+/f369f////ny5/Xr2PXr2f38+f////////////////////////////v38Pz58/////////r16/To1P////////bv3/Tq1PTq1v////79+/z69f////////////ry5+XMnsqhKMKVAMOYAu3gs/////////////////////////////////////////////79+/bt3P79+//9/Pbu3vv48f////////////////////////////r16/Ln0PPmzvv48f////////Po0vn06v/////+/vnz5/z59P/////////////////////////+/PPm0Nq6b8SYB8OWANS0R//+/f////////////////////////////////79+/v38P////bt3Pz58v////////////////////////79+/fv3/v37/////jw4vbu3vv37/Tq1f////////bs2/nz5/////////////////////////////////////////////z28OnUrs2lMsKVAMSZBPLoxv////////////////////////////////z48vbs2v38+fv27v78+f////////////////////////Xs2/Tq1/Pmzv38+f78+vPmz/Xr1/Tp1P///v////////////////////////////////////////38+vr17P/////////+/fTn1Nm4asOWA8OXAN/Hdf////////////////////////////////z58/jx4/////////////////////////fw4f359P////bu3vz48/ny5vrz6f////77+Pbu3v379/////////////////////////////////79/P79+v////r16/Tp1P359P////////r17OXMnMeeHMKVAM+rMv379v////r37vr37v/////////////////+/fXu3fj06Pj06fj06fj06fj06fLmzvDixu/hxP38+vbu3u7fwO/gxPTq1/j06fj16v////////jz6Pf05/j06Pj06Pj06Pj06Pfz5v37+Pjx4/Pmz/fw4vTs2fPo0/Po0vjz5/v58//+/u7dwM+rQ8KVAMacDfTs0P///9S3b72SJN7Jm////////////+zhxbiKJbaGF7iKHbeIGrWFFLWFFLSCDraFFLSDFNe+gb6TNrSDEbOBCrWFFLWEErWEGM+vavHo0LuNI7aHGbWFErWEErWFErWFFLF+D8+vZ+vcusCVN7aFFLWFE7WDELWEEbOBEL6TM/jz5/bs3dm3aMOVAsOWAOjXnf///+7jx7OBArWFFvv48v79/P///8OcQat1AMSfRa99ALKBCLqMJLuOJrqOJ7mMIrmMJb6UL7KABrJ/BLqOJrqNJ7uOJ7F9Bqx3ANe9fbWFD7F/BryQLLyRLLyQLLqNJLqNKL+WOL6ULax2ALJ/BrqOJ7qOJrqNJbqNJbWGId7Jl/z38+DEicWZDsKWAOHLf////////9a7d7KBAMWfS9i/g9Gya6t1AMWfRODKmat1AMmmUvfu3vr27fr37/n16/r37uzgw7F9B72RKPj06fr38Pr38Ni+gKp0AM2tXrWFD7+VLvbw4vfy5ffy5PLmzvjw4vn27cGYNq14AOLOn/r37/r37/r27vr27vn16/r27fz38+bOocieHcKVANvAZP////////r27byRIrF/AL+VMLF+Bq57Au3fwufVr6lyAMuoVfr06v////////////////Lq1rB9CL2RKv///v///////+PSpat1AM2sXbiJFbKABbuQK7yRMLyQLreIJuLNn////8OcP698AvXu3v////////////////////////779+rWr8uhKcKVANe6V////////////+PRorJ/ALqNHK97A8yrXv///+DJl6lyAMqoVv////////////////////Ho0rB9CL2SKv////z48vnv4t3Eiqt1AM6uX7iJFbSEDr+WM8GYOcGYO76UO+bVrf///8ObPK98AvXv4P////////////////////////78+ezauM2lM8KVANe6Vv////////////7+/MikSa98ALSEE/Ps2f///+HMnqlxAMqoVv////////////////////Hn0LB9CLuPI/Tt2ezcu/Ln0dCwZKt0AM6uYbaGEb2TKO3cvPPr2fTs2vPr1vv58////8OdP613AN/Jl/Xv3/Xv3/Pr1+7fwP369f/////9+u3bvM2mOMKVANi8Wv///////////////+/lzK97C9i/hf///////+LQpqVrAMekTv///////////////////+rZta56AK15ALB9BLB8ArB8A614AK14ANi+gLSDCq54ALF9BLF/CbF+CKx3BeHNnv///9CybahvAK13ALF+B7B+B6x2AcKZPP379v////79+u3aus2lNcKVANzDbP///////////////////9zGk/n27f///////+nbu7uQPNa8ff////78+fr16v///////+ratsKcQ8CWNcCXN8KaPL+WNL6TM9e9gfPr1sSfRMGaPcGaO8GZOsGZOr2TOOfXsv////bx5c6uZsGYOsCWNMCWNL2TOMypWvz48f////77+OvWscuiK8KVAOHLgP////////////////////r37//////////////+/fz58fv27/////79+/To0/37+P////fw4ffv3vTp1Pr27f79+/379v369P////////79+v79+v79+v79+v79+v79+P/+/f369v359P////z48ffw4Pny5vz58fr16v369f////z48ufPosmeHsKVAOnZof////////////////////////////////////////ny5vTp1Pv48f////jw4/jx5P////7+/Pbt3Pbt3P///v////////////////////////////////////////////////z58/To0v////////bs2fTq1/37+P////////////rz6eHFjMWaEcadEfXu1v////////////////////////////////////////nz6fjy5Pfv4P////r06fPo1P////////////////////////////////////////////////////v27/r06v////////////Xr1/z48P////v38Pnz5/////////////////br3Nq6cMOWA8+tN/38+P////////////////////////////////////////37+PTp1fXs2v////79+/38+f////////////////////////////////////379/78+f////////v38PPn0P/+/v////////Xr2Pfv4f////////////////////38+P79+u/gxdKsSsKVAODKff////////////////////////////////////////////////369v38+P////////////////////////////////////////////v48fLmzfPmz/369v////////Pp1fr17f////////v37/37+P////////////////////v27fnz6OfPo8qfIsSZCfTrz/////////////////////////////////////////////////////////////////////////////////////z69PXs2vr27v////jw4/fu3vnz5/Xr2f////////Tq1ffw4f////////////////////////////nz5/38+Pz58vLl0Ny9d8OXBta3T/7+/P/////////////////////////////////////////////////////////////////////+/fz58v////////Xr2Pbt3fTo0v369f379vPmz/jy5fPn0f///v////369v7+/P////////////////////////v38PTp1fn06fz38OnVsc+oPsOVA+/kvf////////////////////////////////////////////////////////////n06fjz6P/////+/vXr1vz48f////nz5/fu3vjw4/ft3P////r17PPo0vv27f////////////////////////////79+vfv4P78+fr27ffu3vrz6Pbs292+fcWZDNi7Wv/////////////////////////////////////////////////////////////+/vXr2PXs2fr16/////v37/Xr2P7+/v/+/vbt3fPm0Pn06f////////////////////////////////////////////fv4PXr2Pfv3v79/Pbs2vny5erUr86nOcefFffy3v////////////////////////////////////////////////////////////////r27ffv4PXp1P/9/P79+/Tp1P379v////////38+f////////////////////////////////379/Xr2Pjx4/////bt3Pjw4vfu3f////79+vLjzNi2Z8OYCOnZov////////////////////////////////////////////////////////////////////////n16vfw4f/+/f////7+/f///v/////////////////////////////+/vr16/z59P////bu3ffv3/Xq1vz69fz69fXq2P369f7+/vbr2uDDisidGd/HeP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/fv37v379v////jw4/Xq1/Tq1f379/v37/Xp1fbs2vz69v////////////jv4uXNn8ykL9q/Zv79+//////////////////////////////////////////////////////////////////////////////////////+/v37+P/+/v////z58/z69f////r06fTp0/Xs2fz69Pv27vXt3PXr2Pr17P////v48f369f/////////+/vjw5OfRp9CpQdzCbP79+/////////////////////////////////////////////////////////////////////////////////////////z69vTq1fjw4v379/369vXr2Pz69v78+fjw4fXs2/jz5/////v48Pv37//+/v////////////////38+PXr2ubMn9GsR+PQjP///////////////////////////////////////////////////////////////////////////////////////////////////vv48ffw4vr06v////v48fz58//////+/f379////////////////////////////////vv27vHiyeDEiti5YPHmxP///////////////////////////////////////////////////////////////////////////////////////////////////////////////v////////////////////////////////////////////////////z58vXr1+jTq93BfefVnf379f////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7+/f769vnz6fPn0ezbuOjUqe7fuvv37f/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/v/+/v79+/38+Pz58vv17Pnx5ffv4Pfv3/ny5vv38P///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAA"
+  }
+  GROUP  7607, 0, 0
+  {
+   PAGEALIGN 10
+   RECT (3320,2820,4201,3201)
+   FREEID 1
+   LINE  594, 0, 0
+   {
+    OUTLINE 0,1, (128,128,128)
+    POINTS ( (880,380), (880,0), (0,0), (0,380), (880,380) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  GROUP  7608, 0, 0
+  {
+   PAGEALIGN 10
+   RECT (3320,3020,4201,3021)
+   FREEID 1
+   LINE  578, 0, 0
+   {
+    OUTLINE 0,1, (128,128,128)
+    POINTS ( (0,0), (880,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  GROUP  7609, 0, 0
+  {
+   PAGEALIGN 10
+   RECT (3320,2960,4201,2961)
+   FREEID 1
+   LINE  577, 0, 0
+   {
+    OUTLINE 0,1, (128,128,128)
+    POINTS ( (0,0), (880,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  GROUP  7610, 0, 0
+  {
+   PAGEALIGN 10
+   RECT (3320,3080,4201,3081)
+   FREEID 1
+   LINE  583, 0, 0
+   {
+    OUTLINE 0,1, (128,128,128)
+    POINTS ( (0,0), (880,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  GROUP  7611, 0, 0
+  {
+   PAGEALIGN 10
+   RECT (3320,3140,4201,3141)
+   FREEID 1
+   LINE  582, 0, 0
+   {
+    OUTLINE 0,1, (128,128,128)
+    POINTS ( (0,0), (880,0) )
+    FILL (1,(0,0,0),0)
+   }
+  }
+  GROUP  7612, 0, 0
+  {
+   PAGEALIGN 10
+   RECT (3500,2820,3501,2961)
+   FREEID 1
+   LINE  581, 0, 0
+   {
+    OUTLINE 0,1, (128,128,128)
+    POINTS ( (0,0), (0,140) )
+   }
+  }
+  GROUP  7613, 0, 0
+  {
+   PAGEALIGN 10
+   RECT (3500,2960,3501,3201)
+   FREEID 1
+   LINE  579, 0, 0
+   {
+    OUTLINE 0,1, (128,128,128)
+    POINTS ( (0,0), (0,240) )
+   }
+  }
+ }
+ 
+}
+

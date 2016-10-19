@@ -1,0 +1,16 @@
+[Version]
+Version=8.3
+[Designs]
+vhdl_verilog_edif_c_vhpi=.\VHDL_Verilog_EDIF_C_VHPI\VHDL_Verilog_EDIF_C_VHPI.adf
+vhdl_verilog_edif_c_pli=.\VHDL_Verilog_EDIF_C_PLI\VHDL_Verilog_EDIF_C_PLI.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+vhdl_verilog_edif_c_vhpi=0
+vhdl_verilog_edif_c_pli=0
+[Settings]
+Active=vhdl_verilog_edif_c_pli

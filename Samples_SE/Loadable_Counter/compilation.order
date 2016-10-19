@@ -1,0 +1,7 @@
+.\src\counter.vhd
+.\src\WAVES\counter_TB_pins.vhd
+.\src\WAVES\waves_objects.vhd
+.\src\WAVES\counter_TB_declaration.vhd
+.\src\WAVES\waves_generator.vhd
+.\src\WAVES\counter_TB.vhd
+.\src\WAVES\monitor_utilities.vhd

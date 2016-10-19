@@ -1,0 +1,166 @@
+<html>
+<head>
+	<title>Readme</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta name="author" content="Arek Golec">
+	<link rel="stylesheet" type="text/css" href="../readme_files/style.css">
+</head>
+
+<body>
+<h2>DESCRIPTION:</h2> 
+<p><b>SIMULINK_BAND_PASS_FILTER</b> is simple DSP design using IIR bandpass filter and 1024-point FFT components.
+ 
+<p>The purpose of this design is to demonstrate the use of <b>Active-HDL Co-Simulation Interface to Simulink&reg;</b> in case of different sampling rates required for different HDL blocks. It shows how to synchronize Simulink sampling with HDL simulator and how to differentiate sampling rates of HDL blocks instantiated in Simulink diagram.
+
+<p>MATLAB&reg; and Simulink&reg; software can be downloaded from the MathWorks website at <a href="http://www.mathworks.com/">www.mathworks.com</a>.
+
+<p>The top-level block diagram is created using Simulink block diagram editor. This diagram instantiates black-boxes of the FFT and IIR filters. The FFT design is described in VHDL while the IIR filters are described in Verilog.
+
+<p>The workspace <b>SIMULINK_BAND_PASS_FILTER</b> contains a description of components used in Simulink block diagram. It includes:
+<OL>
+	<Li><b>Biquad_IIR</b> design containing description of the second order IIR filter. 
+	<Li><b>FFT</b> design containing descriptions of the Complex FFT module, RAM memory to store FFT data and control logic responsible for proper FFT output data order. 
+</OL>
+
+<p>This design uses all design entry types available in Active-HDL: State Diagram Editor, Block Diagram Editor and HDL Editor.
+
+<p>The Simulink design is a testbench for two IIR filters and three FFT blocks. There are two band-pass filters. Each of them contains single biquad band-pass section. Three FFT blocks process input, first-stage output and second-stage output signals of bandpass filter.
+
+<p>The filter is stimulated with 1kHz square signal. Two identical IIR filters are designed as Chebyshev bandpass filters with a 44kHz sampling frequency and corner frequencies of 4.5kHz and 5.5kHz, so they pass the 5th harmonic component of source square signal. To have the 5th harmonic in the middle of FFT output spectrum, the whole bandwidth is set to 11kHz, which gives the FFT sampling frequency of 22kHz.
+
+<p>&nbsp;
+<p><h2>BLOCK DESCRIPTION GENERATION:</h2>
+
+<p>To start co-simulation of this design in Simulink, we need to use Active-HDL to create files that describe our HDL components in Simulink diagram.
+
+<p>First, use the <b><i>compile_rtl.do</i></b> macro in the <i>biquad_iir</i> design and <b><i>compile_all.do</i></b> in the <i>fft</i> design in order to compile design files and generate block description files for Simulink.</p>
+<p>You can also generate block description files for Simulink manually. Select top-level modules (<b><i>biquad</i></b> in the <i>biquad_iir</i> design and <b><i>top_fft</i></b> in the <i>fft</i> design) and use the <b>Generate Block Description for Simulink</b> option from the pop-up menu for each of the selected top-level modules (Figure 1). Confirm the default file names and locations by pressing OK in the <b>Save&nbsp;As</b> dialog box.
+
+<p><img SRC="../readme_files/generate_block.png" BORDER="0" ALT="Figure 1. Generating the block description file for co-simulation in Simulink"><br>
+<i>Figure 1. Generating the block description file for co-simulation in Simulink</i>
+
+<p>Once the block description files are created for all modules mentioned above, invoke <b>MATLAB</b>. If you use the co-simulation interface for the first time, browse to the <b>$ALDEC/Simulink</b> folder and type the <b><i>setup</i></b> command. (The <b>$ALDEC</b> variable points to the Active-HDL installation folder; you can examine its value using the <b><i>set</i></b> command in <nobr>Active-HDL</nobr> Console.)
+
+<p>&nbsp;
+<h2>CO-SIMULATION: </h2>
+
+<p>Open the <i>$WSP/Simulink/band_pass_filter_cosim.mdl</i> file in the Simulink environment. Make sure that the <I>$WSP/Simulink</I> folder is either set as the current folder or added to the MATLAB search path.<br>
+The model contains the <b>Active-HDL Co-Sim</b> block on the top-level diagram, three HDL Black-Boxes corresponding to three instances of the top_fft entity and two subsystems (Figure 2). Each subsystem contains one HDL Black-Box named biquad_IIR_HDL. The name displayed in the middle of the HDL Black-Box symbol corresponds to the configuration filename. By default, it is the name of the entity/module, unless you change it with the <b>Generate Block Description for Simulink</b> option. The HDL Black-Boxes are distinguished graphically with the Active-HDL logo.
+
+<p><img SRC="../readme_files/bpf_mdl.png" BORDER="0" ALT="Figure 2. The Simulink model window"><br>
+<i>Figure 2. The Simulink model window</i>
+
+<p>Now, you can simply start simulation and observe the results on the Simulink scopes. For additional information on how to setup co-simulation, refer to the chapters below.<br>
+
+<p>&nbsp;
+<h2>PORTS CONFIGURATION:</h2>
+
+<p>Push into one of the IIR subsystems and double-click on the <i>biquad_IIR_HDL</i> block. The <b>HDL Black-Box Parameters</b> dialog box (Figure 3.) allows you to control data transfer conditions and check properties of every port. Some of main properties are listed below.
+
+<dl class="F">
+<dt><b>Mode</b>
+	<dd>Shows the direction of data transfer or a mode for special signals. The <I>Stim</I> mode indicates that a signal has been added to the <b><I>Stimulators</I></b> tab, <I>Clock</I> and <I>Sync</I> indicate that signals have been added to the <b><I>Clocks</I></b> tab.</dd>
+<dt><B>Point</B>
+	<dd>Allows specifying the binary point for a vector. As HDL Black-Box accepts input data of both floating- and fixed-point types, two separate options are provided: 
+  <dd><b>Point(Float)</b> - double numbers in Simulink are converted to binary numbers in fractional two's complement notation. This parameter defines position of the 2^0 bit. Notice how it is used in the IIR blocks to achieve &lt;-1,1) range on vector ports.
+  <dd><b>Point(Fix)</b> - the point value can be inherited from an input fixed-point number (by setting <i>Range</i> or <i>Accuracy</i>) or customized independently (value set for float-point types can be used by setting <i>As for Float</i> value).</dd>
+<dt><B>Sampling Period</B>
+	<dd>Specifies the sampling period or the reference signal defining the update rate of the output signal (this option is available in the <b><i>Output Ports</i></b> tab). You can specify an integer number related to the <b>Reference Period</b> or one of signals selected as Clock or Sync (Figure 5.) In this example, all modules use their <i>clk</i> signal as reference.</dd>
+<dt><B>Multirate Sampling</B>
+	<dd>Allows you to use a different sampling period for each output (this option is available in the <b><i>Output Ports</i></b> tab).</dd>
+<dt><B>Waveform</B>
+	<dd>This tab allows to select signals to be displayed in the Active-HDL waveform viewer and customize display properties (e.g. <b>Radix</b>, <b>Notation</b>, <b>Analog Mode</b>) for each signal.</dd>
+</dl>
+
+<p> Please refer to the on-line documentation for detailed information on remaining dialog box options.
+
+<p><img SRC="../readme_files/port_signals.png" BORDER="0" ALT="Figure 3. HDL Black-Box Parameters dialog box (Inputs tab)"><br>
+<i>Figure 3. HDL Black-Box Parameters dialog box (Input Ports tab)</i>
+
+<p>&nbsp;
+<h2>TIMING CONSIDERATIONS:</h2>
+
+<p>Most of HDL simulators, including Active-HDL, use an event-driven simulation methodology, while Simulink performs cycle-based simulation. This implies a major consequence: data can be exchanged between the two domains only at scheduled time steps. It means that none of <span>HDL&nbsp;Black-Boxes</span> can be evaluated and no data transfer occurs between time points resulting from the specified sampling period. The fixed-step discrete solver also needs to be used in Simulink to provide correct co-simulation results.<br>
+The sampling period and the relationship between Active-HDL and Simulink time domains is defined in the <b><nobr>Block&nbsp;Parameters</nobr></b> dialog box of the <b><nobr>Active-HDL&nbsp;Co-Sim</nobr></b> block in the <b>Reference Period</b> section:
+
+<p><img SRC="../readme_files/clk_system_period.png" BORDER="0" ALT="Figure 4: Reference Period Settings"><br>
+<i>Figure 4: Reference Period Settings</i>
+
+<p><dl class="F">
+<dt><b>In HDL Simulator</b> 
+	<dd>Specifies the sampling period for Active-HDL.</dd>
+<dt><b>In Simulink</b> 
+	<dd>Specifies the sampling period for Simulink. It can be defined explicitly or the <b>As In Simulator</b> option can be selected. If the period is specified implicitly, the absolute times in both Simulink and Active-HDL remain equal throughout the simulation.</dd>
+</dl>
+
+<p>The <b>Reference Period</b> section defines base sampling rate for all <span>HDL&nbsp;Black-Boxes</span>. The <b><span>HDL&nbsp;Black-Box</span> Parameters</b> dialog box allows setting the following timing parameters of an individual <span>HDL&nbsp;Black-Box</span>:
+<ul>
+	<li><b>Sampling Period</b> for outputs (separately for each output if <b>Multirate Sampling</b> is enabled);</li>
+	<li>selecting number of signals as <b>Clock</b> signals and specifying the <b>Period</b>, <b>Offset</b>, <b>Duty Cycle</b> parameters;</li>
+	<li>selecting number of signals as additional synchronization signals (<b>Sync</b>) referenced to one of Clock signals, and specifying <b>Period</b>, <b>Offset</b> and the <b>Active</b> level.</li>
+</ul>
+
+<p>All parameters specifying the time are defined as integers related to the <b>Reference Period</b>.
+
+<p>As mentioned before, we want to simulate blocks with two different sampling frequencies. The FFT runs with 22kHz, which gives the period of 45.45us, while IIR runs with 44kHz, which gives the period of 22.73us, twice shorter than FFT period. The resulting maximum clock period is 22.73us and, consequently, possible reference periods are: 11.36us, 7.58us 5.68us, 4.55us, 3.79us, 3,25us 2.84us and so on. The corresponding frequencies of 88kHz, 132kHz, 176kHz, 220kHz, 264kHz, 308kHz, 352kHz, etc. also can be used in the <b>Reference Period</b> section.
+
+<p><i>NOTE: Be aware of the round-off error when specifying a period by using frequency units. The fractional part of the resulting period will be rounded to three digits.</i>
+
+<p>Differentiating the sampling period can be accomplished in two ways: by using one clock frequency for all HDL Black-Boxes and additional synchronization signals to activate block, or by using multiple clock frequencies directly.
+
+<h3>Using single-clock frequency and optional synchronization signals</h3>
+
+<p>In order to use this method of synchronization, a module must be equipped with an additional input enabling its operation (e.g. by gating the clock input.) Both entities used in this example have the CE port gating the CLK input, which can be used for synchronization purposes.<br>
+The maximum clock period of 22.73us (44kHz) implies the maximum reference period of 11.36us. If we use this value, then the IIR blocks will be activated on each clock while FFT will be enabled on every second clock. For presentation purposes, we will set a smaller value of the base sampling period than maximum required. We will specify 5.68us, corresponding to 176kHz. The IIR blocks will be enabled every second clock while the FFT blocks – every fourth clock.<br>
+You can examine the <b>Reference Period</b> setting in the <b>Block Parameters</b> of the <b>Active-HDL Co-Sim</b> block as shown in Figure 4. Since we don't need to differentiate the timescales, the <b>As In Simulator</b> option is used for the Simulink sample period.<br>
+<p>Figure 5. shows the HDL Black-Box Parameters of one of the FFT blocks:
+
+<p><img SRC="../readme_files/bb_sample_period.png" BORDER="0" ALT="Figure 5. Clocks settings for one of the FFT blocks"><br>
+<i>Figure 5. Clocks settings for one of the FFT blocks</i>
+
+<dl class="F">
+<dt>Settings for the <i>clk</i> port selected as the Clock signal:
+	<dd><b>Period</b>: 2 - forces <I>clk</I> period of 11.36us (it corresponds to 88kHz)</dd>
+<dt>Settings for the <i>ce</i> port selected as the Sync signal:
+	<dd><b>Reference Clock</b>: clk - uses <i>clk</i> Clock as reference</dd>
+	<dd><b>Clk per Sync</b>: 4 - activates the <i>ce</i> port during every 4th <i>clk</i> period, which results in the block activation period of 45.45us (it corresponds to 22kHz)</dd>
+</dl>
+<p>In case of IIR blocks, the corresponding settings will be specified as follows:
+<dl class="F">
+<dt>Settings for the <i>clk</i> port selected as the Clock signal:
+	<dd><b>Period</b>: 2 - forces <I>clk</I> period of 11.36us (it corresponds to 88kHz)</dd>
+<dt>Settings for the <i>ce</i> port selected as the Sync signal:
+	<dd><b>Reference Clock</b>: clk - uses <i>clk</i> Clock as reference</dd>
+	<dd><b>Clk per Sync</b>: 2 - activates the <i>ce</i> port during every 2nd <i>clk</i> period, which results in the block activation period of 22.73us (it corresponds to 44kHz)</dd>
+</dl>
+
+<p>Switch to the Waveform tab of the HDL Black-Box Parameters dialog box to select the <i>clk</i> and <i>ce</i> ports to be displayed in the Active-HDL Waveform Viewer.
+This is indicated in the <I>Wave</I> column of <I>Input Ports</I> and <I>Output Ports</I> tabs (Figure 3.) This way you can verify if these ports are stimulated correctly.<br>
+Figure 6. presents dependencies of the Sync and Clock signals. The <i>clk</i> signal has the same period of 11.36us (88kHz) for all blocks, the <i>ce</i> signals enable the IIR blocks every 22.73us (44kHz) and the FFT blocks every 45.45us (22kHz).
+<p><img SRC="../readme_files/dependencies.png" BORDER="0" ALT="Figure 6. Dependencies of the Clock and Sync signals for the single-clock frequency"> 
+<br><i>Figure 6. Dependencies of the Clock and Sync signals for the single-clock frequency</i>
+
+<h3>Using multiple-clock frequencies</h3>
+
+<p>When the design constraints allow the use of multiple clock frequencies, you can specify the desired clock frequency directly in the <b>HDL Black Box Parameters</b>. Let's assume that we will use following settings:
+<ul>
+	<li><b>Reference Period:</b> 11.36us (88kHz) - maximum possible value; 
+	<li><b>Period</b> for the <I>clk</I> port of the IIR blocks: 2 - the IIR clock period of 22.73us (22kHz); 
+	<li><b>Period</b> for the <I>clk</I> port of the FFT blocks: 4 - the FFT clock period of 45.45us (44kHz). 
+</ul>
+<p>If the modules have additional enabling signals, they can be forced in one of the following ways:
+<ul>
+	<li>selecting such a signal as the <I>Sync</I> signal and setting the <b>Clk per Sync</b> value to 1;</li>
+	<li>using the force formula for this signal in the <b>Stimulators</b> tab.</li>
+</ul>
+<p>The dependencies between the <i>clk</i> and <i>Sync</i> signals (in case the first method is used) are shown in Figure 7. The clock period for the IIR blocks is set to 22.73us (44kHz) and for the FFT blocks - 45.45us (22kHz).
+<p><img SRC="../readme_files/dependencies1.png" BORDER="0" ALT="Figure 7. Clocks and Sync signals dependencies for multiple clock frequencies"> 
+<br><i>Figure 7. Dependencies of the Clock and Sync signals for the multiple-clock frequencies</i>
+
+<p>&nbsp;
+<p>For further information on the <b>Active-HDL Co-Simulation Interface to Simulink</b>, refer to the Active-HDL on-line documentation. 
+
+<p>The FFT and Biquad_IIR <i>opencores</i> have been downloaded from <A HREF="http://www.opencores.org/">www.opencores.org</A>. Refer to this site for copyright notices.
+
+</body>
+</html>

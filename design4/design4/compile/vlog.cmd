@@ -1,0 +1,1 @@
+-o c:/Users/Sir/Documents/design4/design4/compile -lc c:/Users/Sir/Documents/design4/library.cfg -fl c:/Users/Sir/Documents/design4/design4/projlib.cfg -pli "C:/Aldec/Active-HDL-Student-Edition/bin/systf.dll" -epr c:/Users/Sir/Documents/design4/design4/compile/design4.epr -O2 -sve -msg 5 -sv2k12 -work design4 c:/Users/Sir/Documents/design4/design4/src/adder.v 

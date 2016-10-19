@@ -1,0 +1,11 @@
+.\src\and2.vhd
+.\src\cnt_4b.vhd
+.\src\hex2led.vhd
+.\src\CNT_BCD.bde
+.\src\CONTROL.asf
+.\src\freq_top.bde
+.\src\vhpi_component.vhd
+.\src\TestBench\TestBenchPack.vhd
+.\src\TestBench\testbench_vhpi.vhd
+.\src\testbench_cnt_bcd_conf.vhd
+.\src\vhpi_for_ahdl\vhpi_for_ahdl.dlm

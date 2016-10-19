@@ -1,0 +1,51 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=PSL_VHDL
+
+[Library]
+PSL_VHDL=.\PSL_VHDL.LIB
+
+[$LibMap$]
+PSL_VHDL=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=NONE
+REFRESH_FLOW=1
+FAMILY=
+IMPL_TOOL=
+SYNTH_TOOL=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[LocalVhdlSets]
+CompileWithDebug=1
+
+[LocalVerilogSets]
+EnableDebug=1
+
+[Files]
+/readme.html=-1
+/machine.asf=-1
+/machine_TB.vhd=-1
+/run_all.do=-1
+/run_debug.do=-1
+
+[Files.Data]
+.\src\readme.html=HTML Document
+.\src\machine.asf=State Diagram
+.\src\machine_TB.vhd=VHDL Source Code
+.\src\run_all.do=Macro
+.\src\run_debug.do=Macro
+

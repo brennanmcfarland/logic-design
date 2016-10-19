@@ -1,0 +1,105 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=SC_hex_ram
+
+[Library]
+SC_hex_ram=.\SC_hex_ram.lib
+
+[$LibMap$]
+SC_hex_ram=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+HESPrepare=0
+FLOWTOOLS=ONLY_IMPL
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+VerilogDirsChanged=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+systemc=1
+
+[LocalVhdlSets]
+CompileWithDebug=0
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+
+[LocalVerilogSets]
+EnableDebug=0
+EnableSLP=1
+EnableExpressionCoverage=0
+VerilogLanguage=5
+Strict=0
+Strict2001=
+SystemVerilog3=
+StrictLRMMode=
+VerilogNoSpecify=0
+WarningPrnLevel=1
+ErrorOutputLimit=0
+OptimizationLevel=2
+ProtectLevel=0
+AdditionalOptions=
+
+[Files]
+/readme.txt=-1
+/run_ver.do=-1
+/run_vhd.do=-1
+/testbench.v=-1
+/testbench.vhd=-1
+systemc/hex_ram.dlm=-1
+systemc/comp.cpp=-1
+systemc/comp.h=-1
+systemc/hex2bin.cpp=-1
+systemc/hex2bin.h=-1
+systemc/sc_top.cpp=-1
+systemc/simprims.cpp=-1
+systemc/simprims.h=-1
+
+[Files.Data]
+.\src\readme.txt=Text File
+.\src\run_ver.do=Macro
+.\src\run_vhd.do=Macro
+.\src\testbench.v=Verilog Source Code
+.\src\testbench.vhd=VHDL Source Code
+.\src\systemc\hex_ram.dlm=C/C++ Configuration
+.\src\systemc\comp.cpp=C++ Source Code
+.\src\systemc\comp.h=C++ Source Code
+.\src\systemc\hex2bin.cpp=C++ Source Code
+.\src\systemc\hex2bin.h=C++ Source Code
+.\src\systemc\sc_top.cpp=C++ Source Code
+.\src\systemc\simprims.cpp=C++ Source Code
+.\src\systemc\simprims.h=C++ Source Code
+

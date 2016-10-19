@@ -1,0 +1,9 @@
+# KERNEL:                  TIME |  A B Ci | sum | Co
+# KERNEL:                    0     0 0  0    0     0
+# KERNEL:                   10     0 0  1    1     0
+# KERNEL:                   20     0 1  0    1     0
+# KERNEL:                   30     0 1  1    0     1
+# KERNEL:                   40     1 0  0    1     0
+# KERNEL:                   50     1 0  1    0     1
+# KERNEL:                   60     1 1  0    0     1
+# KERNEL:                   70     1 1  1    1     1

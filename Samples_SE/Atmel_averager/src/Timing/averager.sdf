@@ -1,0 +1,2935 @@
+(DELAYFILE
+ (SDFVERSION "2.1")
+ (DESIGN "averager")
+ (DATE "June 7, 2005")
+ (VENDOR "Atmel")
+ (PROGRAM "Figaro")
+ (VERSION "Atmel 7.5 (patch level 7 applied)")
+ (DIVIDER /)
+ (TIMESCALE 1ns)
+
+  (CELL
+    (CELLTYPE "averager")
+    (INSTANCE )
+    (DELAY 
+      (ABSOLUTE 
+      (INTERCONNECT datain_pad_3/Q u1_u1_Q_0_3/Y  (0.8:1.44:1.96)  (0.68:1.59:1.85)  )
+      (INTERCONNECT R_pad/Q clkarrivedZ0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u1_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u1_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u1_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u1_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u1_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u1_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u1_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u1_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u2_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u2_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u2_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u2_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u2_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u2_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u2_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u1_u2_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u1_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u1_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u1_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u1_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u1_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u1_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u1_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u1_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u2_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u2_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u2_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u2_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u2_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u2_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u2_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u2_u2_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u1_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u1_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u1_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u1_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u1_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u1_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u1_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u1_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u2_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u2_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u2_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u2_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u2_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u2_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u2_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u3_u2_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u1_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u1_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u1_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u1_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u1_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u1_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u1_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u1_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u2_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u2_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u2_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u2_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u2_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u2_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u2_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u4_u2_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand1_0_8/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u5_operand2_0_8/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand1_0_8/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u6_operand2_0_8/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_8/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand1_0_9/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_8/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u7_operand2_0_9/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u8_Q_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u8_Q_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u8_Q_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u8_Q_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u8_Q_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u8_Q_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u8_Q_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u8_Q_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_0/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_1/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_2/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_3/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_4/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_5/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_6/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_7/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT R_pad/Q u9_pipe_0_8/RS  (1.74:2.3:2.86)  (1.88:2.43:2.92)  )
+      (INTERCONNECT datain_pad_0/Q u1_u1_Q_0_0/Y  (0.1:0.17:0.2)  (0.07:0.14:0.16)  )
+      (INTERCONNECT datain_pad_4/Q u1_u1_Q_0_4/Y  (0.8:1.44:1.96)  (0.68:1.59:1.85)  )
+      (INTERCONNECT datain_pad_1/Q u1_u1_Q_0_1/Y  (0.2:0.35:0.49)  (0.19:0.33:0.47)  )
+      (INTERCONNECT datain_pad_6/Q u1_u1_Q_0_6/Y  (1.79:2.61:3.65)  (2.09:3.54:4.43)  )
+      (INTERCONNECT CLK_pad/Q clkarrivedZ0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u1_Q_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u1_Q_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u1_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u1_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u1_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u1_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u1_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u1_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u2_Q_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u2_Q_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u2_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u2_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u2_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u2_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u2_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u1_u2_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u1_Q_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u1_Q_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u1_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u1_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u1_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u1_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u1_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u1_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u2_Q_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u2_Q_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u2_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u2_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u2_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u2_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u2_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u2_u2_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u1_Q_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u1_Q_0_1/CLK  (1.65:1.99:2.62)  (1.25:1.73:2.24)  )
+      (INTERCONNECT CLK_pad/Q u3_u1_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u1_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u1_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u1_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u1_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u1_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u2_Q_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u2_Q_0_1/CLK  (1.65:1.99:2.62)  (1.25:1.73:2.24)  )
+      (INTERCONNECT CLK_pad/Q u3_u2_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u2_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u2_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u2_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u2_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u3_u2_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u1_Q_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u1_Q_0_1/CLK  (1.65:1.99:2.62)  (1.25:1.73:2.24)  )
+      (INTERCONNECT CLK_pad/Q u4_u1_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u1_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u1_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u1_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u1_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u1_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u2_Q_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u2_Q_0_1/CLK  (1.65:1.99:2.62)  (1.25:1.73:2.24)  )
+      (INTERCONNECT CLK_pad/Q u4_u2_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u2_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u2_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u2_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u2_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u4_u2_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand1_0_8/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u5_operand2_0_8/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand1_0_8/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_1/CLK  (1.65:1.99:2.62)  (1.25:1.73:2.24)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u6_operand2_0_8/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_8/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand1_0_9/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_8/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u7_operand2_0_9/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u8_Q_0_0/CLK  (1.65:1.99:2.62)  (1.25:1.73:2.24)  )
+      (INTERCONNECT CLK_pad/Q u8_Q_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u8_Q_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u8_Q_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u8_Q_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u8_Q_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u8_Q_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u8_Q_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_0/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_1/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_2/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_3/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_4/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_5/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_6/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_7/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT CLK_pad/Q u9_pipe_0_8/CLK  (1.67:2.0:2.64)  (1.26:1.74:2.25)  )
+      (INTERCONNECT datain_pad_5/Q u1_u1_Q_0_5/Y  (0.8:1.44:1.96)  (0.68:1.59:1.85)  )
+      (INTERCONNECT datain_pad_7/Q u1_u1_Q_0_7/Y  (0.8:1.44:1.96)  (0.68:1.59:1.85)  )
+      (INTERCONNECT datain_pad_2/Q u1_u1_Q_0_2/Y  (0.2:0.35:0.49)  (0.19:0.33:0.47)  )
+      (INTERCONNECT clkarrivedZ0/G u9_pipe_0_8/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT fig1630/G u8_Q_0_6/Z  (0.05:0.07:0.1)  (0.03:0.09:0.1)  )
+      (INTERCONNECT u1_u1_Q_0_0/G u1_u2_Q_0_0/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u1_u1_Q_0_0/G u1_u3_op_plus_plus_0_carry_3/W  (2.38:3.54:5.18)  (2.65:4.46:5.52)  )
+      (INTERCONNECT u1_u1_Q_0_0/G u5_operand1_0_0/Y  (2.38:3.54:5.18)  (2.65:4.46:5.52)  )
+      (INTERCONNECT u1_u1_Q_0_0/G u5_operand1_0_1/Z  (2.38:3.54:5.18)  (2.65:4.46:5.52)  )
+      (INTERCONNECT u1_u1_Q_0_1/G u1_u2_Q_0_1/Y  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u1_u1_Q_0_1/G u1_u3_op_plus_plus_0_carry_3/X  (0.05:0.2:0.29)  (0.11:0.24:0.28)  )
+      (INTERCONNECT u1_u1_Q_0_1/G u5_operand1_0_1/Y  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u1_u1_Q_0_2/G u1_u2_Q_0_2/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u1_u1_Q_0_2/G u1_u3_op_plus_plus_0_carry_4/X  (2.57:4.53:6.19)  (2.49:5.47:6.27)  )
+      (INTERCONNECT u1_u1_Q_0_2/G u5_operand1_0_2/Z  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u1_u1_Q_0_3/G u1_u2_Q_0_3/Y  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u1_u1_Q_0_3/G u1_u3_op_plus_plus_0_carry_5/X  (0.05:0.2:0.29)  (0.11:0.24:0.28)  )
+      (INTERCONNECT u1_u1_Q_0_3/G u5_operand1_0_3/Z  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u1_u1_Q_0_4/G u1_u2_Q_0_4/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u1_u1_Q_0_4/G u1_u3_op_plus_plus_0_carry_6/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u1_u1_Q_0_4/G u5_operand1_0_4/Z  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u1_u1_Q_0_5/G u1_u2_Q_0_5/Y  (1.87:2.39:3.68)  (2.09:3.1:3.96)  )
+      (INTERCONNECT u1_u1_Q_0_5/G u1_u3_op_plus_plus_0_carry_7/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u1_u1_Q_0_5/G u5_operand1_0_5/Z  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u1_u1_Q_0_6/G u1_u2_Q_0_6/Y  (2.45:3.62:5.28)  (2.39:4.43:5.28)  )
+      (INTERCONNECT u1_u1_Q_0_6/G u1_u3_op_plus_plus_0_carry_8/X  (2.94:4.59:6.58)  (2.78:5.56:6.48)  )
+      (INTERCONNECT u1_u1_Q_0_6/G u5_operand1_0_6/Z  (2.94:4.59:6.58)  (2.78:5.56:6.48)  )
+      (INTERCONNECT u1_u1_Q_0_7/G u1_u2_Q_0_7/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u1_u1_Q_0_7/G u5_operand1_0_7/Z  (1.05:1.64:2.37)  (1.32:2.31:2.82)  )
+      (INTERCONNECT u1_u1_Q_0_7/G u5_operand1_0_8/Y  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u1_u2_Q_0_0/G u1_u3_op_plus_plus_0_carry_3/Z  (3.68:4.88:7.33)  (3.91:5.84:7.48)  )
+      (INTERCONNECT u1_u2_Q_0_0/G u2_u1_Q_0_0/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u1_u2_Q_0_0/G u5_operand1_0_0/X  (3.68:4.88:7.33)  (3.91:5.84:7.48)  )
+      (INTERCONNECT u1_u2_Q_0_0/G u5_operand1_0_1/W  (3.68:4.88:7.33)  (3.91:5.84:7.48)  )
+      (INTERCONNECT u1_u2_Q_0_1/G u1_u3_op_plus_plus_0_carry_3/Y  (2.12:3.16:4.62)  (2.39:4.03:4.98)  )
+      (INTERCONNECT u1_u2_Q_0_1/G u2_u1_Q_0_1/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u1_u2_Q_0_1/G u5_operand1_0_1/X  (2.12:3.16:4.62)  (2.39:4.03:4.98)  )
+      (INTERCONNECT u1_u2_Q_0_2/G u1_u3_op_plus_plus_0_carry_4/Y  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u1_u2_Q_0_2/G u2_u1_Q_0_2/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u1_u2_Q_0_2/G u5_operand1_0_2/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u1_u2_Q_0_3/G u1_u3_op_plus_plus_0_carry_5/Y  (1.21:1.89:2.75)  (1.48:2.61:3.18)  )
+      (INTERCONNECT u1_u2_Q_0_3/G u2_u1_Q_0_3/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u1_u2_Q_0_3/G u5_operand1_0_3/X  (1.21:1.89:2.75)  (1.48:2.61:3.18)  )
+      (INTERCONNECT u1_u2_Q_0_4/G u1_u3_op_plus_plus_0_carry_6/Y  (1.87:2.39:3.68)  (2.09:3.1:3.96)  )
+      (INTERCONNECT u1_u2_Q_0_4/G u2_u1_Q_0_4/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u1_u2_Q_0_4/G u5_operand1_0_4/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u1_u2_Q_0_5/G u1_u3_op_plus_plus_0_carry_7/Y  (0.05:0.2:0.29)  (0.11:0.24:0.28)  )
+      (INTERCONNECT u1_u2_Q_0_5/G u2_u1_Q_0_5/Y  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u1_u2_Q_0_5/G u5_operand1_0_5/X  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u1_u2_Q_0_6/G u1_u3_op_plus_plus_0_carry_8/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u1_u2_Q_0_6/G u2_u1_Q_0_6/Y  (3.29:5.93:8.0)  (3.05:6.87:7.83)  )
+      (INTERCONNECT u1_u2_Q_0_6/G u5_operand1_0_6/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u1_u2_Q_0_7/G u2_u1_Q_0_7/Y  (0.0:0.22:0.3)  (0.16:0.28:0.31)  )
+      (INTERCONNECT u1_u2_Q_0_7/G u5_operand1_0_7/X  (0.0:0.22:0.3)  (0.16:0.28:0.31)  )
+      (INTERCONNECT u1_u2_Q_0_7/G u5_operand1_0_8/Z  (0.0:0.22:0.3)  (0.16:0.28:0.31)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_3/G u1_u3_op_plus_plus_0_carry_4/Z  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_3/G u5_operand1_0_2/Y  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_4/G u1_u3_op_plus_plus_0_carry_5/Z  (0.09:0.14:0.19)  (0.06:0.17:0.18)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_4/G u5_operand1_0_3/Y  (0.05:0.07:0.1)  (0.04:0.09:0.1)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_5/G u1_u3_op_plus_plus_0_carry_6/Z  (2.67:4.69:6.4)  (2.49:5.61:6.39)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_5/G u5_operand1_0_4/Y  (2.67:4.69:6.4)  (2.48:5.61:6.39)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_6/G u1_u3_op_plus_plus_0_carry_7/Z  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_6/G u5_operand1_0_5/Y  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_7/G u1_u3_op_plus_plus_0_carry_8/Z  (2.06:2.8:4.36)  (2.24:3.7:4.54)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_7/G u5_operand1_0_6/Y  (3.11:4.06:6.14)  (3.29:4.95:6.32)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_8/G u5_operand1_0_7/Y  (1.78:2.64:3.83)  (1.72:3.31:3.9)  )
+      (INTERCONNECT u1_u3_op_plus_plus_0_carry_8/G u5_operand1_0_8/X  (2.66:4.07:5.78)  (2.5:4.9:5.76)  )
+      (INTERCONNECT u2_u1_Q_0_0/G u2_u2_Q_0_0/Y  (2.59:3.98:5.86)  (2.86:5.03:6.13)  )
+      (INTERCONNECT u2_u1_Q_0_0/G u2_u3_op_plus_plus_0_carry_3/W  (2.69:4.1:6.04)  (2.96:5.16:6.31)  )
+      (INTERCONNECT u2_u1_Q_0_0/G u5_operand2_0_0/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u2_u1_Q_0_0/G u5_operand2_0_1/Z  (2.69:4.1:6.04)  (2.96:5.16:6.31)  )
+      (INTERCONNECT u2_u1_Q_0_1/G u2_u2_Q_0_1/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u2_u1_Q_0_1/G u2_u3_op_plus_plus_0_carry_3/X  (1.22:1.49:2.38)  (1.45:2.12:2.7)  )
+      (INTERCONNECT u2_u1_Q_0_1/G u5_operand2_0_1/Y  (1.22:1.49:2.38)  (1.45:2.12:2.7)  )
+      (INTERCONNECT u2_u1_Q_0_2/G u2_u2_Q_0_2/Y  (3.12:4.79:6.77)  (2.88:5.62:6.63)  )
+      (INTERCONNECT u2_u1_Q_0_2/G u2_u3_op_plus_plus_0_carry_4/X  (3.12:4.79:6.77)  (2.88:5.62:6.63)  )
+      (INTERCONNECT u2_u1_Q_0_2/G u5_operand2_0_2/Z  (3.12:4.79:6.77)  (2.88:5.62:6.63)  )
+      (INTERCONNECT u2_u1_Q_0_3/G u2_u2_Q_0_3/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u2_u1_Q_0_3/G u2_u3_op_plus_plus_0_carry_5/X  (1.5:2.08:3.08)  (1.63:2.76:3.36)  )
+      (INTERCONNECT u2_u1_Q_0_3/G u5_operand2_0_3/Z  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u2_u1_Q_0_4/G u2_u2_Q_0_4/Y  (0.05:0.07:0.1)  (0.03:0.09:0.1)  )
+      (INTERCONNECT u2_u1_Q_0_4/G u2_u3_op_plus_plus_0_carry_6/X  (2.13:2.7:4.15)  (2.31:3.46:4.41)  )
+      (INTERCONNECT u2_u1_Q_0_4/G u5_operand2_0_4/Z  (2.13:2.7:4.15)  (2.31:3.46:4.41)  )
+      (INTERCONNECT u2_u1_Q_0_5/G u2_u2_Q_0_5/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u1_Q_0_5/G u2_u3_op_plus_plus_0_carry_7/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u1_Q_0_5/G u5_operand2_0_5/Z  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u2_u1_Q_0_6/G u2_u2_Q_0_6/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u1_Q_0_6/G u2_u3_op_plus_plus_0_carry_8/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u2_u1_Q_0_6/G u5_operand2_0_6/Z  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u1_Q_0_7/G u2_u2_Q_0_7/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u1_Q_0_7/G u5_operand2_0_7/Z  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u1_Q_0_7/G u5_operand2_0_8/Y  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u2_u2_Q_0_0/G u2_u3_op_plus_plus_0_carry_3/Z  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u2_Q_0_0/G u3_u1_Q_0_0/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u2_Q_0_0/G u5_operand2_0_0/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u2_u2_Q_0_0/G u5_operand2_0_1/W  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u2_u2_Q_0_1/G u2_u3_op_plus_plus_0_carry_3/Y  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u2_u2_Q_0_1/G u3_u1_Q_0_1/Y  (1.49:2.47:3.46)  (1.66:3.25:3.84)  )
+      (INTERCONNECT u2_u2_Q_0_1/G u5_operand2_0_1/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u2_u2_Q_0_2/G u2_u3_op_plus_plus_0_carry_4/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u2_Q_0_2/G u3_u1_Q_0_2/Y  (1.49:2.55:3.56)  (1.71:3.35:3.95)  )
+      (INTERCONNECT u2_u2_Q_0_2/G u5_operand2_0_2/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u2_Q_0_3/G u2_u3_op_plus_plus_0_carry_5/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u2_Q_0_3/G u3_u1_Q_0_3/Y  (2.04:3.53:4.89)  (2.18:4.49:5.22)  )
+      (INTERCONNECT u2_u2_Q_0_3/G u5_operand2_0_3/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u2_u2_Q_0_4/G u2_u3_op_plus_plus_0_carry_6/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u2_u2_Q_0_4/G u3_u1_Q_0_4/Y  (2.57:4.53:6.18)  (2.49:5.46:6.26)  )
+      (INTERCONNECT u2_u2_Q_0_4/G u5_operand2_0_4/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u2_u2_Q_0_5/G u2_u3_op_plus_plus_0_carry_7/Y  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u2_u2_Q_0_5/G u3_u1_Q_0_5/Y  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u2_u2_Q_0_5/G u5_operand2_0_5/X  (0.05:0.2:0.29)  (0.11:0.24:0.28)  )
+      (INTERCONNECT u2_u2_Q_0_6/G u2_u3_op_plus_plus_0_carry_8/Y  (3.52:5.78:8.06)  (3.21:6.78:7.8)  )
+      (INTERCONNECT u2_u2_Q_0_6/G u3_u1_Q_0_6/Y  (3.03:4.81:6.76)  (2.82:5.65:6.6)  )
+      (INTERCONNECT u2_u2_Q_0_6/G u5_operand2_0_6/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u2_u2_Q_0_7/G u3_u1_Q_0_7/Y  (2.39:3.71:5.24)  (2.36:4.55:5.36)  )
+      (INTERCONNECT u2_u2_Q_0_7/G u5_operand2_0_7/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u2_u2_Q_0_7/G u5_operand2_0_8/Z  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_3/G u2_u3_op_plus_plus_0_carry_4/Z  (2.68:4.31:6.04)  (2.47:5.14:5.93)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_3/G u5_operand2_0_2/Y  (2.68:4.31:6.04)  (2.47:5.14:5.93)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_4/G u2_u3_op_plus_plus_0_carry_5/Z  (0.04:0.07:0.09)  (0.01:0.08:0.09)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_4/G u5_operand2_0_3/Y  (2.62:4.14:5.81)  (2.43:4.98:5.79)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_5/G u2_u3_op_plus_plus_0_carry_6/Z  (0.09:0.14:0.19)  (0.05:0.17:0.19)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_5/G u5_operand2_0_4/Y  (0.05:0.07:0.1)  (0.03:0.09:0.1)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_6/G u2_u3_op_plus_plus_0_carry_7/Z  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_6/G u5_operand2_0_5/Y  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_7/G u2_u3_op_plus_plus_0_carry_8/Z  (2.12:3.09:4.52)  (2.33:3.93:4.88)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_7/G u5_operand2_0_6/Y  (2.12:3.09:4.52)  (2.33:3.93:4.88)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_8/G u5_operand2_0_7/Y  (2.37:3.46:4.97)  (2.26:4.13:4.96)  )
+      (INTERCONNECT u2_u3_op_plus_plus_0_carry_8/G u5_operand2_0_8/X  (2.37:3.46:4.97)  (2.26:4.13:4.96)  )
+      (INTERCONNECT u3_u1_Q_0_0/G u3_u2_Q_0_0/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_0/G u3_u3_op_plus_plus_0_carry_3/W  (1.58:2.77:4.12)  (1.9:3.79:4.42)  )
+      (INTERCONNECT u3_u1_Q_0_0/G u6_operand1_0_0/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_0/G u6_operand1_0_1/Z  (2.38:3.73:5.49)  (2.7:4.76:5.78)  )
+      (INTERCONNECT u3_u1_Q_0_1/G u3_u2_Q_0_1/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_1/G u3_u3_op_plus_plus_0_carry_3/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_1/G u6_operand1_0_1/Y  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u3_u1_Q_0_2/G u3_u2_Q_0_2/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_2/G u3_u3_op_plus_plus_0_carry_4/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_2/G u6_operand1_0_2/Z  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u3_u1_Q_0_3/G u3_u2_Q_0_3/Y  (2.71:4.44:6.22)  (2.52:5.28:6.08)  )
+      (INTERCONNECT u3_u1_Q_0_3/G u3_u3_op_plus_plus_0_carry_5/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u3_u1_Q_0_3/G u6_operand1_0_3/Z  (3.37:5.53:7.71)  (3.05:6.37:7.37)  )
+      (INTERCONNECT u3_u1_Q_0_4/G u3_u2_Q_0_4/Y  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u3_u1_Q_0_4/G u3_u3_op_plus_plus_0_carry_6/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u3_u1_Q_0_4/G u6_operand1_0_4/Z  (1.05:1.64:2.37)  (1.32:2.31:2.82)  )
+      (INTERCONNECT u3_u1_Q_0_5/G u3_u2_Q_0_5/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u3_u1_Q_0_5/G u3_u3_op_plus_plus_0_carry_7/X  (2.68:4.37:6.13)  (2.51:5.22:6.02)  )
+      (INTERCONNECT u3_u1_Q_0_5/G u6_operand1_0_5/Z  (2.68:4.37:6.13)  (2.51:5.22:6.02)  )
+      (INTERCONNECT u3_u1_Q_0_6/G u3_u2_Q_0_6/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_6/G u3_u3_op_plus_plus_0_carry_8/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u3_u1_Q_0_6/G u6_operand1_0_6/Z  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_7/G u3_u2_Q_0_7/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u1_Q_0_7/G u6_operand1_0_7/Z  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u3_u1_Q_0_7/G u6_operand1_0_8/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u2_Q_0_0/G u3_u3_op_plus_plus_0_carry_3/Z  (1.59:2.3:3.65)  (1.81:3.21:3.83)  )
+      (INTERCONNECT u3_u2_Q_0_0/G u4_u1_Q_0_0/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u3_u2_Q_0_0/G u6_operand1_0_0/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u3_u2_Q_0_0/G u6_operand1_0_1/W  (2.39:3.27:5.01)  (2.62:4.17:5.2)  )
+      (INTERCONNECT u3_u2_Q_0_1/G u3_u3_op_plus_plus_0_carry_3/Y  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u3_u2_Q_0_1/G u4_u1_Q_0_1/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u2_Q_0_1/G u6_operand1_0_1/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u2_Q_0_2/G u3_u3_op_plus_plus_0_carry_4/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u3_u2_Q_0_2/G u4_u1_Q_0_2/Y  (1.06:1.24:1.99)  (1.29:1.82:2.34)  )
+      (INTERCONNECT u3_u2_Q_0_2/G u6_operand1_0_2/X  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u3_u2_Q_0_3/G u3_u3_op_plus_plus_0_carry_5/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u2_Q_0_3/G u4_u1_Q_0_3/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u3_u2_Q_0_3/G u6_operand1_0_3/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u3_u2_Q_0_4/G u3_u3_op_plus_plus_0_carry_6/Y  (1.21:1.89:2.75)  (1.48:2.61:3.18)  )
+      (INTERCONNECT u3_u2_Q_0_4/G u4_u1_Q_0_4/Y  (1.21:1.89:2.75)  (1.48:2.61:3.18)  )
+      (INTERCONNECT u3_u2_Q_0_4/G u6_operand1_0_4/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u3_u2_Q_0_5/G u3_u3_op_plus_plus_0_carry_7/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u3_u2_Q_0_5/G u4_u1_Q_0_5/Y  (3.29:5.93:8.0)  (3.05:6.87:7.83)  )
+      (INTERCONNECT u3_u2_Q_0_5/G u6_operand1_0_5/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u3_u2_Q_0_6/G u3_u3_op_plus_plus_0_carry_8/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u3_u2_Q_0_6/G u4_u1_Q_0_6/Y  (3.11:4.6:6.55)  (2.96:5.28:6.4)  )
+      (INTERCONNECT u3_u2_Q_0_6/G u6_operand1_0_6/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u3_u2_Q_0_7/G u4_u1_Q_0_7/Y  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u3_u2_Q_0_7/G u6_operand1_0_7/X  (0.05:0.2:0.29)  (0.11:0.24:0.28)  )
+      (INTERCONNECT u3_u2_Q_0_7/G u6_operand1_0_8/Z  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_3/G u3_u3_op_plus_plus_0_carry_4/Z  (3.44:5.91:8.07)  (3.12:6.83:7.86)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_3/G u6_operand1_0_2/Y  (3.44:5.91:8.07)  (3.12:6.83:7.86)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_4/G u3_u3_op_plus_plus_0_carry_5/Z  (3.07:4.48:6.48)  (2.96:5.3:6.41)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_4/G u6_operand1_0_3/Y  (3.07:4.48:6.48)  (2.96:5.3:6.41)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_5/G u3_u3_op_plus_plus_0_carry_6/Z  (0.04:0.07:0.09)  (0.01:0.08:0.09)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_5/G u6_operand1_0_4/Y  (1.54:2.08:3.08)  (1.6:2.76:3.36)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_6/G u3_u3_op_plus_plus_0_carry_7/Z  (2.68:4.7:6.4)  (2.49:5.61:6.4)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_6/G u6_operand1_0_5/Y  (2.68:4.7:6.4)  (2.49:5.61:6.4)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_7/G u3_u3_op_plus_plus_0_carry_8/Z  (1.61:2.25:3.3)  (1.64:2.92:3.51)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_7/G u6_operand1_0_6/Y  (1.61:2.25:3.3)  (1.64:2.92:3.51)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_8/G u6_operand1_0_7/Y  (2.37:3.46:4.97)  (2.26:4.13:4.96)  )
+      (INTERCONNECT u3_u3_op_plus_plus_0_carry_8/G u6_operand1_0_8/X  (2.37:3.46:4.97)  (2.26:4.13:4.96)  )
+      (INTERCONNECT u4_u1_Q_0_0/G u4_u2_Q_0_0/Y  (2.97:4.69:6.61)  (2.61:5.36:6.24)  )
+      (INTERCONNECT u4_u1_Q_0_0/G u4_u3_op_plus_plus_0_carry_3/Z  (2.97:4.69:6.61)  (2.61:5.36:6.24)  )
+      (INTERCONNECT u4_u1_Q_0_0/G u6_operand2_0_0/X  (2.97:4.69:6.61)  (2.61:5.36:6.24)  )
+      (INTERCONNECT u4_u1_Q_0_0/G u6_operand2_0_1/W  (2.76:4.44:6.26)  (2.4:5.11:5.89)  )
+      (INTERCONNECT u4_u1_Q_0_1/G u4_u2_Q_0_1/Y  (1.6:2.71:3.77)  (1.71:3.49:4.08)  )
+      (INTERCONNECT u4_u1_Q_0_1/G u4_u3_op_plus_plus_0_carry_3/Y  (1.6:2.71:3.77)  (1.71:3.49:4.08)  )
+      (INTERCONNECT u4_u1_Q_0_1/G u6_operand2_0_1/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u4_u1_Q_0_2/G u4_u2_Q_0_2/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_2/G u4_u3_op_plus_plus_0_carry_4/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_2/G u6_operand2_0_2/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u4_u1_Q_0_3/G u4_u2_Q_0_3/Y  (0.05:0.2:0.29)  (0.11:0.24:0.28)  )
+      (INTERCONNECT u4_u1_Q_0_3/G u4_u3_op_plus_plus_0_carry_5/Y  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u4_u1_Q_0_3/G u6_operand2_0_3/X  (0.0:0.13:0.19)  (0.09:0.16:0.18)  )
+      (INTERCONNECT u4_u1_Q_0_4/G u4_u2_Q_0_4/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_4/G u4_u3_op_plus_plus_0_carry_6/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_4/G u6_operand2_0_4/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u4_u1_Q_0_5/G u4_u2_Q_0_5/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_5/G u4_u3_op_plus_plus_0_carry_7/Y  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u4_u1_Q_0_5/G u6_operand2_0_5/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_6/G u4_u2_Q_0_6/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_6/G u4_u3_op_plus_plus_0_carry_8/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_6/G u6_operand2_0_6/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u4_u1_Q_0_7/G u4_u2_Q_0_7/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_7/G u6_operand2_0_7/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u1_Q_0_7/G u6_operand2_0_8/Z  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u4_u2_Q_0_0/G u4_u3_op_plus_plus_0_carry_3/W  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u2_Q_0_0/G u6_operand2_0_0/Y  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u2_Q_0_0/G u6_operand2_0_1/Z  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u4_u2_Q_0_1/G u4_u3_op_plus_plus_0_carry_3/X  (1.21:1.82:2.65)  (1.42:2.52:3.08)  )
+      (INTERCONNECT u4_u2_Q_0_1/G u6_operand2_0_1/Y  (1.21:1.82:2.65)  (1.42:2.52:3.08)  )
+      (INTERCONNECT u4_u2_Q_0_2/G u4_u3_op_plus_plus_0_carry_4/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u4_u2_Q_0_2/G u6_operand2_0_2/Z  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u4_u2_Q_0_3/G u4_u3_op_plus_plus_0_carry_5/X  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u2_Q_0_3/G u6_operand2_0_3/Z  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u4_u2_Q_0_4/G u4_u3_op_plus_plus_0_carry_6/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u4_u2_Q_0_4/G u6_operand2_0_4/Z  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u4_u2_Q_0_5/G u4_u3_op_plus_plus_0_carry_7/X  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u4_u2_Q_0_5/G u6_operand2_0_5/Z  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u4_u2_Q_0_6/G u4_u3_op_plus_plus_0_carry_8/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u4_u2_Q_0_6/G u6_operand2_0_6/Z  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u4_u2_Q_0_7/G u6_operand2_0_7/Z  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u4_u2_Q_0_7/G u6_operand2_0_8/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_3/G u4_u3_op_plus_plus_0_carry_4/Z  (2.3:3.66:5.18)  (2.36:4.56:5.42)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_3/G u6_operand2_0_2/Y  (2.3:3.66:5.18)  (2.36:4.56:5.42)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_4/G u4_u3_op_plus_plus_0_carry_5/Z  (2.49:3.88:5.46)  (2.37:4.7:5.5)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_4/G u6_operand2_0_3/Y  (2.49:3.88:5.46)  (2.37:4.7:5.5)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_5/G u4_u3_op_plus_plus_0_carry_6/Z  (2.37:3.46:4.97)  (2.26:4.13:4.96)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_5/G u6_operand2_0_4/Y  (2.37:3.46:4.97)  (2.26:4.13:4.96)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_6/G u4_u3_op_plus_plus_0_carry_7/Z  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_6/G u6_operand2_0_5/Y  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_7/G u4_u3_op_plus_plus_0_carry_8/Z  (2.37:3.46:4.97)  (2.26:4.13:4.96)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_7/G u6_operand2_0_6/Y  (2.37:3.46:4.97)  (2.26:4.13:4.96)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_8/G u6_operand2_0_7/Y  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u4_u3_op_plus_plus_0_carry_8/G u6_operand2_0_8/X  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u5_operand1_0_0/G u5_op_plus_plus_0_carry_3/Z  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u5_operand1_0_0/G u7_operand1_0_0/X  (0.04:0.21:0.29)  (0.13:0.26:0.29)  )
+      (INTERCONNECT u5_operand1_0_0/G u7_operand1_0_1/W  (0.0:0.14:0.2)  (0.11:0.18:0.2)  )
+      (INTERCONNECT u5_operand1_0_1/G u5_op_plus_plus_0_carry_3/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u5_operand1_0_1/G u7_operand1_0_1/X  (1.06:1.24:1.99)  (1.29:1.82:2.34)  )
+      (INTERCONNECT u5_operand1_0_2/G u5_op_plus_plus_0_carry_4/Y  (3.31:4.7:6.86)  (3.52:5.68:7.15)  )
+      (INTERCONNECT u5_operand1_0_2/G u7_operand1_0_2/X  (3.31:4.7:6.86)  (3.52:5.68:7.15)  )
+      (INTERCONNECT u5_operand1_0_3/G u5_op_plus_plus_0_carry_5/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u5_operand1_0_3/G u7_operand1_0_3/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u5_operand1_0_4/G u5_op_plus_plus_0_carry_6/Y  (2.13:2.7:4.15)  (2.31:3.46:4.41)  )
+      (INTERCONNECT u5_operand1_0_4/G u7_operand1_0_4/X  (2.13:2.7:4.15)  (2.31:3.46:4.41)  )
+      (INTERCONNECT u5_operand1_0_5/G u5_op_plus_plus_0_carry_7/Y  (1.21:1.82:2.65)  (1.42:2.52:3.08)  )
+      (INTERCONNECT u5_operand1_0_5/G u7_operand1_0_5/X  (1.21:1.82:2.65)  (1.42:2.52:3.08)  )
+      (INTERCONNECT u5_operand1_0_6/G u5_op_plus_plus_0_carry_8/Y  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u5_operand1_0_6/G u7_operand1_0_6/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u5_operand1_0_7/G u5_op_plus_plus_0_carry_9/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u5_operand1_0_7/G u7_operand1_0_7/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u5_operand1_0_8/G u7_operand1_0_8/X  (1.05:1.64:2.37)  (1.32:2.31:2.83)  )
+      (INTERCONNECT u5_operand1_0_8/G u7_operand1_0_9/Z  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u5_operand2_0_0/G u5_op_plus_plus_0_carry_3/W  (3.36:5.48:7.8)  (3.28:6.57:7.73)  )
+      (INTERCONNECT u5_operand2_0_0/G u7_operand1_0_0/Y  (3.36:5.48:7.8)  (3.28:6.57:7.73)  )
+      (INTERCONNECT u5_operand2_0_0/G u7_operand1_0_1/Z  (2.94:4.19:6.12)  (3.16:5.12:6.44)  )
+      (INTERCONNECT u5_operand2_0_1/G u5_op_plus_plus_0_carry_3/X  (2.57:4.13:5.81)  (2.45:4.97:5.78)  )
+      (INTERCONNECT u5_operand2_0_1/G u7_operand1_0_1/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u5_operand2_0_2/G u5_op_plus_plus_0_carry_4/X  (2.26:3.9:5.37)  (2.28:4.84:5.59)  )
+      (INTERCONNECT u5_operand2_0_2/G u7_operand1_0_2/Z  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u5_operand2_0_3/G u5_op_plus_plus_0_carry_5/X  (1.05:1.64:2.37)  (1.32:2.31:2.82)  )
+      (INTERCONNECT u5_operand2_0_3/G u7_operand1_0_3/Z  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u5_operand2_0_4/G u5_op_plus_plus_0_carry_6/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u5_operand2_0_4/G u7_operand1_0_4/Z  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u5_operand2_0_5/G u5_op_plus_plus_0_carry_7/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u5_operand2_0_5/G u7_operand1_0_5/Z  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u5_operand2_0_6/G u5_op_plus_plus_0_carry_8/X  (1.06:1.24:1.99)  (1.29:1.82:2.34)  )
+      (INTERCONNECT u5_operand2_0_6/G u7_operand1_0_6/Z  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u5_operand2_0_7/G u5_op_plus_plus_0_carry_9/X  (2.12:3.09:4.52)  (2.33:3.93:4.88)  )
+      (INTERCONNECT u5_operand2_0_7/G u7_operand1_0_7/Z  (2.12:3.09:4.52)  (2.33:3.93:4.88)  )
+      (INTERCONNECT u5_operand2_0_8/G u7_operand1_0_8/Z  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u5_operand2_0_8/G u7_operand1_0_9/Y  (2.37:3.85:5.34)  (2.28:4.61:5.44)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_3/G u5_op_plus_plus_0_carry_4/Z  (0.09:0.14:0.19)  (0.04:0.17:0.2)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_3/G u7_operand1_0_2/Y  (0.04:0.07:0.09)  (0.01:0.08:0.09)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_4/G u5_op_plus_plus_0_carry_5/Z  (3.31:4.7:6.86)  (3.52:5.68:7.15)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_4/G u7_operand1_0_3/Y  (3.31:4.7:6.86)  (3.52:5.68:7.15)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_5/G u5_op_plus_plus_0_carry_6/Z  (0.04:0.07:0.09)  (0.01:0.08:0.09)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_5/G u7_operand1_0_4/Y  (2.62:4.15:5.81)  (2.43:4.98:5.79)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_6/G u5_op_plus_plus_0_carry_7/Z  (2.68:4.7:6.41)  (2.49:5.61:6.4)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_6/G u7_operand1_0_5/Y  (2.68:4.7:6.41)  (2.49:5.61:6.4)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_7/G u5_op_plus_plus_0_carry_8/Z  (2.39:3.2:4.92)  (2.58:4.1:5.11)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_7/G u7_operand1_0_6/Y  (1.59:2.24:3.55)  (1.77:3.13:3.74)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_8/G u5_op_plus_plus_0_carry_9/Z  (0.09:0.14:0.19)  (0.05:0.17:0.19)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_8/G u7_operand1_0_7/Y  (0.05:0.07:0.1)  (0.03:0.09:0.1)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_9/G u7_operand1_0_8/Y  (0.09:0.14:0.19)  (0.04:0.17:0.2)  )
+      (INTERCONNECT u5_op_plus_plus_0_carry_9/G u7_operand1_0_9/X  (0.04:0.07:0.09)  (0.01:0.08:0.09)  )
+      (INTERCONNECT u6_operand1_0_0/G u6_op_plus_plus_0_carry_3/Z  (2.46:3.48:5.16)  (2.59:4.36:5.34)  )
+      (INTERCONNECT u6_operand1_0_0/G u7_operand2_0_0/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u6_operand1_0_0/G u7_operand2_0_1/W  (1.87:2.39:3.68)  (2.09:3.1:3.96)  )
+      (INTERCONNECT u6_operand1_0_1/G u6_op_plus_plus_0_carry_3/Y  (1.49:2.47:3.46)  (1.66:3.25:3.84)  )
+      (INTERCONNECT u6_operand1_0_1/G u7_operand2_0_1/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u6_operand1_0_2/G u6_op_plus_plus_0_carry_4/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u6_operand1_0_2/G u7_operand2_0_2/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u6_operand1_0_3/G u6_op_plus_plus_0_carry_5/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u6_operand1_0_3/G u7_operand2_0_3/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u6_operand1_0_4/G u6_op_plus_plus_0_carry_6/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u6_operand1_0_4/G u7_operand2_0_4/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u6_operand1_0_5/G u6_op_plus_plus_0_carry_7/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u6_operand1_0_5/G u7_operand2_0_5/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u6_operand1_0_6/G u6_op_plus_plus_0_carry_8/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u6_operand1_0_6/G u7_operand2_0_6/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u6_operand1_0_7/G u6_op_plus_plus_0_carry_9/Y  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u6_operand1_0_7/G u7_operand2_0_7/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u6_operand1_0_8/G u7_operand2_0_8/X  (1.22:1.43:2.28)  (1.4:2.04:2.61)  )
+      (INTERCONNECT u6_operand1_0_8/G u7_operand2_0_9/Z  (1.22:1.43:2.28)  (1.4:2.04:2.61)  )
+      (INTERCONNECT u6_operand2_0_0/G u6_op_plus_plus_0_carry_3/W  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u6_operand2_0_0/G u7_operand2_0_0/Y  (2.37:3.53:5.06)  (2.31:4.21:5.05)  )
+      (INTERCONNECT u6_operand2_0_0/G u7_operand2_0_1/Z  (2.37:3.53:5.06)  (2.31:4.21:5.05)  )
+      (INTERCONNECT u6_operand2_0_1/G u6_op_plus_plus_0_carry_3/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u6_operand2_0_1/G u7_operand2_0_1/Y  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u6_operand2_0_2/G u6_op_plus_plus_0_carry_4/X  (1.21:1.82:2.65)  (1.42:2.52:3.08)  )
+      (INTERCONNECT u6_operand2_0_2/G u7_operand2_0_2/Z  (1.21:1.82:2.65)  (1.42:2.52:3.08)  )
+      (INTERCONNECT u6_operand2_0_3/G u6_op_plus_plus_0_carry_5/X  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u6_operand2_0_3/G u7_operand2_0_3/Z  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u6_operand2_0_4/G u6_op_plus_plus_0_carry_6/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u6_operand2_0_4/G u7_operand2_0_4/Z  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u6_operand2_0_5/G u6_op_plus_plus_0_carry_7/X  (1.22:1.43:2.28)  (1.4:2.04:2.61)  )
+      (INTERCONNECT u6_operand2_0_5/G u7_operand2_0_5/Z  (1.22:1.43:2.28)  (1.4:2.04:2.61)  )
+      (INTERCONNECT u6_operand2_0_6/G u6_op_plus_plus_0_carry_8/X  (1.21:1.82:2.65)  (1.42:2.52:3.08)  )
+      (INTERCONNECT u6_operand2_0_6/G u7_operand2_0_6/Z  (1.21:1.82:2.65)  (1.42:2.52:3.08)  )
+      (INTERCONNECT u6_operand2_0_7/G u6_op_plus_plus_0_carry_9/X  (1.58:2.62:3.92)  (1.79:3.61:4.21)  )
+      (INTERCONNECT u6_operand2_0_7/G u7_operand2_0_7/Z  (2.38:3.59:5.29)  (2.6:4.57:5.58)  )
+      (INTERCONNECT u6_operand2_0_8/G u7_operand2_0_8/Z  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u6_operand2_0_8/G u7_operand2_0_9/Y  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_3/G u6_op_plus_plus_0_carry_4/Z  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_3/G u7_operand2_0_2/Y  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_4/G u6_op_plus_plus_0_carry_5/Z  (2.67:4.69:6.39)  (2.48:5.6:6.39)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_4/G u7_operand2_0_3/Y  (2.67:4.69:6.39)  (2.48:5.6:6.39)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_5/G u6_op_plus_plus_0_carry_6/Z  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_5/G u7_operand2_0_4/Y  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_6/G u6_op_plus_plus_0_carry_7/Z  (2.68:4.31:6.04)  (2.47:5.14:5.93)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_6/G u7_operand2_0_5/Y  (2.68:4.31:6.04)  (2.47:5.14:5.93)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_7/G u6_op_plus_plus_0_carry_8/Z  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_7/G u7_operand2_0_6/Y  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_8/G u6_op_plus_plus_0_carry_9/Z  (2.38:3.46:4.97)  (2.26:4.13:4.97)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_8/G u7_operand2_0_7/Y  (2.37:3.46:4.97)  (2.26:4.13:4.97)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_9/G u7_operand2_0_8/Y  (0.09:0.14:0.19)  (0.05:0.17:0.19)  )
+      (INTERCONNECT u6_op_plus_plus_0_carry_9/G u7_operand2_0_9/X  (0.05:0.07:0.1)  (0.03:0.09:0.1)  )
+      (INTERCONNECT u7_operand1_0_0/G u7_op_plus_plus_0_carry_3/Z  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u7_operand1_0_1/G u7_op_plus_plus_0_carry_3/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u7_operand1_0_2/G u7_op_plus_plus_0_carry_4/Y  (2.2:3.04:4.5)  (2.28:3.85:4.71)  )
+      (INTERCONNECT u7_operand1_0_3/G u7_op_plus_plus_0_carry_5/Y  (2.9:4.8:6.7)  (2.58:5.63:6.43)  )
+      (INTERCONNECT u7_operand1_0_3/G u8_Q_0_0/X  (2.9:4.8:6.7)  (2.58:5.63:6.43)  )
+      (INTERCONNECT u7_operand1_0_4/G u7_op_plus_plus_0_carry_6/Y  (2.13:2.7:4.15)  (2.31:3.46:4.41)  )
+      (INTERCONNECT u7_operand1_0_4/G u8_Q_0_1/X  (2.13:2.7:4.15)  (2.31:3.46:4.41)  )
+      (INTERCONNECT u7_operand1_0_5/G u7_op_plus_plus_0_carry_7/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u7_operand1_0_5/G u8_Q_0_2/X  (2.87:4.19:6.09)  (2.85:5.01:6.08)  )
+      (INTERCONNECT u7_operand1_0_6/G u7_op_plus_plus_0_carry_8/Y  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u7_operand1_0_6/G u8_Q_0_3/X  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u7_operand1_0_7/G u7_op_plus_plus_0_carry_9/Y  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u7_operand1_0_7/G u8_Q_0_4/X  (1.6:2.64:3.67)  (1.66:3.39:3.98)  )
+      (INTERCONNECT u7_operand1_0_8/G fig1630/Z  (3.46:4.95:7.24)  (3.68:5.99:7.51)  )
+      (INTERCONNECT u7_operand1_0_8/G u8_Q_0_5/X  (2.21:3.44:5.11)  (2.42:4.48:5.37)  )
+      (INTERCONNECT u7_operand1_0_8/G u8_Q_4_0_a2_7/Y  (3.46:4.95:7.24)  (3.68:5.99:7.51)  )
+      (INTERCONNECT u7_operand1_0_9/G u8_Q_0_6/X  (2.13:2.7:4.15)  (2.31:3.46:4.41)  )
+      (INTERCONNECT u7_operand1_0_9/G u8_Q_0_7/Z  (2.13:2.7:4.15)  (2.31:3.46:4.41)  )
+      (INTERCONNECT u7_operand2_0_0/G u7_op_plus_plus_0_carry_3/W  (1.05:1.56:2.27)  (1.27:2.21:2.72)  )
+      (INTERCONNECT u7_operand2_0_1/G u7_op_plus_plus_0_carry_3/X  (1.06:1.17:1.9)  (1.25:1.74:2.25)  )
+      (INTERCONNECT u7_operand2_0_2/G u7_op_plus_plus_0_carry_4/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u7_operand2_0_3/G u7_op_plus_plus_0_carry_5/X  (3.74:5.85:8.31)  (3.44:6.82:8.01)  )
+      (INTERCONNECT u7_operand2_0_3/G u8_Q_0_0/Y  (2.87:4.13:5.99)  (2.81:4.94:6.0)  )
+      (INTERCONNECT u7_operand2_0_4/G u7_op_plus_plus_0_carry_6/X  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u7_operand2_0_4/G u8_Q_0_1/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u7_operand2_0_5/G u7_op_plus_plus_0_carry_7/X  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u7_operand2_0_5/G u8_Q_0_2/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u7_operand2_0_6/G u7_op_plus_plus_0_carry_8/X  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u7_operand2_0_6/G u8_Q_0_3/Y  (0.04:0.14:0.19)  (0.08:0.17:0.19)  )
+      (INTERCONNECT u7_operand2_0_7/G u7_op_plus_plus_0_carry_9/X  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u7_operand2_0_7/G u8_Q_0_4/Y  (0.05:0.14:0.19)  (0.07:0.17:0.19)  )
+      (INTERCONNECT u7_operand2_0_8/G fig1630/Y  (1.98:3.5:4.82)  (1.85:4.26:4.84)  )
+      (INTERCONNECT u7_operand2_0_8/G u8_Q_0_5/Y  (1.98:3.5:4.82)  (1.85:4.26:4.84)  )
+      (INTERCONNECT u7_operand2_0_8/G u8_Q_4_0_a2_7/X  (2.37:3.96:5.48)  (2.23:4.72:5.49)  )
+      (INTERCONNECT u7_operand2_0_9/G u8_Q_0_6/Y  (2.78:4.84:6.58)  (2.63:5.76:6.62)  )
+      (INTERCONNECT u7_operand2_0_9/G u8_Q_0_7/X  (2.78:4.84:6.58)  (2.63:5.76:6.62)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_3/G u7_op_plus_plus_0_carry_4/Z  (2.86:4.52:6.36)  (2.83:5.41:6.47)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_4/G u7_op_plus_plus_0_carry_5/Z  (0.05:0.07:0.1)  (0.03:0.09:0.1)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_4/G u8_Q_0_0/W  (0.09:0.14:0.19)  (0.05:0.17:0.19)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_5/G u7_op_plus_plus_0_carry_6/Z  (2.36:4.07:5.58)  (2.27:4.98:5.72)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_5/G u8_Q_0_1/W  (2.36:4.07:5.58)  (2.27:4.98:5.72)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_6/G u7_op_plus_plus_0_carry_7/Z  (2.68:4.31:6.04)  (2.47:5.14:5.93)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_6/G u8_Q_0_2/W  (2.68:4.31:6.04)  (2.47:5.14:5.93)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_7/G u7_op_plus_plus_0_carry_8/Z  (0.04:0.07:0.09)  (0.01:0.08:0.09)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_7/G u8_Q_0_3/W  (1.91:2.39:3.68)  (2.06:3.1:3.96)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_8/G u7_op_plus_plus_0_carry_9/Z  (2.68:4.3:6.03)  (2.46:5.13:5.93)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_8/G u8_Q_0_4/W  (2.68:4.3:6.03)  (2.46:5.13:5.93)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_9/G fig1630/W  (0.14:0.21:0.29)  (0.08:0.26:0.29)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_9/G u8_Q_0_5/W  (0.09:0.15:0.2)  (0.05:0.18:0.2)  )
+      (INTERCONNECT u7_op_plus_plus_0_carry_9/G u8_Q_4_0_a2_7/Z  (0.09:0.15:0.2)  (0.05:0.18:0.2)  )
+      (INTERCONNECT u8_Q_0_0/G dataout_pad_0/A  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u8_Q_0_1/G dataout_pad_1/A  (3.35:5.59:7.36)  (3.4:6.74:8.07)  )
+      (INTERCONNECT u8_Q_0_2/G dataout_pad_2/A  (0.85:0.86:1.43)  (1.04:1.37:1.81)  )
+      (INTERCONNECT u8_Q_0_3/G dataout_pad_3/A  (0.75:1.25:1.82)  (0.91:1.55:2.29)  )
+      (INTERCONNECT u8_Q_0_4/G dataout_pad_4/A  (0.85:0.86:1.43)  (1.04:1.37:1.81)  )
+      (INTERCONNECT u8_Q_0_5/G dataout_pad_5/A  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u8_Q_0_6/G dataout_pad_6/A  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u8_Q_0_7/G dataout_pad_7/A  (0.85:1.25:1.79)  (1.06:1.84:2.28)  )
+      (INTERCONNECT u8_Q_4_0_a2_7/G u8_Q_0_6/W  (0.09:0.14:0.19)  (0.05:0.17:0.19)  )
+      (INTERCONNECT u8_Q_4_0_a2_7/G u8_Q_0_7/Y  (0.05:0.07:0.1)  (0.03:0.09:0.1)  )
+      (INTERCONNECT u9_pipe_0_0/G fig1630/X  (5.45:8.54:12.02)  (4.76:9.35:11.08)  )
+      (INTERCONNECT u9_pipe_0_0/G u8_Q_0_0/Z  (3.18:5.32:7.5)  (2.86:6.29:7.16)  )
+      (INTERCONNECT u9_pipe_0_0/G u8_Q_0_1/Z  (3.18:5.32:7.5)  (2.86:6.29:7.16)  )
+      (INTERCONNECT u9_pipe_0_0/G u8_Q_0_2/Z  (4.04:6.95:9.73)  (3.38:7.92:8.9)  )
+      (INTERCONNECT u9_pipe_0_0/G u8_Q_0_3/Z  (4.04:6.95:9.73)  (3.38:7.92:8.9)  )
+      (INTERCONNECT u9_pipe_0_0/G u8_Q_0_4/Z  (5.45:8.54:12.02)  (4.76:9.35:11.08)  )
+      (INTERCONNECT u9_pipe_0_0/G u8_Q_0_5/Z  (5.45:8.54:12.02)  (4.76:9.35:11.08)  )
+      (INTERCONNECT u9_pipe_0_0/G u8_Q_0_7/W  (5.34:8.42:11.84)  (4.66:9.23:10.9)  )
+      (INTERCONNECT u9_pipe_0_0/G u8_Q_4_0_a2_7/W  (5.45:8.54:12.02)  (4.76:9.35:11.08)  )
+      (INTERCONNECT u9_pipe_0_1/G u9_pipe_0_0/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u9_pipe_0_2/G u9_pipe_0_1/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u9_pipe_0_3/G u9_pipe_0_2/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u9_pipe_0_4/G u9_pipe_0_3/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u9_pipe_0_5/G u9_pipe_0_4/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u9_pipe_0_6/G u9_pipe_0_5/Y  (0.0:0.07:0.09)  (0.04:0.08:0.09)  )
+      (INTERCONNECT u9_pipe_0_7/G u9_pipe_0_6/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+      (INTERCONNECT u9_pipe_0_8/G u9_pipe_0_7/Y  (0.0:0.07:0.1)  (0.05:0.09:0.1)  )
+  )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE clkarrivedZ0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )))
+
+  (CELL
+    (CELLTYPE "gclkbuf")
+    (INSTANCE CLK_pad)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.47:0.45:0.53)  (1.54:1.37:1.73) ))))
+
+  (CELL
+    (CELLTYPE "ibuf")
+    (INSTANCE datain_pad_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "ibuf")
+    (INSTANCE datain_pad_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "ibuf")
+    (INSTANCE datain_pad_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "ibuf")
+    (INSTANCE datain_pad_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "ibuf")
+    (INSTANCE datain_pad_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "ibuf")
+    (INSTANCE datain_pad_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "ibuf")
+    (INSTANCE datain_pad_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "ibuf")
+    (INSTANCE datain_pad_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "obuf")
+    (INSTANCE dataout_pad_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH A PAD (0.83:1.66:1.91)  (0.71:1.43:1.68) ))))
+
+  (CELL
+    (CELLTYPE "obuf")
+    (INSTANCE dataout_pad_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH A PAD (0.83:1.66:1.91)  (0.71:1.43:1.68) ))))
+
+  (CELL
+    (CELLTYPE "obuf")
+    (INSTANCE dataout_pad_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH A PAD (0.83:1.66:1.91)  (0.71:1.43:1.68) ))))
+
+  (CELL
+    (CELLTYPE "obuf")
+    (INSTANCE dataout_pad_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH A PAD (0.83:1.66:1.91)  (0.71:1.43:1.68) ))))
+
+  (CELL
+    (CELLTYPE "obuf")
+    (INSTANCE dataout_pad_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH A PAD (0.83:1.66:1.91)  (0.71:1.43:1.68) ))))
+
+  (CELL
+    (CELLTYPE "obuf")
+    (INSTANCE dataout_pad_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH A PAD (0.83:1.66:1.91)  (0.71:1.43:1.68) ))))
+
+  (CELL
+    (CELLTYPE "obuf")
+    (INSTANCE dataout_pad_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH A PAD (0.83:1.66:1.91)  (0.71:1.43:1.68) ))))
+
+  (CELL
+    (CELLTYPE "obuf")
+    (INSTANCE dataout_pad_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH A PAD (0.83:1.66:1.91)  (0.71:1.43:1.68) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE fig1630)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH Y G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Z G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH W G  (0.7:1.21:1.67)  (0.8:1.54:2.15) ))))
+
+  (CELL
+    (CELLTYPE "rsbuf")
+    (INSTANCE R_pad)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH PAD Q (0.48:0.98:1.11)  (0.5:0.88:1.07) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u1_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u1_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u1_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u1_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u1_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u1_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u1_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u1_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u2_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u2_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u2_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u2_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u2_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u2_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u2_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u1_u2_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u1_u3_op_plus_plus_0_carry_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Y G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Z G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH W G  (1.15:1.49:1.98)  (1.22:1.78:2.36) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u1_u3_op_plus_plus_0_carry_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.95:1.47:2.09)  (0.9:1.91:2.52) )
+      (IOPATH Y G  (0.68:1.34:1.64)  (0.81:1.75:2.11) )
+      (IOPATH Z G  (1.21:2.11:2.51)  (1.28:2.49:3.04) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u1_u3_op_plus_plus_0_carry_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Y G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH Z G  (0.7:1.21:1.67)  (0.8:1.54:2.15) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u1_u3_op_plus_plus_0_carry_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Y G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH Z G  (0.63:0.88:1.18)  (0.75:1.19:1.55) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u1_u3_op_plus_plus_0_carry_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u1_u3_op_plus_plus_0_carry_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u1_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u1_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u1_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u1_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u1_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u1_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u1_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u1_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u2_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u2_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u2_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u2_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u2_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u2_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u2_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u2_u2_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u2_u3_op_plus_plus_0_carry_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.87:1.4:2.0)  (0.83:1.82:2.42) )
+      (IOPATH Y G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Z G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH W G  (1.13:2.04:2.42)  (1.22:2.41:2.95) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u2_u3_op_plus_plus_0_carry_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.87:1.4:2.0)  (0.83:1.82:2.42) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (1.13:2.04:2.42)  (1.22:2.41:2.95) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u2_u3_op_plus_plus_0_carry_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.95:1.47:2.09)  (0.9:1.91:2.52) )
+      (IOPATH Y G  (0.76:1.17:1.74)  (0.86:1.47:2.2) )
+      (IOPATH Z G  (0.68:1.34:1.64)  (0.81:1.75:2.11) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u2_u3_op_plus_plus_0_carry_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH Y G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Z G  (0.7:1.21:1.67)  (0.8:1.54:2.15) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u2_u3_op_plus_plus_0_carry_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Y G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Z G  (0.84:1.11:1.48)  (0.82:1.25:1.75) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u2_u3_op_plus_plus_0_carry_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u1_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u1_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u1_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u1_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u1_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u1_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u1_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u1_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u2_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u2_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u2_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u2_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u2_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u2_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u2_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u3_u2_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u3_u3_op_plus_plus_0_carry_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Y G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Z G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH W G  (1.15:1.49:1.98)  (1.22:1.78:2.36) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u3_u3_op_plus_plus_0_carry_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Y G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Z G  (1.13:2.04:2.42)  (1.22:2.41:2.95) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u3_u3_op_plus_plus_0_carry_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u3_u3_op_plus_plus_0_carry_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Y G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH Z G  (0.7:1.21:1.67)  (0.8:1.54:2.15) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u3_u3_op_plus_plus_0_carry_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (1.13:2.04:2.42)  (1.22:2.41:2.95) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u3_u3_op_plus_plus_0_carry_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u1_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u1_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u1_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u1_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u1_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u1_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u1_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u1_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u2_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u2_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u2_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u2_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u2_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u2_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u2_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u4_u2_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u4_u3_op_plus_plus_0_carry_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH Y G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Z G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH W G  (0.63:0.88:1.18)  (0.75:1.19:1.55) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u4_u3_op_plus_plus_0_carry_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u4_u3_op_plus_plus_0_carry_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Y G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Z G  (1.13:2.04:2.42)  (1.22:2.41:2.95) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u4_u3_op_plus_plus_0_carry_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Y G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Z G  (1.15:1.49:1.98)  (1.22:1.78:2.36) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u4_u3_op_plus_plus_0_carry_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Y G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Z G  (1.13:2.04:2.42)  (1.22:2.41:2.95) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u4_u3_op_plus_plus_0_carry_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Y G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Z G  (1.15:1.49:1.98)  (1.22:1.78:2.36) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD W (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand1_0_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD W (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u5_operand2_0_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u5_op_plus_plus_0_carry_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.92:1.18:1.57)  (0.88:1.32:1.82) )
+      (IOPATH Y G  (0.75:1.27:1.76)  (0.82:1.62:2.24) )
+      (IOPATH Z G  (0.67:0.95:1.26)  (0.77:1.27:1.63) )
+      (IOPATH W G  (1.21:1.55:2.07)  (1.27:1.86:2.46) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u5_op_plus_plus_0_carry_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH Y G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH Z G  (0.63:0.88:1.18)  (0.75:1.19:1.55) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u5_op_plus_plus_0_carry_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.87:1.4:2.0)  (0.83:1.82:2.42) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.63:1.27:1.54)  (0.77:1.67:2.02) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u5_op_plus_plus_0_carry_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Y G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH Z G  (0.7:1.21:1.67)  (0.8:1.54:2.15) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u5_op_plus_plus_0_carry_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Y G  (1.13:2.04:2.42)  (1.22:2.41:2.95) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u5_op_plus_plus_0_carry_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (1.21:2.11:2.51)  (1.28:2.49:3.04) )
+      (IOPATH Y G  (0.68:1.34:1.64)  (0.81:1.75:2.11) )
+      (IOPATH Z G  (0.76:1.17:1.74)  (0.86:1.47:2.2) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u5_op_plus_plus_0_carry_9)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (1.21:1.55:2.07)  (1.27:1.86:2.46) )
+      (IOPATH Y G  (0.67:0.95:1.26)  (0.77:1.27:1.63) )
+      (IOPATH Z G  (0.75:1.27:1.76)  (0.82:1.62:2.24) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD W (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand1_0_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD W (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u6_operand2_0_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u6_op_plus_plus_0_carry_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Y G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH Z G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH W G  (0.7:1.21:1.67)  (0.8:1.54:2.15) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u6_op_plus_plus_0_carry_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH Y G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Z G  (0.84:1.11:1.48)  (0.82:1.25:1.75) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u6_op_plus_plus_0_carry_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Y G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Z G  (1.15:1.49:1.98)  (1.22:1.78:2.36) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u6_op_plus_plus_0_carry_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u6_op_plus_plus_0_carry_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (1.15:1.49:1.98)  (1.22:1.78:2.36) )
+      (IOPATH Y G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Z G  (0.84:1.11:1.48)  (0.82:1.25:1.75) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u6_op_plus_plus_0_carry_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.87:1.4:2.0)  (0.83:1.82:2.42) )
+      (IOPATH Y G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Z G  (1.13:2.04:2.42)  (1.22:2.41:2.95) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u6_op_plus_plus_0_carry_9)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (1.21:2.11:2.51)  (1.28:2.49:3.04) )
+      (IOPATH Y G  (0.68:1.34:1.64)  (0.81:1.75:2.11) )
+      (IOPATH Z G  (0.76:1.17:1.74)  (0.86:1.47:2.2) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD W (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand1_0_9)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD W (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u7_operand2_0_9)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u7_op_plus_plus_0_carry_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH Y G  (0.63:0.88:1.18)  (0.75:1.19:1.55) )
+      (IOPATH Z G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH W G  (1.15:1.49:1.98)  (1.22:1.78:2.36) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u7_op_plus_plus_0_carry_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.76:1.17:1.74)  (0.86:1.47:2.2) )
+      (IOPATH Y G  (1.21:2.11:2.51)  (1.28:2.49:3.04) )
+      (IOPATH Z G  (0.68:1.34:1.64)  (0.81:1.75:2.11) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u7_op_plus_plus_0_carry_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.7:1.21:1.67)  (0.8:1.54:2.15) )
+      (IOPATH Y G  (0.84:1.11:1.48)  (0.82:1.25:1.75) )
+      (IOPATH Z G  (0.63:0.88:1.18)  (0.75:1.19:1.55) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u7_op_plus_plus_0_carry_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Y G  (0.87:1.4:2.0)  (0.83:1.82:2.42) )
+      (IOPATH Z G  (0.63:1.27:1.54)  (0.77:1.67:2.02) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u7_op_plus_plus_0_carry_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Y G  (0.63:1.27:1.54)  (0.77:1.67:2.02) )
+      (IOPATH Z G  (0.87:1.4:2.0)  (0.83:1.82:2.42) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u7_op_plus_plus_0_carry_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.71:1.1:1.64)  (0.84:1.38:2.1) )
+      (IOPATH Y G  (0.87:1.4:2.0)  (0.83:1.82:2.42) )
+      (IOPATH Z G  (0.63:1.27:1.54)  (0.77:1.67:2.02) ))))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u7_op_plus_plus_0_carry_9)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.68:1.34:1.64)  (0.81:1.75:2.11) )
+      (IOPATH Y G  (0.95:1.47:2.09)  (0.9:1.91:2.52) )
+      (IOPATH Z G  (0.76:1.17:1.74)  (0.86:1.47:2.2) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u8_Q_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD W (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u8_Q_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD W (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u8_Q_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD W (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u8_Q_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD W (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u8_Q_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD W (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u8_Q_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD W (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u8_Q_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )
+      (SETUPHOLD Y (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD Z (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD W (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u8_Q_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD X (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )
+      (SETUPHOLD Z (posedge CLK) (1.76:2.31:3.09)   (-0.86:-1.11:-1.49) )
+      (SETUPHOLD W (posedge CLK) (1.23:1.66:2.21)   (-0.33:-0.46:-0.61) )))
+
+  (CELL
+    (CELLTYPE "plut1")
+    (INSTANCE u8_Q_4_0_a2_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH X G  (0.95:1.47:2.09)  (0.9:1.91:2.52) )
+      (IOPATH Y G  (1.21:2.11:2.51)  (1.28:2.49:3.04) )
+      (IOPATH Z G  (0.76:1.17:1.74)  (0.86:1.47:2.2) )
+      (IOPATH W G  (0.68:1.34:1.64)  (0.81:1.75:2.11) ))))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_0)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_1)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_2)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_3)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_4)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_5)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_6)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (1.0:1.34:1.73)  (1.11:1.31:1.77) )
+      (IOPATH (negedge RS) G ( )  (1.24:1.7:2.19) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.3:1.78:2.38)   (-0.4:-0.58:-0.78) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_7)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+
+  (CELL
+    (CELLTYPE "plutr1")
+    (INSTANCE u9_pipe_0_8)
+    (DELAY 
+      (ABSOLUTE 
+      (IOPATH (posedge CLK) G  (0.96:1.28:1.66)  (1.05:1.24:1.69) )
+      (IOPATH (negedge RS) G ( )  (1.18:1.63:2.08) )))
+    (TIMINGCHECK 
+      (RECOVERY (negedge RS) (posedge CLK) (0.6:0.8:1.2) )
+      (SETUPHOLD Y (posedge CLK) (1.35:1.84:2.63)   (-0.45:-0.64:-1.03) )))
+)

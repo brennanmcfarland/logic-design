@@ -1,0 +1,71 @@
+timestamp=1245858144069
+
+[AND2]
+A/AND2=22|./src/and2.v|1|
+P/~emb=134,282,395,490
+S/and2=S/AND2 40|0|2*0
+
+[AND3]
+A/AND3=22|./src/and3.v|1|
+P/~emb=161,312,426,526
+S/and3=S/AND3 40|0|2*1480
+
+[AND4]
+A/AND4=22|./src/and4.v|1|
+P/~emb=188,342,459,562
+S/and4=S/AND4 40|0|2*3333
+
+[c2or]
+A/c2or=A/C2OR 21|./src/c2or.vhd|12|
+S/c2or=40|0|2*5561
+
+[crv]
+A/crv=A/CRV 24|.\src\crv.bde|10000|
+S/crv=S/CRV 40|0|2*7733
+
+[filter]
+A/filter=24|.\src\filter.bde|10000|
+
+[oscil_c_pli]
+A/oscil_c_pli=22|./src/oscil_c_pli.v|1|
+P/~emb=182,337,462,546
+S/oscil_c_pli=40|0|2*9648
+
+[pfdiv]
+A/pfdiv=A/PFDIV 21|./src/pfdiv.vhd|13|
+S/pfdiv=S/PFDIV 40|0|2*11516
+
+[~A]
+./src/and2.v=0*7420*7758
+./src/and2.v_and3.v_and4.v=0*6411*6836
+./src/and3.v=0*8312*8655
+./src/and4.v=0*9209*9553
+./src/c2or.vhd~C2OR|C2OR=0*4532*4846
+./src/cb4ce.vhd~CB4CE|CB4CE=0*365*718
+./src/oscil_c_pli.v=0*10107*10480
+./src/pfdiv.vhd~PFDIV|PFDIV=0*2967*4157
+C:/My_Designs/MIXED_DESIGNS/VHDL_Verilog_EDIF_C_PLI/src/and2.v=0*1633*1949
+C:/My_Designs/MIXED_DESIGNS/VHDL_Verilog_EDIF_C_PLI/src/and3.v=0*817*1138
+C:/My_Designs/MIXED_DESIGNS/VHDL_Verilog_EDIF_C_PLI/src/and4.v=0*0*322
+C:/My_Designs/MIXED_DESIGNS/VHDL_Verilog_EDIF_C_PLI/src/oscil_c_pli.v=0*2444*2795
+ModifyID=397
+Version=73
+c:/My_Designs/Samples_82/MIXED_DESIGNS/VHDL_Verilog_EDIF_C_PLI/src/and2.v=0*12726*13127
+c:/My_Designs/Samples_82/MIXED_DESIGNS/VHDL_Verilog_EDIF_C_PLI/src/and3.v=0*11033*11434
+c:/My_Designs/Samples_82/MIXED_DESIGNS/VHDL_Verilog_EDIF_C_PLI/src/and4.v=0*9304*9705
+c:/My_Designs/Samples_82/MIXED_DESIGNS/VHDL_Verilog_EDIF_C_PLI/src/oscil_c_pli.v=0*14542*14982
+
+[~MFT]
+0=0|0VHDL_Verilog_EDIF_C_PLI.mgf|3961|0
+2=0|2VHDL_Verilog_EDIF_C_PLI.mgf|11516|0
+
+[~U]
+AND2=12|0*817||0x93
+AND3=12|0*1405||0x93
+AND4=12|0*2029||0x93
+c2or=11|0*2689|
+crv=CRV 13|0*2878||0x7
+filter=11|0*3065|
+oscil_c_pli=12|0*3266||0x93
+pfdiv=11|0*3961|
+

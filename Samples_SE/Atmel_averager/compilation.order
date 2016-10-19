@@ -1,0 +1,4 @@
+.\src\Functional\Averager.vhd
+.\src\Timing\averager.vhd
+.\src\Functional\Aver_tb.vhd
+.\src\Timing\Post_tb.vhd

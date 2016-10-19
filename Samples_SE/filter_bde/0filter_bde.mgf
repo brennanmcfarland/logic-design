@@ -1,0 +1,44 @@
+V 000035 13 139 1128162195780 c2or
+E C2OR EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P CM _in std_logic
+P CP _in std_logic
+P NQ _out std_logic
+P Q _out std_logic
+X C2OR
+V 000034 13 130 1128162196717 crv
+E CRV EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P Q _out std_logic_vector[3:0]
+P CDN _in std_logic
+P CUP _in std_logic
+X CRV
+V 000037 13 171 1128162197030 filter
+E filter EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P NI _in std_logic_vector[3:0]
+P NO _out std_logic_vector[3:0]
+P CLK _in std_logic
+P RESET _in std_logic
+X filter
+V 000036 13 144 1128162196092 oscil
+E OSCIL EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P CLK _in std_logic
+P CLR _in std_logic
+P F0 _out std_logic
+P F1 _out std_logic
+X OSCIL
+V 000036 13 162 1128162196405 pfdiv
+E PFDIV EDIF
+L IEEE;STD;
+U IEEE.STD_LOGIC_1164;
+P N _in std_logic_vector[3:0]
+P CLKIN _in std_logic
+P CLKOUT _out std_logic
+P RESET _in std_logic
+X PFDIV

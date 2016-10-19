@@ -1,0 +1,6 @@
+alog -dbg "$dsn/src/hex2led.v"
+alog -dbg "$dsn/src/cnt_10b.bde"
+alog -dbg "$dsn/src/bin2bcd.v"
+alog -dbg "$dsn/src/control.asf"
+alog -dbg "$dsn/src/freq_m.bde"
+alog -dbg "$dsn/src/frequency_meter_tb.v"

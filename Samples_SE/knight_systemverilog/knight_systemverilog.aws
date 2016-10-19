@@ -1,0 +1,14 @@
+[Version]
+Version=8.3
+[Designs]
+knight_systemverilog=.\knight_systemverilog.adf
+[Settings]
+Active=knight_systemverilog
+[Expand]
+knight_systemverilog=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

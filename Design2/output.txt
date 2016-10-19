@@ -1,0 +1,9 @@
+		TIME |  A B Ci | sum | Co
+# KERNEL:                    00 0 0 z 0
+# KERNEL:                   100 0 1 z 0
+# KERNEL:                   200 1 0 z 0
+# KERNEL:                   300 1 1 z 1
+# KERNEL:                   401 0 0 z 0
+# KERNEL:                   501 0 1 z 1
+# KERNEL:                   601 1 0 z 1
+# KERNEL:                   701 1 1 z 1

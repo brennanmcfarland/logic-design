@@ -1,0 +1,16 @@
+setactivelib -work
+acom -dbg "$dsn/src/cfft/address.vhd"
+acom -dbg "$dsn/src/cfft/blockdram.vhd"
+acom -dbg "$dsn/src/cfft/div4limit.vhd"
+acom -dbg "$dsn/src/cfft/cfft4.vhd"
+acom -dbg "$dsn/src/cfft/p2r_cordicpipe.vhd"
+acom -dbg "$dsn/src/cfft/rofactor.vhd"
+acom -dbg "$dsn/src/cfft/p2r_cordic.vhd"
+acom -dbg "$dsn/src/cfft/sc_corproc.vhd"
+acom -dbg "$dsn/src/cfft/mulfactor.vhd"
+acom -dbg "$dsn/src/cfft/cfft.vhd"
+acom -dbg "$dsn/src/ram.vhd"
+comp "$dsn/src/control.asf"
+comp "$dsn/src/top_fft.bde"
+comp "$dsn/src/top_fft_tb.bde"
+entity top_fft_tb

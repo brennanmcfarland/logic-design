@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
+  <!-- $MVD$:template("","0","0") -->
+  <TITLE>Traffic Control</TITLE>
+  <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+
+ <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition"></HEAD>
+ <BODY TEXT="BLACK" LINK="BLUE" VLINK="PURPLE">
+  <P>
+   <TABLE CELLPADDING="0" CELLSPACING="0" BORDER="0">
+    <TR>
+     <TD VALIGN=TOP>
+      <P>
+       <tbody></TD>
+     <TD VALIGN=TOP></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="111" VALIGN=TOP>
+      <P>
+       <FONT COLOR="TEAL"><B>Example</B></FONT></TD>
+     <TD WIDTH="601" VALIGN=TOP>
+      <P>
+       <B>Traffic lights: model verification with assertions</B></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="111" VALIGN=TOP>
+      <P>
+       <FONT COLOR="TEAL"><B>HDL</B></FONT></TD>
+     <TD WIDTH="601" VALIGN=TOP>
+      <P>
+       <B>VHDL</B></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="111" VALIGN=TOP>
+      <P>
+       <FONT COLOR="TEAL"><B>Assertions</B></FONT></TD>
+     <TD WIDTH="601" VALIGN=TOP>
+      <P>
+       <B>PSL 1.1</B></TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   </tbody>&nbsp;</P>
+  <P>
+   This document contains the following sections:</P>
+  <OL>
+   <LI>
+   <P>
+    <A HREF="#general">General concepts</A><BR>
+    <LI><A HREF="#features">Features</A><BR>
+    <LI><A HREF="#files">Design files</A><BR>
+    <LI><A HREF="#problem">Problem definition</A><BR>
+    <LI><A HREF="#implementation">Implementation overview</A><BR>
+    <LI><A HREF="#verification">Verification</A></P>
+   </OL>
+  <H1>
+   <A NAME="general"></A>1. General concepts</H1>
+  <UL>
+   <LI>
+   <P>
+    Division into separate assertions for specification and implementation.</P>
+   <LI>
+   <P>
+    A verification model separated from the design.</P>
+   </UL>
+  <P>
+   &nbsp;</P>
+  <H1>
+   <A NAME="features"></A>2. Features</H1>
+  <P>
+   <TABLE CELLPADDING="5" CELLSPACING="0" BORDER="1">
+    <TR>
+     <TD VALIGN=CENTER>
+      <H2>
+       PSL</TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <P>
+       <FONT COLOR="BLUE"><TT>vunit</TT></FONT></TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <P>
+       concatenation <FONT COLOR="BLUE"><TT>; </TT></FONT>, fusion <FONT COLOR="BLUE"><TT>:</TT></FONT><BR>
+      </TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <P>
+       built-in <FONT COLOR="BLUE"><TT>fell()</TT></FONT>, <FONT COLOR="BLUE"><TT>rose()</TT></FONT> functions</TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <P>
+       suffix implication <FONT COLOR="BLUE"><TT>|-&gt;</TT></FONT></TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <P>
+       suffix implication <FONT COLOR="BLUE"><TT>{}()</TT></FONT></TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <P>
+       repetition <FONT COLOR="BLUE"><TT>[*n]</TT></FONT>, <FONT COLOR="BLUE"><TT>[*n
+        to m]</TT></FONT></TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <H2>
+       Debug</TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <P>
+       breakpoints on all failed assertions (<B>assertion fail -action break</B>)</TD>
+    </TR>
+    <TR>
+     <TD VALIGN=CENTER>
+      <P>
+       GUI: assertions statistics (Assertion Viewer)</TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   &nbsp;</P>
+  <H1>
+   <A NAME="files"></A>3. Design files</H1>
+  <P>
+   <TABLE WIDTH="50%" CELLPADDING="5" CELLSPACING="0" BORDER="1">
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">ffd.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       FlipFlop D model</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">counter.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Counter model</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">traffic_control_entity.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Traffic Control - main unit entity</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">traffic_control.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Traffic Control - main unit</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">traffic_control_no_bug.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Traffic Control - main unit (no bugs introduced)</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">testbench_entity.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Testbench entity</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">testbench.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Testbench</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">testbench_no_bug.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Testbench (no bugs introduced)</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">testbench_verbose.vhd</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Testbench with verbose messages</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">traffic_control_vhd_vunit.psl</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Assertions for the design specification</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">runme.do</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Standard simulation script</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">runme_no_bug.do</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Simulation script: version with no bugs introduced to the design</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">runme_verbose.do</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Simulation script: version with verbose messages</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="37%" VALIGN=TOP>
+      <P>
+       <TT><SPAN STYLE="font-size : 10.0pt;">runme_verbose_debug.do</SPAN></TT></TD>
+     <TD VALIGN=TOP>
+      <P>
+       Debug simulation script: breakpoints on assertions</TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <H1>
+   <A NAME="problem"></A>4. Problem definition</H1>
+  <P>
+   There are traffic lights for a two road crossing - the main road A
+   and a minor road B. There are also traffic lights for pedestrians. A
+   radio sensor is installed. The sensor detects an ambulance on the
+   road B approaching to the crossing. There is also a car sensor
+   installed on road B. The pedestrians can push a key when they want to
+   cross road A.</P>
+  <P>
+   The specification of the traffic lights behavior :</P>
+  <P>
+   &nbsp;</P>
+  <H2>
+   4.1. Normal state</H2>
+  <P>
+   In NORMAL state (there is no ambulance, no cars on the road B, no
+   pedestrians pushed the keys and there is no failure) the cars on the
+   road A have a green light.</P>
+  <P>
+   &nbsp;</P>
+  <H2>
+   4.2. Single events</H2>
+  <P>
+   If the audio sensor detects an ambulance on road B the lights change
+   into green for road B, unconditionally (the light sequence must start
+   from green for road A).</P>
+  <P>
+   If the sensors detect cars on road B the light changes into green for
+   road B when an additional condition is met, namely the last green
+   light for road A was not later than t1 cycles in the past.</P>
+  <P>
+   &nbsp;</P>
+  <H2>
+   4.3. Arbitration</H2>
+  <P>
+   If any event (ambulance detection, car detection or pushed key)
+   occurs during the lights transition, then the event has no influence
+   on the lights cycle. If the lights for road A change from red into
+   green, the sequence finishes and then the system reacts on the next
+   event (we assume a car stays and the sensors still detect it or the
+   radio sensor still detects an ambulance or the pedestrian pushes the
+   key again) as described in 4.2. If the lights for road A change from
+   green into red, the event is just omitted.</P>
+  <P>
+   If an ambulance is detected and a car or pushed key is detected, the
+   lights change into green for road B unconditionally - the ambulance
+   has a higher priority and the system does not wait for t1 cycles.
+   (Note that the system would wait for t1 cycles if it detected a car
+   or a key push, rather than an ambulance.)</P>
+  <P>
+   &nbsp;</P>
+  <H2>
+   4.4. Exception</H2>
+  <P>
+   If the sensors detect any failure in the light system the lights
+   should immediately change into flashing yellow. This state holds till
+   there is no failure in the system</P>
+  <P>
+   &nbsp;</P>
+  <H1>
+   <A NAME="implementation"></A>5. Implementation overview</H1>
+  <P>
+   Traffic Control is implemented using a finite state machine with 6
+   states, determined by lights state (for example green for road A, red
+   for road A, yellow and red for road A). Two counters count periods of
+   the states. Input signals (pushed key, detected radio signal,
+   detected car on road B) are saved in the input flip-flops D. The
+   design uses a Clk signal, active on the negative edge and an
+   asynchronous reset active on the positive edge.</P>
+  <P>
+   &nbsp;</P>
+  <H1>
+   <A NAME="verification"></A>6. Verification</H1>
+  <P>
+   &nbsp;</P>
+  <H2>
+   6.1. Assertions for the specification</H2>
+  <P>
+   The first group of specification assertions consists of assertions
+   which check the design behavior during the lights failure. The second
+   group of assertions checks the design behavior in case an ambulance
+   is detected. The last assertion in the scope checks the lights
+   behavior when pedestrians push the key.</P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;<BR>
+   <BR>
+   <HR ALIGN=CENTER WIDTH="100%" SIZE="2">
+   </P>
+  <P>
+   <B>Copyright &copy; Aldec, Inc.</B><BR>
+   All rights reserved.</P>
+ </BODY>
+</HTML>

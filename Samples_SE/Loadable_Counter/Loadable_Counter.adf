@@ -1,0 +1,165 @@
+[Project]
+Current config=compile
+VCS=0
+modified=261
+version=3
+Current Flow=Multivendor
+
+[Configurations]
+Generic=Loadable_Counter
+compile=Loadable_Counter
+
+[Library]
+Loadable_Counter=.\Loadable_Counter.LIB
+
+[Settings]
+SYNTH_TOOL=<none>
+FLOWTOOLS=ONLY_IMPL
+IMPL_TOOL=<none>
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FAMILY=
+SYNTH_STATUS=NONE
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+UseCeloxica=0
+IMPL_STATUS=NONE
+REFRESH_FLOW=1
+CSYNTH_TOOL=<none>
+Celoxica=0
+RUN_MODE_SYNTH=0
+FUNC_LIB=Loadable_Counter
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+VerilogDirsChanged=1
+DisableVitalMsg=0
+VitalAccel=1
+DisableIEEEWarnings=0
+WireDelay=2
+ReportAssertionsActivations=0
+TrackAssertionFailures=1
+ReportAssertionsFailures=1
+AssertionFailureLimit=0
+AssertionFailureAction=Continue
+TrackAssertionPasses=1
+ReportAssertionPasses=0
+AssertionPassLimit=0
+ReportUnfinishedAssertions=1
+TrackCoverMatches=1
+ReportCoverMatches=1
+CoverAction=Continue
+ReportDroppedCoverEvaluations=0
+ReportActivatedCoverEvaluations=0
+
+[$LibMap$]
+Active_lib=VIRTEX2
+xilinxun=VIRTEX2
+Loadable_Counter=.
+UnlinkedDesignLibrary=VIRTEX2
+DESIGNS=VIRTEX2
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[ORDER]
+autorefresh=0
+macro_path=
+macro_name=
+modified=1
+Synchronize=1
+
+[Groups]
+WAVES=1
+
+[sdf.c.testbench_for_counter]
+0=src\counter_tim.sdf| /counter_wb/UUT, Average, No
+SdfNoWarn=0
+IVG=0
+
+[sdf.c.timing_for_counter]
+0=src\counter_tim.sdf| /counter_wb/UUT, Average, No
+SdfNoWarn=0
+IVG=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+
+[LocalVerilogSets]
+EnableDebug=0
+EnableSLP=1
+EnableExpressionCoverage=0
+VerilogLanguage=5
+Strict=0
+Strict2001=
+SystemVerilog3=
+StrictLRMMode=
+VerilogNoSpecify=0
+WarningPrnLevel=1
+ErrorOutputLimit=0
+OptimizationLevel=2
+ProtectLevel=0
+AdditionalOptions=
+MonitoringOfEventsUDP=0
+DisablePulseError=0
+HasInitialRegsValue=0
+InitialRegsValue=X
+
+[Files]
+/readme.txt=-1
+/counter.vhd=-1
+/counter_tim.vhd=-1
+/counter_tim.sdf=-1
+WAVES/counter_TB_header=-1
+WAVES/counter_TB_pins.vhd=-1
+WAVES/waves_objects.vhd=-1
+WAVES/counter_TB_declaration.vhd=-1
+WAVES/waves_generator.vhd=-1
+WAVES/counter_TB.vhd=-1
+WAVES/Functional.vec=-1
+WAVES/monitor_utilities.vhd=-1
+WAVES/counter_TB_tim_cfg.vhd=-1
+WAVES/counter_TB_runtest.do=-1
+WAVES/counter_TB_tim_runtest.do=-1
+
+[Files.Data]
+.\src\readme.txt=Text File
+.\src\counter.vhd=VHDL Source Code
+.\src\counter_tim.vhd=VHDL Source Code
+.\src\counter_tim.sdf=SDF File
+.\src\WAVES\counter_TB_header=Text File
+.\src\WAVES\counter_TB_pins.vhd=VHDL Test Bench
+.\src\WAVES\waves_objects.vhd=VHDL Test Bench
+.\src\WAVES\counter_TB_declaration.vhd=VHDL Test Bench
+.\src\WAVES\waves_generator.vhd=VHDL Test Bench
+.\src\WAVES\counter_TB.vhd=VHDL Test Bench
+.\src\WAVES\Functional.vec=Text File
+.\src\WAVES\monitor_utilities.vhd=VHDL Test Bench
+.\src\WAVES\counter_TB_tim_cfg.vhd=VHDL Test Bench
+.\src\WAVES\counter_TB_runtest.do=Macro
+.\src\WAVES\counter_TB_tim_runtest.do=Macro
+

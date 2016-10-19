@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=iso-8859-1">
+<title>Traffic Control</title>
+</head>
+<body text="#000000" link="#0000ff" vlink="#800080">
+<table border="0" cellpadding="0" cellspacing="0">
+    <tr valign="TOP">
+        <td width="111">
+        <p><font color="#008080"><b>Example</b></font></p>
+        </td>
+        <td width="470">
+        <p><b>Traffic lights : model verification with assertions</b></p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="111">
+        <p><font color="#008080"><b>HDL</b></font></p>
+        </td>
+        <td width="470">
+        <p><b>Verilog</b></p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="111">
+        <p><font color="#008080"><b>Assertions</b></font></p>
+        </td>
+        <td width="470">
+        <p><b>PSL 1.1</b></p>
+        </td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+<p>This document contains the following sections:</p>
+<ol>
+    <li><a href="#general">General concepts</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#files">Design files</a></li>
+    <li><a href="#problem">Problem definition</a></li>
+    <li><a href="#implementation">Implementation overview</a></li>
+    <li><a href="#verification">Verification</a></li>
+</ol>
+<p>&nbsp;</p>
+<h1><a name="general"></a>1. General concepts</h1>
+<p>&nbsp;</p>
+<ul>
+    <li>
+    <p>Division into separate assertions for a specification and implementation.</p>
+    </li>
+    <li>
+    <p>A verification model separated from the design.</p>
+    </li>
+</ul>
+<p>&nbsp;</p>
+<h1><a name="features"></a>2. Features</h1>
+<table border="1" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="600" valign="TOP">
+        <h2>PSL</h2>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p><font color="#0000ff"><tt>vunit</tt></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>concatenation <font color="#0000ff"><tt>;</tt></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>built-in <font color="#0000ff"><tt>fell()</tt></font>, <font color="#0000ff"><tt>rose()</tt></font>
+        functions</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>suffix implication <font color="#0000ff"><tt>|-&gt;</tt></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>suffix implication <font color="#0000ff"><tt>{}()</tt></font></p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>repetition <font color="#0000ff"><tt>[*n]</tt></font>, <font color="#0000ff"><tt>[*n..m]</tt></font>
+        </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <h2>SystemVerilog</h2>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>implicit connections</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>built-in <font color="#0000ff"><tt>$info()</tt></font> task</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p><font color="#0000ff"><tt>++</tt></font>, <font color="#0000ff"><tt>--</tt></font>
+        operators</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>loop iterator declared in the loop header</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <h2>Debug</h2>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>breakpoints on all failed assertions (<b>assertion fail -action break</b>)</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p>assertions messages reported to a separate log file (<b>transcript -assert to assert_psl.log</b>)</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <h2>Other</h2>
+        </td>
+    </tr>
+    <tr>
+        <td width="600" valign="TOP">
+        <p><font color="#0000ff"><tt>{$root}</tt></font> in <b>vsim</b> command (macros)</p>
+        </td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+<h1><a name="files"></a>3. Design files</h1>
+<table border="1" cellpadding="0" cellspacing="0">
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>ffd.v</tt></p>
+        </td>
+        <td width="380">
+        <p>FlipFlop D model</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>counter.v</tt></p>
+        </td>
+        <td width="380">
+        <p>Counter model</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>traffic_control.v</tt></p>
+        </td>
+        <td width="380">
+        <p>Traffic Control - main unit</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>tb.v</tt></p>
+        </td>
+        <td width="380">
+        <p>Testbench</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>parameters.h</tt></p>
+        </td>
+        <td width="380">
+        <p>Design defines</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>traffic_control_ver_vunit.psl</tt></p>
+        </td>
+        <td width="380">
+        <p>Assertions for the design specification</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>runme.do</tt></p>
+        </td>
+        <td width="380">
+        <p>Standard simulation script</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>runme_no_bug.do</tt></p>
+        </td>
+        <td width="380">
+        <p>Simulation script: version with no bugs introduced to the design</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>runme_verbose.do</tt></p>
+        </td>
+        <td width="380">
+        <p>Simulation script: version with verbose messages</p>
+        </td>
+    </tr>
+    <tr valign="TOP">
+        <td width="201">
+        <p><tt>runme_verbose_debug.do</tt></p>
+        </td>
+        <td width="380">
+        <p>Debug simulation script: breakpoints on assertions</p>
+        </td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+<h1><a name="problem"></a>4. Problem definition</h1>
+<p>There are traffic lights for a two road crossing - the main road A and a minor road B.
+There are also traffic lights for pedestrians. A radio sensor is installed. The sensor detects
+an ambulance on the road B approaching to the crossing. There is also a car sensor installed on
+road B. The pedestrians can push a key when they want to cross road A.</p>
+<p>The specification of the traffic lights behavior :</p>
+<p>&nbsp;</p>
+<h2>4.1. Normal state</h2>
+<p>In NORMAL state (there is no ambulance, no cars on the road B, no pedestrians pushed the
+keys and there is no failure) the cars on the road A have a green light.</p>
+<p>&nbsp;</p>
+<h2>4.2. Single events</h2>
+<p>If the audio sensor detects an ambulance on road B the lights change into green for road
+B, unconditionally (the light sequence must start from green for road A).</p>
+<p>If the sensors detect cars on road B the light changes into green for road B when an
+additional condition is met, namely the last green light for road A was not later than t1 cycles
+in the past.</p>
+<p>&nbsp;</p>
+<h2>4.3. Arbitration</h2>
+<p>If any event (ambulance detection, car detection or pushed key) occurs during the lights
+transition, then the event has no influence on the lights cycle. If the lights for road A change
+from red into green, the sequence finishes and then the system reacts on the next event (we
+assume a car stays and the sensors still detect it or the radio sensor still detects an
+ambulance or the pedestrian pushes the key again) as described in 4.2. If the lights for road A
+change from green into red, the event is just omitted.</p>
+<p>If an ambulance is detected and a car or pushed key is detected, the lights change into
+green for road B unconditionally - the ambulance has a higher priority and the system does not
+wait for t1 cycles. (Note that the system would wait for t1 cycles if it detected a car or a key
+push, rather than an ambulance.)</p>
+<p>&nbsp;</p>
+<h2>4.4. Exception</h2>
+<p>If the sensors detect any failure in the light system the lights should immediately
+change into flashing yellow. This state holds till there is no failure in the system</p>
+<p>&nbsp;</p>
+<h1><a name="implementation"></a>5. Implementation overview</h1>
+<p>Traffic Control is implemented using a finite state machine with 6 states, determined by
+lights state (for example green for road A, red for road A, yellow and red for road A). Two
+counters count periods of the states. Input signals (pushed key, detected radio signal, detected
+car on road B) are saved in the input flip-flops D. The design uses a Clk signal, active on the
+negative edge and an asynchronous reset active on the positive edge.</p>
+<p>&nbsp;</p>
+<h1><a name="verification"></a>6. Verification</h1>
+<p>&nbsp;</p>
+<h2>6.1. Assertions for the specification</h2>
+<p>The first group of specification assertions consists of assertions which check the design
+behavior during the lights failure. The second group of assertions checks the design behavior in
+case an ambulance is detected. The last assertion in the scope checks the lights behavior when
+pedestrians push the key. The second group of assertions is implemented as embedded in Verilog code 
+while all other assertions are defined separately in PSL file.</p>
+<br>
+<br>
+<hr>
+<p><b>Copyright &copy; Aldec, Inc.</b> <br>
+All rights reserved. <br>
+</p>
+</body>
+</html>

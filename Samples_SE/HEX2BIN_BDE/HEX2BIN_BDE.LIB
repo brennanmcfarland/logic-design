@@ -1,0 +1,103 @@
+timestamp=1245856932294
+
+[ADRCNT]
+A/ADRCNT=24|.\src\ADRCNT.bde|10000|
+P/~emb=239,491,796,1347
+S/adrcnt=S/ADRCNT 40|0|2*0
+
+[ASCIIDEC]
+A/ASCIIDEC=22|./src/ASCIIDEC.v|25|
+P/~emb=196,398,593,714
+S/asciidec=S/ASCIIDEC 40|0|2*3001
+
+[CD4029]
+A/CD4029=22|./src/CD4029.v|25|
+P/~emb=258,438,681,856
+S/cd4029=S/CD4029 40|0|2*5292
+
+[COMP]
+A/COMP=22|./src/COMP.v|25|
+P/~emb=144,288,462,547
+S/comp=S/COMP 40|0|2*8074
+
+[DAC_SC1]
+A/DAC_SC1=24|.\src\DAC_SC1.bde|10000|
+P/~emb=302,696,1093,1683
+
+[DATREG]
+A/DATREG=22|./src/DATREG.v|25|
+P/~emb=210,403,612,730
+S/datreg=S/DATREG 40|0|2*9537
+
+[DAT_CNT]
+A/DAT_CNT=22|./src/DAT_CNT.v|25|
+P/~emb=237,430,692,825
+S/dat_cnt=S/DAT_CNT 40|0|2*12196
+
+[INTELHEX]
+A/INTELHEX=22|./src/INTELHEX.v|25|
+P/~emb=468,763,1521,1831
+S/intelhex=S/INTELHEX 40|0|2*15212
+
+[LRC]
+A/LRC=24|.\src\LRC.bde|10000|
+P/~emb=234,544,992,1425
+S/lrc=S/LRC 40|0|2*21228
+
+[REG4]
+A/REG4=22|./src/REG4.v|25|
+P/~emb=199,362,548,654
+S/reg4=S/REG4 40|0|2*24268
+
+[SUB]
+A/SUB=22|./src/SUB.v|25|
+P/~emb=60,494,791,983
+S/sub=S/SUB 40|0|2*26417
+
+[~A]
+./compile/ADRCNT.v=0*8459*9104
+./compile/dac_sc1.v=0*10778*11546
+./compile/lrc.v=0*9558*10327
+./src/CD4029.v=0*0*534
+./src/INTELHEX.v=0*2005*3341
+./src/REG4.v=0*5653*6093
+./src/asciidec.v=0*984*1537
+./src/comp.v=0*4856*5205
+./src/dat_cnt.v=0*3809*4405
+./src/datreg.v=0*7482*8009
+./src/sub.v=0*6541*7035
+./src/uut_pli.v=0*13405*14419
+./src/uut_std.v=0*12001*12954
+ModifyID=1353
+Version=73
+c:/My_Designs/Samples_82/HEX2BIN_BDE/compile/ADRCNT.v=0*72336*73053
+c:/My_Designs/Samples_82/HEX2BIN_BDE/compile/DAC_SC1.v=0*79072*79902
+c:/My_Designs/Samples_82/HEX2BIN_BDE/compile/LRC.v=0*75617*76443
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/ASCIIDEC.v=0*53152*53771
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/CD4029.v=0*50796*51397
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/COMP.v=0*62926*63333
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/DATREG.v=0*69420*70005
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/DAT_CNT.v=0*60868*61518
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/INTELHEX.v=0*57554*58958
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/REG4.v=0*64898*65401
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/SUB.v=0*67100*67666
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/uut_pli.v=0*85546*86629
+c:/My_Designs/Samples_82/HEX2BIN_BDE/src/uut_std.v=0*82201*83219
+
+[~MFT]
+0=0|0HEX2BIN_BDE.mgf|14580|0
+2=0|2HEX2BIN_BDE.mgf|26417|0
+
+[~U]
+ADRCNT=12|0*0||0x83
+ASCIIDEC=12|0*1635||0x83
+CD4029=12|0*2694||0x83
+COMP=12|0*3828||0x83
+DAC_SC1=12|0*4539||0x80
+DATREG=12|0*6487||0x83
+DAT_CNT=12|0*7548||0x83
+INTELHEX=12|0*8760||0x83
+LRC=12|0*11845||0x93
+REG4=12|0*13709||0x83
+SUB=12|0*14580||0x83
+

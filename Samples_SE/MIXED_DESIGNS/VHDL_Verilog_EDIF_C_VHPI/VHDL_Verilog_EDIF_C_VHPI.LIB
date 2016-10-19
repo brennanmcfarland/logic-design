@@ -1,0 +1,70 @@
+timestamp=1125568438553
+
+[AND2]
+A/AND2=22|.\src\and2.v|10000|
+P/~emb=129,277,390,485
+S/and2=S/AND2 40|0|2*0
+
+[AND3]
+A/AND3=22|.\src\and3.v|10000|
+P/~emb=156,307,421,520
+S/and3=S/AND3 40|0|2*1404
+
+[AND4]
+A/AND4=22|.\src\and4.v|10000|
+P/~emb=183,337,454,556
+S/and4=S/AND4 40|0|2*3155
+
+[c2or]
+A/c2or=A/C2OR 21|.\src\c2or.vhd|10000|
+S/c2or=S/C2OR 40|0|2*5255
+
+[crv]
+A/crv=A/CRV 24|.\src\crv.bde|10000|
+S/crv=S/CRV 40|0|2*7429
+
+[filter]
+A/filter=24|.\src\filter.bde|10000|
+
+[oscil_c_vhpi]
+A/oscil_c_vhpi=21|.\src\oscil_c_vhpi.vhd|10000|
+S/oscil_c_vhpi=40|0|2*9344
+
+[pfdiv]
+A/pfdiv=A/PFDIV 21|.\src\pfdiv.vhd|10000|
+S/pfdiv=S/PFDIV 40|0|2*11188
+
+[~A]
+./compile/filter.vhd~filter=0*786*1068
+./compile/filter.vhd~filter|filter=0*1136*2196
+./src/Testbench/filter_tb.vhd~FILTER_tb=0*2271*2487
+./src/Testbench/filter_tb.vhd~TB_ARCHITECTURE|FILTER_tb=0*2567*4035
+./src/c2or.vhd~C2OR=0*4131*4378
+./src/c2or.vhd~C2OR|C2OR=0*4438*4752
+./src/cb4ce.vhd~CB4CE=0*0*303
+./src/cb4ce.vhd~CB4CE|CB4CE=0*365*718
+./src/oscil_c_vhpi.vhd~oscil_c_vhpi=0*6396*6656
+./src/oscil_c_vhpi.vhd~oscil_c_vhpi|oscil_c_vhpi=0*6732*6973
+./src/pfdiv.vhd~PFDIV=0*4817*5076
+./src/pfdiv.vhd~PFDIV|PFDIV=0*5138*6328
+./src/and2.v=0*8058*8398
+./src/and2.v_and3.v_and4.v=0*7062*7489
+./src/and3.v=0*8937*9282
+./src/and4.v=0*9821*10167
+ModifyID=143
+Version=73
+
+[~MFT]
+0=0|0VHDL_Verilog_EDIF_C_VHPI.mgf|13308|0
+2=0|2VHDL_Verilog_EDIF_C_VHPI.mgf|11188|0
+
+[~U]
+AND2=12|0*10706||0x93
+AND3=12|0*11286||0x93
+AND4=12|0*11901||0x93
+c2or=C2OR 11|0*12552||0x3
+crv=CRV 13|0*12736||0x7
+filter=11|0*12923|
+oscil_c_vhpi=11|0*13119||0x3
+pfdiv=PFDIV 11|0*13308||0x3
+

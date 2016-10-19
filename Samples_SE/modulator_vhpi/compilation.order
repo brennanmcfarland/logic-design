@@ -1,0 +1,5 @@
+.\src\multiplier.vhd
+.\src\modulator.bde
+.\src\VHPI\modulator_vhpi.dlm
+.\src\VHPI\generator_vhpi.vhd
+.\src\TestBench\modulator_TB.vhd

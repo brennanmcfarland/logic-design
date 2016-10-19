@@ -1,0 +1,117 @@
+[Project]
+Current config=compile
+VCS=0
+modified=0
+version=3
+Current Flow=Multivendor
+
+[Configurations]
+Generic=QLOGIC_VOICE
+compile=QLOGIC_VOICE
+
+[Groups]
+functional=1
+timing=1
+macros=1
+
+[Library]
+QLOGIC_VOICE=.\QLOGIC_VOICE.LIB
+
+[Settings]
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+FAMILY=
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=ONLY_IMPL
+SYNTH_STATUS=NONE
+C_SERVER_SIM=NONE
+ON_SERVERFARM_SIM=0
+C_SERVER_SYNTH=NONE
+ON_SERVERFARM_SYNTH=0
+C_SERVER_IMPL=NONE
+ON_SERVERFARM_IMPL=0
+RUN_MODE_SYNTH=1
+UseCeloxica=0
+REFRESH_FLOW=1
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+VerilogDirsChanged=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[ORDER]
+autorefresh=0
+macro_path=
+macro_name=
+modified=1
+Synchronize=1
+
+[$LibMap$]
+QLOGIC_VOICE=.
+
+[LocalVhdlSets]
+CompileWithDebug=0
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+
+[LocalVerilogSets]
+EnableDebug=0
+EnableSLP=1
+EnableExpressionCoverage=0
+VerilogLanguage=5
+Strict=0
+Strict2001=
+SystemVerilog3=
+StrictLRMMode=
+VerilogNoSpecify=0
+WarningPrnLevel=1
+ErrorOutputLimit=0
+OptimizationLevel=2
+ProtectLevel=0
+AdditionalOptions=
+
+[Files]
+/readme.txt=-1
+functional/Voicepkg.vhd=-1
+functional/Voice.vhd=-1
+functional/Voice_tb.vhd=-1
+timing/Voice_t.vhq=-1
+timing/Voice.sdf=-1
+timing/Voicepkg.vhd=-1
+timing/Voice_t_tb.vhd=-1
+macros/Functional.do=-1
+macros/Timing.do=-1
+
+[Files.Data]
+.\src\readme.txt=Text File
+.\src\functional\Voicepkg.vhd=VHDL Source Code
+.\src\functional\Voice.vhd=VHDL Source Code
+.\src\functional\Voice_tb.vhd=VHDL Test Bench
+.\src\timing\Voice_t.vhq=VHDL Source Code
+.\src\timing\Voice.sdf=Sdf File
+.\src\timing\Voicepkg.vhd=VHDL Source Code
+.\src\timing\Voice_t_tb.vhd=VHDL Test Bench
+.\src\macros\Functional.do=Macro
+.\src\macros\Timing.do=Macro
+

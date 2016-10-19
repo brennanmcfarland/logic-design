@@ -1,0 +1,5 @@
+alog -v2k -pli "C:/Program Files/Aldec/Active-HDL 8.4/BIN/aldec_matlab_cosim.dll" "$dsn/src/abs.v"
+alog -v2k -pli "C:/Program Files/Aldec/Active-HDL 8.4/BIN/aldec_matlab_cosim.dll" "$dsn/src/filter_simple.v"
+alog -v2k -pli "C:/Program Files/Aldec/Active-HDL 8.4/BIN/aldec_matlab_cosim.dll" "$dsn/src/filter_bessel.v"
+alog -v2k -pli "C:/Program Files/Aldec/Active-HDL 8.4/BIN/aldec_matlab_cosim.dll" "$dsn/src/dsp.bde"
+alog -v2k -pli "C:/Program Files/Aldec/Active-HDL 8.4/BIN/aldec_matlab_cosim.dll" "$dsn/src/dsp_test.bde"

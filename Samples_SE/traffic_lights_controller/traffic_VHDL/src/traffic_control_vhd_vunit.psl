@@ -1,0 +1,71 @@
+-- Copyright (c) Aldec, Inc.
+-- All rights reserved.
+--
+-- Last modified: $Date: 2007-10-22 16:12:38 +0200 (Mon, 22 Oct 2007) $
+-- $Revision: 68101 $
+
+
+vunit CheckFailures(TrafficControl)
+{
+    default clock is fell(Clk);
+
+    -- the lights for the road A (GreenA) and for the road B (GreenB)
+    -- can never be green simultaneously
+    property as_a_p is never (GreenA and GreenB);
+
+    -- the lights for the road A (GreenA) and for the pedestrians (GreenCrossing | FlashingGreenCrossing)
+    -- can never be green simultaneously
+    property as_b_p is never (GreenA and (GreenCrossing or FlashingGreenCrossing));
+
+    -- whenever the failure happens (FailureDetect)
+    -- the lights for the road A and for the road B should be flashing yellow (FlashingYellowA & FlashingYellowB)
+    -- all the time the sensors detect a failure
+    property as_c_p is always { rose(FailureDetect) } |-> {[*1];FlashingYellowA and FlashingYellowB };
+
+    -- if the failure happens the lights for the pedestrians can be never on
+    property as_d_p is always { rose(FailureDetect)} |->  {[*1];(not GreenCrossing and not FlashingGreenCrossing and not RedCrossing)};
+
+    -- NOTE: this verification unit contain more than one assertion directives.
+    as_a : assert as_a_p;
+    as_b : assert as_b_p;
+    as_c : assert as_c_p;
+    as_d : assert as_d_p;
+}
+
+
+-- NOTE: this verification unit contain more than one assertion directives.
+vunit CheckAmbulanceDetection(TrafficControl)
+{
+    default clock is fell(Clk);
+
+    -- if the radio sensor detects an appearing of the ambulance (posedge R)
+    -- the lights change into green (GreenB) at that time
+    property as_e_p is never {{rose(RadioSensor)} & {GreenA} ; GreenB};
+
+    -- if the radio sensor detects an appearing of the ambulance (RadioSensor)
+    -- the lights for the road A have always to change
+    -- from green into red within min 4, max. 7 clk cycles
+    property as_f_p is always { rose(RadioSensor) } |-> {[*4 to 7];GreenB};
+
+
+    -- the green lights sequence for the road B (posedge GreenB) must start not earlier
+    -- than T1 clk cycles after the beginning of the green light
+    -- for the road A if there is no ambulance detected (~RadioSensor),
+        -- if the ambulance is detected the rule shall not be checked.
+    property as_h_p is always {rose(GreenA)}|->{[*0 to 5];not GreenB} sync_abort (RadioSensor);
+
+    as_e : assert as_e_p;
+    as_f : assert as_f_p;
+    as_h : assert as_h_p;
+}
+
+
+vunit OtherEvents(TrafficControl)
+{
+    default clock is fell(Clk);
+
+    -- the red light for the road A can never appear immediately after a pushed key
+
+    property as_i_p is never {rose(Key and GreenA) ;RedA};
+    as_i : assert as_i_p;
+}

@@ -1,0 +1,29 @@
+timestamp=1474997685506
+
+[~A]
+C:/Users/Sir/Documents/HDLDesigns/Design2/design2/src/testbench.v=0*325*974
+LastVerilogToplevel=testbench
+ModifyID=1
+Version=74
+
+[$root]
+A/$root=22|||1*0
+BinI32/$root=3*0
+SLP=3*104
+Version=10.3.3559.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92162b323819f5a40d86560ecf85db09bb27
+
+[testbench]
+A/testbench=22|./../src/testbench.v|3|1*374
+BinI32/testbench=3*172
+R=./../src/testbench.v|3
+SLP=3*1454
+Version=10.3.3559.6081  (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|9c08cd30fe0f9550ac0d051aa32c9ba5030c5f4de3ffa3c97f58c5528f1d7913d8d10c41d4691677ebd2979ffd848dd6
+
+[~MFT]
+0=4|0design2.mgf|974|0
+1=2|1design2.mgf|374|0
+3=4|3design2.mgf|1454|0
+
+[~U]
+$root=12|0*0|
+testbench=12|0*166||0x10

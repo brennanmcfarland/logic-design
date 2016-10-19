@@ -1,0 +1,5 @@
+acom "$dsn/src/vhpi/generator_vhpi.vhd"
+comp "$dsn/src/vhpi/modulator_vhpi.dlm"
+acom "$dsn/src/multiplier.vhd"
+acom "$dsn/src/modulator.bde"
+acom "$dsn/src/testbench/modulator_tb.vhd"

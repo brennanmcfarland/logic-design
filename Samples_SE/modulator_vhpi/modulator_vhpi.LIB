@@ -1,0 +1,32 @@
+timestamp=1106045920204
+
+[generator]
+A/generator=21|./src/VHPI/generator_vhpi.vhd|24|
+S/generator=40|0|2*0
+
+[modulator]
+A/modulator=A/Modulator 24|.\src\modulator.bde|10000|
+
+[multiplier]
+A/multiplier=A/Multiplier 21|./src/multiplier.vhd|23|
+S/multiplier=S/Multiplier 40|0|2*1820
+
+[~A]
+./compile/modulator.vhd~Modulator=0*1327*1671
+./compile/modulator.vhd~ModulatorModulator=0*1744*2826
+./src/VHPI/generator_vhpi.vhd~generator=0*0*263
+./src/VHPI/generator_vhpi.vhd~generatorgenerator=0*342*564
+./src/multiplier.vhd~Multiplier=0*652*909
+./src/multiplier.vhd~MultiplierMultiplier=0*980*1246
+ModifyID=124
+Version=73
+
+[~MFT]
+0=0|0modulator_vhpi.mgf|3327|0
+2=0|2modulator_vhpi.mgf|1820|0
+
+[~U]
+generator=11|0*2908||0x3
+modulator=Modulator 11|0*3076|
+multiplier=Multiplier 11|0*3327||0x7
+

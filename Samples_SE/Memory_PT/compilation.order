@@ -1,0 +1,3 @@
+.\src\sparse.vhd
+.\src\memory.vhd
+.\src\memory_tb.vhd

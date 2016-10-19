@@ -1,0 +1,2747 @@
+Model {
+  Name			  "matlab_mixed_cosim"
+  Version		  7.0
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.594"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Fri Jun 13 13:40:18 2003"
+  Creator		  "arekg"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "arekg"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Oct 05 10:12:08 2011"
+  RTWModifiedTimeStamp	  0
+  ModelVersionFormat	  "1.%<AutoIncrement:594>"
+  ConfigurationManager	  "None"
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.3.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.3.0"
+	  StartTime		  "0.0"
+	  StopTime		  "370"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.3.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "sigsOut"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.3.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  on
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.3.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.3.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.3.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Version		  "1.3.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  RTWCompilerOptimization "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Version		      "1.3.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Version		      "1.3.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      ComplexToMagnitudeAngle
+      Output		      "Magnitude and angle"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RealImagToComplex
+      Input		      "Real and imag"
+      ConstantPart	      "0"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Sin
+      SineType		      "Time based"
+      TimeSource	      "Use simulation time"
+      Amplitude		      "1"
+      Bias		      "0"
+      Frequency		      "1"
+      Phase		      "0"
+      Samples		      "10"
+      Offset		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "matlab_mixed_cosim"
+    Location		    [331, 132, 1340, 749]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "[1.000000, 1.000000, 0.874510]"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "Active-HDL Co-Sim"
+      Tag		      "Active-HDL_Co-Sim_close"
+      Ports		      []
+      Position		      [25, 322, 106, 405]
+      Priority		      "1"
+      SourceBlock	      "aldec_ahdl/Active-HDL Co-Sim"
+      SourceType	      "Active-HDL Simulation Manager"
+      hdl_period	      "0.5"
+      hdl_tscale	      "sec"
+      sys_period	      "[1, 0]"
+      sys_tscale	      "As In Simulator"
+      vsim_cmd		      "-ieee_nowarn"
+      wav_fn		      "matlab_mixed_cosim"
+      wav_settings	      "[0,0,0,0,0,0,0,0]"
+      dbg		      off
+      auto_start	      off
+      gen_tb		      "[0,0]"
+      batch_sim		      off
+      tb_fn		      "mlab_post_tb.log"
+      metavalue_map	      "[0,0]"
+      sim_resolution	      "[1,0,0]"
+      active_page	      "4"
+      aws_en		      off
+      ahdl_en		      off
+      blk_ver		      "9.1.RTM"
+      macro_en		      "[1,0,1]"
+      macro_path	      "prepare_project.do"
+      mfun_text		      "check_mfiles"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      Position		      [340, 78, 430, 112]
+      BackgroundColor	      "[1.000000, 0.792157, 0.584314]"
+      Gain		      "23000"
+      ParameterDataType	      "sfix(16)"
+      ParameterScaling	      "2^0"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain2"
+      Position		      [340, 272, 430, 308]
+      BackgroundColor	      "[1.000000, 0.792157, 0.584314]"
+      Gain		      "1200"
+      ParameterDataType	      "sfix(16)"
+      ParameterScaling	      "2^0"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "IIR_1st_stage"
+      Ports		      [1, 1]
+      Position		      [140, 63, 215, 127]
+      BackgroundColor	      "[0.941176, 0.980392, 1.000000]"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      System {
+	Name			"IIR_1st_stage"
+	Location		[2, 74, 1014, 724]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	212
+	ScreenColor		"[1.000000, 1.000000, 0.874510]"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "x"
+	  Position		  [40, 183, 70, 197]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [90, 175, 145, 205]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Gain			  "0.04"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  Ports			  [3]
+	  Position		  [535, 424, 565, 456]
+	  BackgroundColor	  "cyan"
+	  Floating		  off
+	  Location		  [146, 305, 1162, 962]
+	  Open			  off
+	  NumInputPorts		  "3"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "Input"
+	    axes2		    "Internal"
+	    axes3		    "Output"
+	  }
+	  YMin			  "-0.025~-0.025~-0.02"
+	  YMax			  "0.025~0.03~0.03"
+	  SaveName		  "ScopeData3"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "a11_1"
+	  Position		  [40, 235, 130, 265]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "a11_2"
+	  Position		  [490, 235, 580, 265]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "a12_1"
+	  Position		  [150, 266, 245, 294]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "-0.17157288"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "a12_2"
+	  Position		  [600, 265, 690, 295]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "-0.17157288"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b10_1"
+	  Position		  [40, 295, 130, 325]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.29289323"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b10_2"
+	  Position		  [490, 295, 580, 325]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.29289323"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b11_1"
+	  Position		  [150, 326, 245, 354]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "-0.58578646"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b11_2"
+	  Position		  [600, 325, 690, 355]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.58578646"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b12_1"
+	  Position		  [40, 355, 130, 385]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.29289323"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b12_2"
+	  Position		  [490, 356, 580, 384]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.29289323"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "biquad_IIR_1_1"
+	  Ports			  [6, 1]
+	  Position		  [310, 203, 440, 387]
+	  BackgroundColor	  "[0.941176, 0.980392, 1.000000]"
+	  Priority		  "1"
+	  SourceBlock		  "aldec_ahdl/HDL Black-Box"
+	  SourceType		  "Active-HDL Block"
+	  module_m		  "biquad"
+	  ports_cfg		  "{clk,3,1,0,0,1,8,0,0,1,0,0}{nreset,5,1,0,0,1,8,0,0,1,0,0}{x,0,16,0,15,1,0,0,0,0,0,0}{ce,4,1,0,0,1,8,0,0,1,0,0}{valid,5,1,0,0,1,8,0,0,1,0,0}{a11,0,8,0,7,1,0,0,0,0,0,0}{a12,0,8,0,7,1,0,0,0,0,0,0}{b10,0,8,0,7,1,0,0,0,0,0,0}{b11,0,8,0,7,1,0,0,0,0,0,0}{b12,0,8,0,7,1,0,0,0,0,0,0}{yout,1,16,0,15,clk,0,0,0,0,0,0}"
+	  params		  "{DATAWIDTH,16,}{COEFWIDTH,8,}{ACCUM,2,}"
+	  clocks		  "{0,2,0,0.5000,0}"
+	  ces			  "{3,0,1,0,1}"
+	  stims			  "{4,0 0s 1 2s}{1,0 0s 1 2s}"
+	  hdl_src		  "c:\\My_Designs\\Samples_73\\simulink_mixed_example\\biquad_iir\\src\\multa.v;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\biquad_iir\\src\\multb.v;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\biquad_iir\\src\\biquad.v"
+	  block_mask		  "image(imread('HDLBlackBox.jpg'),'center'); disp('biquad');port_label('input', 1, 'x');port_label('input', 2, 'a11');port_label('input', 3, 'a12');port_label('input', 4, 'b10');port_label('input', 5, 'b11');port_label('input', 6, 'b12');port_label('output', 1, 'yout');"
+	  config		  "[6,1]"
+	  inp			  "[6, 0, 16, 15, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0]"
+	  out			  "[1, 0, 16, 15, 0, 0, 0]"
+	  sampling		  "[0,1,1,1,1,1,1,2]"
+	  active_page		  "{0}{80,0,35,1,65,2,70,3,70,4,60,5,60,6,50,7,35,8,35,9,119,10}{103,0,55,1,70,2,75,3,75,4,45,5,45,6,45,7,165,8,0,0,0,0}{165,0,130,1,190,2,190,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{81,0,60,1,60,2,70,3,60,4,0,0,0,0,0,0,0,0,0,0,0,0}{83,0,70,1,80,2,50,3,50,4,0,0,0,0,0,0,0,0,0,0,0,0}{125,0,330,1,220,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{95,0,95,1,70,2,50,3,80,4,35,5,35,6,65,7,150,8,0,0,0,0}{735,436}"
+	  param_val		  "{0,0,0,0,0,0}"
+	  clk_val		  "[2,0,0.5000]"
+	  ce_val		  "[1,0]"
+	  blk_ver		  "9.1.RTM"
+	  blk_conf		  "0"
+	  user_conv		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "biquad_IIR_1_2"
+	  Ports			  [6, 1]
+	  Position		  [740, 205, 870, 385]
+	  BackgroundColor	  "[0.941176, 0.980392, 1.000000]"
+	  Priority		  "1"
+	  SourceBlock		  "aldec_ahdl/HDL Black-Box"
+	  SourceType		  "Active-HDL Block"
+	  module_m		  "biquad"
+	  ports_cfg		  "{clk,3,1,0,0,1,8,0,0,1,0,0}{nreset,5,1,0,0,1,8,0,0,1,0,0}{x,0,16,0,15,1,0,0,0,0,0,0}{ce,4,1,0,0,1,8,0,0,1,0,0}{valid,5,1,0,0,1,8,0,0,1,0,0}{a11,0,8,0,7,1,0,0,0,0,0,0}{a12,0,8,0,7,1,0,0,0,0,0,0}{b10,0,8,0,7,1,0,0,0,0,0,0}{b11,0,8,0,7,1,0,0,0,0,0,0}{b12,0,8,0,7,1,0,0,0,0,0,0}{yout,1,16,0,15,clk,0,0,0,0,0,0}"
+	  params		  "{DATAWIDTH,16,}{COEFWIDTH,8,}{ACCUM,2,}"
+	  clocks		  "{0,2,0,0.5000,0}"
+	  ces			  "{3,0,1,0,1}"
+	  stims			  "{4,0 0s 1 2s}{1,0 0s 1 2s}"
+	  hdl_src		  "c:\\My_Designs\\Samples_73\\simulink_mixed_example\\biquad_iir\\src\\multa.v;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\biquad_iir\\src\\multb.v;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\biquad_iir\\src\\biquad.v"
+	  block_mask		  "image(imread('HDLBlackBox.jpg'),'center'); disp('biquad');port_label('input', 1, 'x');port_label('input', 2, 'a11');port_label('input', 3, 'a12');port_label('input', 4, 'b10');port_label('input', 5, 'b11');port_label('input', 6, 'b12');port_label('output', 1, 'yout');"
+	  config		  "[6,1]"
+	  inp			  "[6, 0, 16, 15, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0]"
+	  out			  "[1, 0, 16, 15, 0, 0, 0]"
+	  sampling		  "[0,1,1,1,1,1,1,2]"
+	  active_page		  "{0}{80,0,35,1,65,2,70,3,70,4,60,5,60,6,50,7,35,8,35,9,119,10}{103,0,55,1,70,2,75,3,75,4,45,5,45,6,45,7,165,8,0,0,0,0}{165,0,130,1,190,2,190,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{81,0,60,1,60,2,70,3,60,4,0,0,0,0,0,0,0,0,0,0,0,0}{83,0,70,1,80,2,50,3,50,4,0,0,0,0,0,0,0,0,0,0,0,0}{125,0,330,1,220,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{95,0,95,1,70,2,50,3,80,4,35,5,35,6,65,7,150,8,0,0,0,0}{735,436}"
+	  param_val		  "{0,0,0,0,0,0}"
+	  clk_val		  "[2,0,0.5000]"
+	  ce_val		  "[1,0]"
+	  blk_ver		  "9.1.RTM"
+	  blk_conf		  "0"
+	  user_conv		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "yout"
+	  Position		  [945, 258, 975, 272]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "x"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "biquad_IIR_1_1"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "biquad_IIR_1_2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 145]
+	    DstBlock		    "Scope"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [120, 0; 0, 30]
+	  Branch {
+	    DstBlock		    "biquad_IIR_1_1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 210]
+	    DstBlock		    "Scope"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "biquad_IIR_1_2"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -30; 10, 0]
+	  Branch {
+	    DstBlock		    "yout"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 275; -420, 0; 0, -90]
+	    DstBlock		    "Scope"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "b10_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "a12_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "a11_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "b12_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_2"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "b10_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_2"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "a12_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "a11_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "b11_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_2"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "b12_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_1"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "b11_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_1_1"
+	  DstPort		  5
+	}
+	Annotation {
+	  Position		  [539, 195]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	}
+	Annotation {
+	  Name			  "Verilog"
+	  Position		  [379, 187]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.874510]"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	  FontAngle		  "italic"
+	}
+	Annotation {
+	  Name			  "Verilog"
+	  Position		  [809, 187]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.874510]"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	  FontAngle		  "italic"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "IIR_2nd_stage"
+      Ports		      [1, 1]
+      Position		      [240, 63, 315, 127]
+      BackgroundColor	      "[0.941176, 0.980392, 1.000000]"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      System {
+	Name			"IIR_2nd_stage"
+	Location		[2, 74, 1221, 724]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	212
+	ScreenColor		"[1.000000, 1.000000, 0.874510]"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "x"
+	  Position		  [55, 293, 85, 307]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain3"
+	  Position		  [770, 284, 820, 316]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Gain			  "0.5"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  Ports			  [3]
+	  Position		  [650, 419, 680, 451]
+	  BackgroundColor	  "cyan"
+	  Floating		  off
+	  Location		  [146, 305, 1162, 962]
+	  Open			  off
+	  NumInputPorts		  "3"
+	  ZoomMode		  "xonly"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "Input"
+	    axes2		    "Internal"
+	    axes3		    "Output"
+	  }
+	  YMin			  "-0.025~-0.025~-0.02"
+	  YMax			  "0.025~0.03~0.03"
+	  SaveName		  "ScopeData4"
+	  DataFormat		  "StructureWithTime"
+	  SampleTime		  "0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "a11_1"
+	  Position		  [150, 135, 240, 165]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "a11_2"
+	  Position		  [625, 135, 715, 165]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "a12_1"
+	  Position		  [260, 164, 350, 196]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "-0.17157288"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "a12_2"
+	  Position		  [735, 164, 825, 196]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "-0.17157288"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b10_1"
+	  Position		  [150, 194, 240, 226]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.29289323"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b10_2"
+	  Position		  [625, 194, 715, 226]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.29289323"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b11_1"
+	  Position		  [260, 225, 350, 255]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "-0.58578646"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b11_2"
+	  Position		  [735, 224, 825, 256]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.58578646"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b12_1"
+	  Position		  [150, 256, 240, 284]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.29289323"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "b12_2"
+	  Position		  [625, 255, 715, 285]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Value			  "0.29289323"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "biquad_IIR_2_1"
+	  Ports			  [6, 1]
+	  Position		  [420, 135, 560, 315]
+	  BackgroundColor	  "[0.941176, 0.980392, 1.000000]"
+	  Priority		  "1"
+	  SourceBlock		  "aldec_ahdl/HDL Black-Box"
+	  SourceType		  "Active-HDL Block"
+	  module_m		  "biquad_post_synth"
+	  ports_cfg		  "{a11,0,8,0,7,1,0,0,0,0,0,0}{a12,0,8,0,7,1,0,0,0,0,0,0}{b10,0,8,0,7,1,0,0,0,0,0,0}{b11,0,8,0,7,1,0,0,0,0,0,0}{b12,0,8,0,7,1,0,0,0,0,0,0}{x,0,16,0,15,1,0,0,0,0,0,0}{ce,4,1,0,0,1,8,0,0,1,0,0}{clk,3,1,0,0,1,8,0,0,1,0,0}{nreset,5,1,0,0,1,8,0,0,1,0,0}{valid,5,1,0,0,1,8,0,0,1,0,0}{yout,1,16,0,15,clk,0,0,0,0,0,0}"
+	  clocks		  "{7,2,0,0.5000,0}"
+	  ces			  "{6,7,1,0,1}"
+	  stims			  "{8,0 0s 1 2s}{9,0 0s 1 2s}"
+	  hdl_src		  "C:\\Program Files\\Aldec\\Active-HDL 7.2\\Vlib\\VIRTEX\\src\\virtex.vhd;C:\\Program Files\\Aldec\\Active-HDL 7.2\\Vlib\\unisim\\src\\unisim_vital.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\biquad_iir\\src\\post-synthesis\\biquad_post_synth.edf"
+	  block_mask		  "image(imread('HDLBlackBox.jpg'),'center'); disp('biquad_post_synth');port_label('input', 1, 'a11');port_label('input', 2, 'a12');port_label('input', 3, 'b10');port_label('input', 4, 'b11');port_label('input', 5, 'b12');port_label('input', 6, 'x');port_label('output', 1, 'yout');"
+	  config		  "[6,1]"
+	  inp			  "[6, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 16, 15, 0, 0, 0]"
+	  out			  "[1, 0, 16, 15, 0, 0, 0]"
+	  sampling		  "[0,1,1,1,1,1,1,2]"
+	  active_page		  "{0}{80,0,35,1,65,2,70,3,70,4,60,5,60,6,50,7,35,8,35,9,119,10}{103,0,55,1,70,2,75,3,75,4,45,5,45,6,45,7,165,8,0,0,0,0}{165,0,130,1,190,2,190,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{81,0,60,1,60,2,70,3,60,4,0,0,0,0,0,0,0,0,0,0,0,0}{83,0,70,1,80,2,50,3,50,4,0,0,0,0,0,0,0,0,0,0,0,0}{125,0,330,1,220,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{95,0,95,1,70,2,50,3,80,4,35,5,35,6,65,7,150,8,0,0,0,0}{735,436}"
+	  param_val		  "0"
+	  clk_val		  "[2,0,0.5000]"
+	  ce_val		  "[1,0]"
+	  blk_ver		  "9.1.RTM"
+	  blk_conf		  "0"
+	  user_conv		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "biquad_IIR_2_2"
+	  Ports			  [6, 1]
+	  Position		  [870, 127, 1010, 323]
+	  BackgroundColor	  "[0.941176, 0.980392, 1.000000]"
+	  Priority		  "1"
+	  SourceBlock		  "aldec_ahdl/HDL Black-Box"
+	  SourceType		  "Active-HDL Block"
+	  module_m		  "biquad_post_synth"
+	  ports_cfg		  "{a11,0,8,0,7,1,0,0,0,0,0,0}{a12,0,8,0,7,1,0,0,0,0,0,0}{b10,0,8,0,7,1,0,0,0,0,0,0}{b11,0,8,0,7,1,0,0,0,0,0,0}{b12,0,8,0,7,1,0,0,0,0,0,0}{x,0,16,0,15,1,0,0,0,0,0,0}{ce,4,1,0,0,1,8,0,0,1,0,0}{clk,3,1,0,0,1,8,0,0,1,0,0}{nreset,5,1,0,0,1,8,0,0,1,0,0}{valid,5,1,0,0,1,8,0,0,1,0,0}{yout,1,16,0,15,clk,0,0,0,0,0,0}"
+	  clocks		  "{7,2,0,0.5000,0}"
+	  ces			  "{6,7,1,0,1}"
+	  stims			  "{8,0 0s 1 2s}{9,0 0s 1 2s}"
+	  hdl_src		  "C:\\Program Files\\Aldec\\Active-HDL 7.2\\Vlib\\VIRTEX\\src\\virtex.vhd;C:\\Program Files\\Aldec\\Active-HDL 7.2\\Vlib\\unisim\\src\\unisim_vital.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\biquad_iir\\src\\post-synthesis\\biquad_post_synth.edf"
+	  block_mask		  "image(imread('HDLBlackBox.jpg'),'center'); disp('biquad_post_synth');port_label('input', 1, 'a11');port_label('input', 2, 'a12');port_label('input', 3, 'b10');port_label('input', 4, 'b11');port_label('input', 5, 'b12');port_label('input', 6, 'x');port_label('output', 1, 'yout');"
+	  config		  "[6,1]"
+	  inp			  "[6, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 8, 7, 0, 0, 0, 0, 16, 15, 0, 0, 0]"
+	  out			  "[1, 0, 16, 15, 0, 0, 0]"
+	  sampling		  "[0,1,1,1,1,1,1,2]"
+	  active_page		  "{0}{80,0,35,1,65,2,70,3,70,4,60,5,60,6,50,7,35,8,35,9,119,10}{103,0,55,1,70,2,75,3,75,4,45,5,45,6,45,7,165,8,0,0,0,0}{165,0,130,1,190,2,190,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{81,0,60,1,60,2,70,3,60,4,0,0,0,0,0,0,0,0,0,0,0,0}{83,0,70,1,80,2,50,3,50,4,0,0,0,0,0,0,0,0,0,0,0,0}{125,0,330,1,220,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{95,0,95,1,70,2,50,3,80,4,35,5,35,6,65,7,150,8,0,0,0,0}{735,436}"
+	  param_val		  "0"
+	  clk_val		  "[2,0,0.5000]"
+	  ce_val		  "[1,0]"
+	  blk_ver		  "9.1.RTM"
+	  blk_conf		  "0"
+	  user_conv		  "0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "yout"
+	  Position		  [1105, 218, 1135, 232]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "biquad_IIR_2_1"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 75]
+	  Branch {
+	    Points		    [0, 135]
+	    DstBlock		    "Scope"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Labels		    [1, 0]
+	    DstBlock		    "Gain3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "biquad_IIR_2_2"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  Branch {
+	    Points		    [0, 245; -470, 0; 0, -25]
+	    DstBlock		    "Scope"
+	    DstPort		    3
+	  }
+	  Branch {
+	    DstBlock		    "yout"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "b10_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "a12_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "a11_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "b12_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_2"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "b10_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "a12_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "a11_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "b11_2"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_2"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "b12_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_1"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "b11_1"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Gain3"
+	  SrcPort		  1
+	  DstBlock		  "biquad_IIR_2_2"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "x"
+	  SrcPort		  1
+	  Points		  [250, 0; 0, 0]
+	  Branch {
+	    Points		    [0, 125]
+	    DstBlock		    "Scope"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "biquad_IIR_2_1"
+	    DstPort		    6
+	  }
+	}
+	Annotation {
+	  Position		  [664, 155]
+	}
+	Annotation {
+	  Name			  "EDIF"
+	  Position		  [939, 117]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.874510]"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	  FontAngle		  "italic"
+	}
+	Annotation {
+	  Name			  "EDIF"
+	  Position		  [494, 117]
+	  BackgroundColor	  "[1.000000, 1.000000, 0.874510]"
+	  FontName		  "Arial"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	  FontAngle		  "italic"
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "IIR_FFT_HDL"
+      Ports		      [2, 2]
+      Position		      [540, 73, 640, 157]
+      BackgroundColor	      "[0.941176, 0.980392, 1.000000]"
+      Priority		      "1"
+      SourceBlock	      "aldec_ahdl/HDL Black-Box"
+      SourceType	      "Active-HDL Block"
+      module_m		      "top_fft"
+      ports_cfg		      "{ce,4,1,0,0,1,8,0,0,1,0,0}{clk,3,1,0,0,1,8,0,0,1,0,0}{inv,5,1,0,0,1,8,0,0,1,0,0}{rst,5,1,0,0,1,8,0,0,1,0,0}{start,5,1,0,0,1,8,0,0,1,0,0}{Iin,0,-1,0,0,1,0,0,0,0,0,0}{Qin,0,-1,0,0,1,0,0,0,0,0,0}{Iout,1,-1,0,0,clk,0,0,0,0,0,0}{Qout,1,-1,0,0,clk,0,0,0,0,0,0}"
+      params		      "{WIDTH,16,NATURAL}{POINT,64,NATURAL}{STAGE,3,NATURAL}"
+      clocks		      "{1,2,0,0.5000,0}"
+      ces		      "{0,1,1,0,1}"
+      stims		      "{3,1 0s 0 7s}{4,0 0s 1 8s 0 10s}{2,0}"
+      hdl_src		      "c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\address.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\blockdram.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\div4limit.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\cfft4.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\rofactor.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\p2r_cordic.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\sc_corproc.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\mulfactor.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\cfft.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\ram\\ram.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\compile\\control.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\compile\\top_fft.vhd"
+      block_mask	      "image(imread('HDLBlackBox.jpg'),'center'); disp('top_fft');port_label('input', 1, 'Iin');port_label('input', 2, 'Qin');port_label('output', 1, 'Iout');port_label('output', 2, 'Qout');"
+      config		      "[2,2]"
+      inp		      "[2, 0, abs(16-1 - 0) + 1, 0, 0, 0, 0, 0, abs(16-1 - 0) + 1, 0, 0, 0, 0]"
+      out		      "[2, 0, abs(16+1 - 0) + 1, 0, 0, 0, 0, 0, abs(16+1 - 0) + 1, 0, 0, 0, 0]"
+      sampling		      "[0,1,1,2,2]"
+      active_page	      "{0}{80,0,35,1,65,2,70,3,70,4,60,5,60,6,50,7,35,8,35,9,119,10}{103,0,55,1,70,2,75,3,75,4,45,5,45,6,45,7,165,8,0,0,0,0}{165,0,130,1,190,2,190,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{81,0,60,1,60,2,70,3,60,4,0,0,0,0,0,0,0,0,0,0,0,0}{83,0,70,1,80,2,50,3,50,4,0,0,0,0,0,0,0,0,0,0,0,0}{125,0,330,1,220,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{95,0,95,1,70,2,50,3,80,4,35,5,35,6,65,7,150,8,0,0,0,0}{735,436}"
+      param_val		      "{16,-1,64,-1,3,-1}"
+      clk_val		      "[2,0,0.5000]"
+      ce_val		      "[1,0]"
+      blk_ver		      "9.1.RTM"
+      blk_conf		      "0"
+      user_conv		      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "IIR_MagPh"
+      Ports		      [2]
+      Position		      [950, 74, 995, 156]
+      BackgroundColor	      "cyan"
+      Floating		      off
+      Location		      [6, 53, 1022, 710]
+      Open		      off
+      NumInputPorts	      "2"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"Magnitude"
+	axes2			"Phase"
+      }
+      YMin		      "0~-2"
+      YMax		      "11500~3.25"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "IIR_ReIm"
+      Ports		      [2]
+      Position		      [540, 186, 570, 219]
+      BackgroundColor	      "cyan"
+      Floating		      off
+      Location		      [34, 116, 1050, 773]
+      Open		      off
+      NumInputPorts	      "2"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      YMin		      "-25000~-1"
+      YMax		      "25000~1"
+      SaveName		      "ScopeData19"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "IIR_sp_ReIm"
+      Ports		      [2]
+      Position		      [695, 186, 725, 219]
+      BackgroundColor	      "cyan"
+      Floating		      off
+      Location		      [6, 53, 1022, 710]
+      Open		      off
+      NumInputPorts	      "2"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"Re"
+	axes2			"Im"
+      }
+      YMin		      "-35000~-35000"
+      YMax		      "35000~35000"
+      SaveName		      "ScopeData5"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Pure_FFT_HDL"
+      Ports		      [2, 2]
+      Position		      [540, 268, 640, 352]
+      BackgroundColor	      "[0.941176, 0.980392, 1.000000]"
+      Priority		      "1"
+      SourceBlock	      "aldec_ahdl/HDL Black-Box"
+      SourceType	      "Active-HDL Block"
+      module_m		      "top_fft"
+      ports_cfg		      "{ce,4,1,0,0,1,8,0,0,1,0,0}{clk,3,1,0,0,1,8,0,0,1,0,0}{inv,5,1,0,0,1,8,0,0,1,0,0}{rst,5,1,0,0,1,8,0,0,1,0,0}{start,5,1,0,0,1,8,0,0,1,0,0}{Iin,0,-1,0,0,1,0,0,0,0,0,0}{Qin,0,-1,0,0,1,0,0,0,0,0,0}{Iout,1,-1,0,0,clk,0,0,0,0,0,0}{Qout,1,-1,0,0,clk,0,0,0,0,0,0}"
+      params		      "{WIDTH,16,NATURAL}{POINT,64,NATURAL}{STAGE,3,NATURAL}"
+      clocks		      "{1,2,0,0.5000,0}"
+      ces		      "{0,1,1,0,1}"
+      stims		      "{3,1 0s 0 7s}{4,0 0s 1 8s 0 10s}{2,0}"
+      hdl_src		      "c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\address.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\blockdram.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\div4limit.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\cfft4.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\rofactor.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\p2r_cordic.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\sc_corproc.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\mulfactor.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\cfft\\cfft.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\src\\ram\\ram.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\compile\\control.vhd;c:\\My_Designs\\Samples_73\\simulink_mixed_example\\fft\\compile\\top_fft.vhd"
+      block_mask	      "image(imread('HDLBlackBox.jpg'),'center'); disp('top_fft');port_label('input', 1, 'Iin');port_label('input', 2, 'Qin');port_label('output', 1, 'Iout');port_label('output', 2, 'Qout');"
+      config		      "[2,2]"
+      inp		      "[2, 0, abs(16-1 - 0) + 1, 0, 0, 0, 0, 0, abs(16-1 - 0) + 1, 0, 0, 0, 0]"
+      out		      "[2, 0, abs(16+1 - 0) + 1, 0, 0, 0, 0, 0, abs(16+1 - 0) + 1, 0, 0, 0, 0]"
+      sampling		      "[0,1,1,2,2]"
+      active_page	      "{0}{80,0,35,1,65,2,70,3,70,4,60,5,60,6,50,7,35,8,35,9,119,10}{103,0,55,1,70,2,75,3,75,4,45,5,45,6,45,7,165,8,0,0,0,0}{165,0,130,1,190,2,190,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{81,0,60,1,60,2,70,3,60,4,0,0,0,0,0,0,0,0,0,0,0,0}{83,0,70,1,80,2,50,3,50,4,0,0,0,0,0,0,0,0,0,0,0,0}{125,0,330,1,220,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}{95,0,95,1,70,2,50,3,80,4,35,5,35,6,65,7,150,8,0,0,0,0}{735,436}"
+      param_val		      "{16,-1,64,-1,3,-1}"
+      clk_val		      "[2,0,0.5000]"
+      ce_val		      "[1,0]"
+      blk_ver		      "9.1.RTM"
+      blk_conf		      "0"
+      user_conv		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Zero"
+      Position		      [435, 120, 465, 150]
+      BackgroundColor	      "[1.000000, 0.792157, 0.584314]"
+      Value		      "0"
+      OutDataTypeMode	      "double"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "mag_comp"
+      Ports		      [2]
+      Position		      [950, 181, 995, 239]
+      BackgroundColor	      "cyan"
+      Floating		      off
+      Location		      [6, 53, 1022, 710]
+      Open		      off
+      NumInputPorts	      "2"
+      List {
+	ListType		AxesTitles
+	axes1			"IIR Magnitude"
+	axes2			"Pure Magnitude"
+      }
+      TimeRange		      "370"
+      YMin		      "0~0"
+      YMax		      "12000~7000"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "nyq2spec_1"
+      Ports		      [2, 2]
+      Position		      [745, 73, 825, 157]
+      BackgroundColor	      "[1.000000, 0.792157, 0.584314]"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      System {
+	Name			"nyq2spec_1"
+	Location		[308, 193, 806, 493]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"[1.000000, 1.000000, 0.874510]"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Re"
+	  Position		  [110, 103, 140, 117]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Im"
+	  Position		  [110, 168, 140, 182]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  ComplexToMagnitudeAngle
+	  Name			  "Complex to\nMagnitude-Angle"
+	  Ports			  [1, 2]
+	  Position		  [305, 133, 335, 162]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Output		  "Magnitude and angle"
+	}
+	Block {
+	  BlockType		  RealImagToComplex
+	  Name			  "Real-Imag to\nComplex"
+	  Ports			  [2, 1]
+	  Position		  [205, 133, 235, 162]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "module"
+	  Position		  [405, 103, 435, 117]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "phase"
+	  Position		  [405, 168, 435, 182]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Re"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 30]
+	  DstBlock		  "Real-Imag to\nComplex"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Real-Imag to\nComplex"
+	  SrcPort		  1
+	  DstBlock		  "Complex to\nMagnitude-Angle"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Complex to\nMagnitude-Angle"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, -30]
+	  DstBlock		  "module"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Im"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -20]
+	  DstBlock		  "Real-Imag to\nComplex"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Complex to\nMagnitude-Angle"
+	  SrcPort		  2
+	  Points		  [30, 0; 0, 20]
+	  DstBlock		  "phase"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "nyq2spec_2"
+      Ports		      [2, 2]
+      Position		      [745, 272, 830, 348]
+      BackgroundColor	      "[1.000000, 0.792157, 0.584314]"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      System {
+	Name			"nyq2spec_2"
+	Location		[308, 193, 806, 493]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"[1.000000, 1.000000, 0.874510]"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Re"
+	  Position		  [110, 103, 140, 117]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Im"
+	  Position		  [110, 168, 140, 182]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  ComplexToMagnitudeAngle
+	  Name			  "Complex to\nMagnitude-Angle"
+	  Ports			  [1, 2]
+	  Position		  [305, 133, 335, 162]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Output		  "Magnitude and angle"
+	}
+	Block {
+	  BlockType		  RealImagToComplex
+	  Name			  "Real-Imag to\nComplex"
+	  Ports			  [2, 1]
+	  Position		  [205, 133, 235, 162]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "module"
+	  Position		  [405, 103, 435, 117]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "phase"
+	  Position		  [405, 168, 435, 182]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "Re"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 30]
+	  DstBlock		  "Real-Imag to\nComplex"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Real-Imag to\nComplex"
+	  SrcPort		  1
+	  DstBlock		  "Complex to\nMagnitude-Angle"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Complex to\nMagnitude-Angle"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, -30]
+	  DstBlock		  "module"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Im"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -20]
+	  DstBlock		  "Real-Imag to\nComplex"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Complex to\nMagnitude-Angle"
+	  SrcPort		  2
+	  Points		  [30, 0; 0, 20]
+	  DstBlock		  "phase"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "pure_MagPh"
+      Ports		      [2]
+      Position		      [950, 268, 995, 352]
+      BackgroundColor	      "cyan"
+      Floating		      off
+      Location		      [8, 74, 919, 653]
+      Open		      off
+      NumInputPorts	      "2"
+      List {
+	ListType		AxesTitles
+	axes1			"Magnitude"
+	axes2			"Phase"
+      }
+      TimeRange		      "370"
+      YMin		      "-3.5~-5"
+      YMax		      "3.5~5"
+      SaveName		      "ScopeData24"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "pure_ReIm"
+      Ports		      [2]
+      Position		      [540, 406, 570, 439]
+      BackgroundColor	      "cyan"
+      Floating		      off
+      Location		      [6, 53, 1022, 710]
+      Open		      off
+      NumInputPorts	      "2"
+      List {
+	ListType		AxesTitles
+	axes1			"Re"
+	axes2			"Im"
+      }
+      YMin		      "-1200~-1"
+      YMax		      "1200~1"
+      SaveName		      "ScopeData21"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "pure_real"
+      Ports		      [1]
+      Position		      [225, 183, 255, 217]
+      BackgroundColor	      "cyan"
+      Floating		      off
+      Location		      [6, 53, 1022, 710]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "-450"
+      YMax		      "450"
+      SaveName		      "ScopeData13"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "pure_sp_ReIm"
+      Ports		      [2]
+      Position		      [695, 411, 725, 444]
+      BackgroundColor	      "cyan"
+      Floating		      off
+      Location		      [6, 53, 1022, 710]
+      Open		      off
+      NumInputPorts	      "2"
+      List {
+	ListType		AxesTitles
+	axes1			"Re"
+	axes2			"Im"
+      }
+      YMin		      "-1~-5"
+      YMax		      "1~5"
+      SaveName		      "ScopeData20"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "quasi_white"
+      Ports		      [0, 1]
+      Position		      [25, 70, 75, 120]
+      BackgroundColor	      "[1.000000, 0.792157, 0.584314]"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      System {
+	Name			"quasi_white"
+	Location		[15, 74, 568, 744]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	212
+	ScreenColor		"[1.000000, 1.000000, 0.874510]"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"63"
+	Block {
+	  BlockType		  Sin
+	  Name			  "1/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 445, 50, 475]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.09817"
+	  Samples		  "0.0625"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "10/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 335, 235, 365]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.98175"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "11/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 695, 50, 725]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.07992"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "12/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 125, 50, 155]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.1781"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "13/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 745, 50, 775]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.27627"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "14/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 385, 235, 415]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.37445"
+	  Samples		  "6"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "15/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 795, 50, 825]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.47262"
+	  Samples		  "0.0625"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "16/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 175, 50, 205]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.5708"
+	  Samples		  "6"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "17/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 655, 235, 685]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.66897"
+	  Samples		  "0.125"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "18/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 435, 235, 465]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.76715"
+	  Samples		  "0.3125"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "19/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 705, 235, 735]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.86532"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "2/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 235, 235, 265]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.19635"
+	  Samples		  "0.0625"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "20/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 225, 50, 255]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "1.9635"
+	  Samples		  "0.3125"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "21/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 755, 235, 785]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.06167"
+	  Samples		  "6"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "22/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 485, 235, 515]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.15984"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "23/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 805, 235, 835]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.25802"
+	  Samples		  "0.3125"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "24/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 275, 50, 305]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.3562"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "25/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 855, 235, 885]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.45437"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "26/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 535, 235, 565]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.55254"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "27/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 905, 235, 935]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.65072"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "28/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 325, 50, 355]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.74889"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "29/64\n"
+	  Ports			  [0, 1]
+	  Position		  [205, 955, 235, 985]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.84707"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "3/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 495, 50, 525]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.29452"
+	  Samples		  "0.125"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "30/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 585, 235, 615]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "2.94524"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "31/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 1005, 235, 1035]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "3.04342"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "32/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 375, 50, 405]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "3.14159"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "4/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 25, 50, 55]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.3927"
+	  Samples		  "0.0625"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "5/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 545, 50, 575]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.49087"
+	  Samples		  "4"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "6/64"
+	  Ports			  [0, 1]
+	  Position		  [205, 285, 235, 315]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.58905"
+	  Samples		  "0.125"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "7/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 595, 50, 625]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.68722"
+	  Samples		  "6"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "8/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 75, 50, 105]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.7854"
+	  Samples		  "0.125"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sin
+	  Name			  "9/64"
+	  Ports			  [0, 1]
+	  Position		  [20, 645, 50, 675]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  SineType		  "Time based"
+	  Frequency		  "0.88357"
+	  Samples		  "0.3125"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [8, 1]
+	  Position		  [115, 14, 140, 416]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  ShowName		  off
+	  Inputs		  "++++++++"
+	  CollapseMode		  "All dimensions"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [8, 1]
+	  Position		  [295, 230, 320, 620]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  ShowName		  off
+	  Inputs		  "++++++++"
+	  CollapseMode		  "All dimensions"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [8, 1]
+	  Position		  [115, 425, 140, 845]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  ShowName		  off
+	  Inputs		  "++++++++"
+	  CollapseMode		  "All dimensions"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  Ports			  [8, 1]
+	  Position		  [295, 650, 320, 1040]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  ShowName		  off
+	  Inputs		  "++++++++"
+	  CollapseMode		  "All dimensions"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum5"
+	  Ports			  [4, 1]
+	  Position		  [420, 108, 450, 952]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  ShowName		  off
+	  Inputs		  "++++"
+	  CollapseMode		  "All dimensions"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out"
+	  Position		  [590, 524, 640, 536]
+	  BackgroundColor	  "[1.000000, 0.792157, 0.584314]"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "24/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "20/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "16/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "12/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "8/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "4/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "22/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "18/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "14/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "10/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "6/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "2/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "28/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "26/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "11/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "9/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "7/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "5/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "3/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "13/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "1/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "32/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "30/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "15/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "25/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "23/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "21/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "19/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "17/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "27/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "29/64\n"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "31/64"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "Sum5"
+	  SrcPort		  1
+	  DstBlock		  "Out"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "IIR_FFT_HDL"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	Points			[0, 100]
+	DstBlock		"IIR_sp_ReIm"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"nyq2spec_1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "IIR_FFT_HDL"
+      SrcPort		      2
+      Points		      [15, 0]
+      Branch {
+	Points			[0, 75]
+	DstBlock		"IIR_sp_ReIm"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"nyq2spec_1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "nyq2spec_1"
+      SrcPort		      1
+      Points		      [45, 0]
+      Branch {
+	DstBlock		"IIR_MagPh"
+	DstPort			1
+      }
+      Branch {
+	Labels			[2, 0]
+	Points			[0, 100]
+	DstBlock		"mag_comp"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "nyq2spec_1"
+      SrcPort		      2
+      DstBlock		      "IIR_MagPh"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Zero"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	DstBlock		"IIR_FFT_HDL"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 75]
+	Branch {
+	  DstBlock		  "IIR_ReIm"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 120]
+	  Branch {
+	    Points		    [0, 100]
+	    DstBlock		    "pure_ReIm"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Pure_FFT_HDL"
+	    DstPort		    2
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "quasi_white"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	Points			[0, 105]
+	Branch {
+	  DstBlock		  "pure_real"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, -105]
+	  DstBlock		  "IIR_1st_stage"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[0, 195]
+	DstBlock		"Gain2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "nyq2spec_2"
+      SrcPort		      1
+      Points		      [40, 0]
+      Branch {
+	DstBlock		"pure_MagPh"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -65]
+	DstBlock		"mag_comp"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      Points		      [75, 0]
+      Branch {
+	Points			[0, 100]
+	DstBlock		"IIR_ReIm"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"IIR_FFT_HDL"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "IIR_1st_stage"
+      SrcPort		      1
+      DstBlock		      "IIR_2nd_stage"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pure_FFT_HDL"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	DstBlock		"nyq2spec_2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 130]
+	DstBlock		"pure_sp_ReIm"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Gain2"
+      SrcPort		      1
+      Points		      [0, 0; 75, 0]
+      Branch {
+	Points			[0, 125]
+	DstBlock		"pure_ReIm"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Pure_FFT_HDL"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Pure_FFT_HDL"
+      SrcPort		      2
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"nyq2spec_2"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 105]
+	DstBlock		"pure_sp_ReIm"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "nyq2spec_2"
+      SrcPort		      2
+      DstBlock		      "pure_MagPh"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "IIR_2nd_stage"
+      SrcPort		      1
+      DstBlock		      "Gain1"
+      DstPort		      1
+    }
+    Annotation {
+      Name		      "Verilog"
+      Position		      [174, 52]
+      BackgroundColor	      "[1.000000, 1.000000, 0.874510]"
+      FontName		      "Arial"
+      FontSize		      12
+      FontWeight	      "bold"
+      FontAngle		      "italic"
+    }
+    Annotation {
+      Name		      "EDIF"
+      Position		      [279, 52]
+      BackgroundColor	      "[1.000000, 1.000000, 0.874510]"
+      FontName		      "Arial"
+      FontSize		      12
+      FontWeight	      "bold"
+      FontAngle		      "italic"
+    }
+    Annotation {
+      Name		      "VHDL"
+      Position		      [589, 257]
+      BackgroundColor	      "[1.000000, 1.000000, 0.874510]"
+      FontName		      "Arial"
+      FontSize		      12
+      FontWeight	      "bold"
+      FontAngle		      "italic"
+    }
+    Annotation {
+      Name		      "VHDL"
+      Position		      [589, 62]
+      BackgroundColor	      "[1.000000, 1.000000, 0.874510]"
+      FontName		      "Arial"
+      FontSize		      12
+      FontWeight	      "bold"
+      FontAngle		      "italic"
+    }
+  }
+}

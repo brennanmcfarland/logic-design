@@ -1,0 +1,121 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+All-Verilog
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate Verilog module 'design2.testbench'.
+# Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: VSIM: cannot select specified top-level
+# ELBREAD: Elaboration process.
+# ELBREAD: You do not have a valid license to run simulation with SLP.
+# Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: You do not have a valid license to run simulation with SLP.
+# Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate Verilog module 'design2.testbench'.
+# Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: VSIM: cannot select specified top-level
+# ELBREAD: Elaboration process.
+# ELBREAD: You do not have a valid license to run simulation with SLP.
+# Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: You do not have a valid license to run simulation with SLP.
+# Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: You do not have a valid license to simulate Verilog module 'design2.testbench'.
+# Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: VSIM: cannot select specified top-level
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench testbench
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work design2 $dsn/src/adder.v $dsn/src/testbench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Info: VCP2876 adder.v : (5, 14): Implicit net declaration, symbol a_ has not been declared in module adder.
+# Info: VCP2876 adder.v : (6, 14): Implicit net declaration, symbol b_ has not been declared in module adder.
+# Info: VCP2876 adder.v : (7, 15): Implicit net declaration, symbol ab has not been declared in module adder.
+# Info: VCP2876 adder.v : (8, 17): Implicit net declaration, symbol a_b_ has not been declared in module adder.
+# Info: VCP2876 adder.v : (9, 20): Implicit net declaration, symbol u1_cin_ has not been declared in module adder.
+# Info: VCP2876 testbench.v : (7, 26): Implicit net declaration, symbol sum has not been declared in module testbench.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: testbench.
+# $root top modules: testbench.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'adder' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 10ps.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library 'C:\Aldec\Active-HDL-Student-Edition\bin\systf.dll'
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 6 (60.00%) primitives and 4 (40.00%) other processes in SLP
+# SLP: 12 (80.00%) signals in SLP and 3 (20.00%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6040 kB (elbread=1280 elab2=4615 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location c:\Users\Sir\Documents\HDLDesigns\Design2\design2\src\wave.asdb
+#  6:17 PM, Wednesday, October 12, 2016
+#  Simulation has been initialized
+run
+# KERNEL:                  TIME |  A B Ci | sum | Co
+# KERNEL:                    0     0 0  0    z     0
+# KERNEL:                   10     0 0  1    z     0
+# KERNEL:                   20     0 1  0    z     0
+# KERNEL:                   30     0 1  1    z     1
+# KERNEL:                   40     1 0  0    z     0
+# KERNEL:                   50     1 0  1    z     1
+# KERNEL:                   60     1 1  0    z     1
+# KERNEL:                   70     1 1  1    z     1
+# RUNTIME: Info: RUNTIME_0068 testbench.v (17): $finish called.
+# KERNEL: Time: 80 ns,  Iteration: 0,  Instance: /testbench,  Process: @INITIAL#9_1@.
+# KERNEL: stopped at time: 80 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.

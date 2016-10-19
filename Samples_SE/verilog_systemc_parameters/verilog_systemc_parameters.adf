@@ -1,0 +1,131 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=verilog_systemc_parameters
+
+[Library]
+verilog_systemc_parameters=.\verilog_systemc_parameters.LIB
+
+[$LibMap$]
+verilog_systemc_parameters=.
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+VerilogDirsChanged=1
+SimulationAccessReadModules=
+SimulationAccessReadWriteModules=
+SimulationAccessReadPaths=
+SimulationAccessReadWritePaths=
+SimulationAccessNetsPaths=
+SimulationAccessNetsModules=
+
+[Groups]
+systemc2verilog=1
+systemc2verilog\integer=1
+systemc2verilog\real=1
+systemc2verilog\string=1
+systemc2verilog\vector=1
+verilog2systemc=1
+verilog2systemc\integer=1
+verilog2systemc\real=1
+verilog2systemc\string=1
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[LocalVhdlSets]
+CompileWithDebug=0
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+
+[LocalVerilogSets]
+EnableDebug=0
+EnableSLP=1
+EnableExpressionCoverage=0
+VerilogLanguage=5
+Strict=0
+Strict2001=
+SystemVerilog3=
+StrictLRMMode=
+VerilogNoSpecify=0
+WarningPrnLevel=1
+ErrorOutputLimit=0
+OptimizationLevel=2
+ProtectLevel=0
+AdditionalOptions=
+
+[Files]
+/readme.txt=-1
+systemc2verilog\integer/runme.do=-1
+systemc2verilog\integer/systemc.cpp=-1
+systemc2verilog\integer/verilog.v=-1
+systemc2verilog\real/runme.do=-1
+systemc2verilog\real/systemc.cpp=-1
+systemc2verilog\real/verilog.v=-1
+systemc2verilog\string/runme.do=-1
+systemc2verilog\string/systemc.cpp=-1
+systemc2verilog\string/verilog.v=-1
+systemc2verilog\vector/runme.do=-1
+systemc2verilog\vector/systemc.cpp=-1
+systemc2verilog\vector/verilog.v=-1
+verilog2systemc\integer/runme.do=-1
+verilog2systemc\integer/systemc.cpp=-1
+verilog2systemc\integer/verilog.v=-1
+verilog2systemc\real/runme.do=-1
+verilog2systemc\real/systemc.cpp=-1
+verilog2systemc\real/verilog.v=-1
+verilog2systemc\string/runme.do=-1
+verilog2systemc\string/systemc.cpp=-1
+verilog2systemc\string/verilog.v=-1
+
+[Files.Data]
+.\src\readme.txt=Text File
+.\src\systemc2verilog\integer\runme.do=Macro
+.\src\systemc2verilog\integer\systemc.cpp=C++ Source Code
+.\src\systemc2verilog\integer\verilog.v=Verilog Source Code
+.\src\systemc2verilog\real\runme.do=Macro
+.\src\systemc2verilog\real\systemc.cpp=C++ Source Code
+.\src\systemc2verilog\real\verilog.v=Verilog Source Code
+.\src\systemc2verilog\string\runme.do=Macro
+.\src\systemc2verilog\string\systemc.cpp=C++ Source Code
+.\src\systemc2verilog\string\verilog.v=Verilog Source Code
+.\src\systemc2verilog\vector\runme.do=Macro
+.\src\systemc2verilog\vector\systemc.cpp=C++ Source Code
+.\src\systemc2verilog\vector\verilog.v=Verilog Source Code
+.\src\verilog2systemc\integer\runme.do=Macro
+.\src\verilog2systemc\integer\systemc.cpp=C++ Source Code
+.\src\verilog2systemc\integer\verilog.v=Verilog Source Code
+.\src\verilog2systemc\real\runme.do=Macro
+.\src\verilog2systemc\real\systemc.cpp=C++ Source Code
+.\src\verilog2systemc\real\verilog.v=Verilog Source Code
+.\src\verilog2systemc\string\runme.do=Macro
+.\src\verilog2systemc\string\systemc.cpp=C++ Source Code
+.\src\verilog2systemc\string\verilog.v=Verilog Source Code
+

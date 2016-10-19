@@ -1,0 +1,16 @@
+timestamp=1141309877191
+
+[pulse_gen]
+A/struct=24|.\src\pulse_gen.bde|10000|
+
+[~A]
+C:/ncsrc/Samples_73/1/SignalAgent/src/counter.v=0*0*521
+ModifyID=25
+Version=73
+
+[~MFT]
+0=0|0SignalAgent.mgf|985|0
+
+[~U]
+pulse_gen=11|0*985|
+

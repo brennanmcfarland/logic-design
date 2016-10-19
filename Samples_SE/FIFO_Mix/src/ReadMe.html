@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+
+
+  
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+  
+  
+  
+  <title>FIFO Mixed Design Readme</title></head>
+<body>
+
+
+
+
+<h2><font color="#000099"><i>FIFO_mix</i> Design</font></h2><h4><font color="#000099">Text and Graphical Design Entry,Verilog/VHDL/SystemC Simulation, Embedded PSL, Coverage(Code, Expression and Toggle) and Xtrace.</font> </h4>This design implements simple text transmission system implementing FIFO and RAM.
+
+
+
+
+<img style="width: 700px; height: 400px;" alt="Design Diagram" title="Diagram" src="IMG/FIFOmixed.png" height="400" vspace="7" width="700"><br>The design demonstrates the use of various design source formats and HDLs:<br>
+
+
+
+<ul>
+
+
+
+  <li>&nbsp;&nbsp;Block Diagram</li>
+
+
+
+  <li>&nbsp;&nbsp;State Diagram</li>
+
+
+
+  <li>&nbsp;&nbsp;SystemC</li>
+
+
+
+  <li>&nbsp;&nbsp;Verilog</li>
+
+
+
+  <li>&nbsp;&nbsp;VHDL</li>
+
+
+
+</ul>
+
+
+
+The SystemC module&nbsp;<b><i>sender</i></b> reads data from the&nbsp;<b><i>text.txt</i></b> file and
+sends it,&nbsp; one character per each rising clock edge, to its DATA
+output. Data generated &nbsp;by the&nbsp;<b><i>sender</i></b> is fed to the inputs of
+the&nbsp;<b><i>fifo</i></b> module (written in VHDL). <br>
+
+
+
+The Verilog module&nbsp;<b><i>ram</i></b> reads data from the&nbsp;<b><i>fifo</i></b> at slower clock
+speed. The Verilog module&nbsp;<b><i>counter</i></b> provides address for&nbsp;<b><i>ram</i></b> memory
+access.<br>
+
+
+
+State machine&nbsp;<b><i>control</i></b> synchronizes the work of&nbsp;<b><i>fifo</i></b>,&nbsp;<b><i>counter</i></b> and&nbsp;<b><i>ram</i></b>.<br>
+
+
+
+The complete system is described in the&nbsp;<b><i>top</i></b> block diagram, shown above. Testbench file <i><b>top_tb.vhd</b></i> is also provided.<br>
+
+
+
+<br><font color="#993399">Please note that simulation&nbsp;macros do not build SystemC
+module. Before the first run, or if you make any changes to&nbsp;<b><i>sender.h</i></b> or&nbsp;<b><i>sender.cpp</i></b>, remember
+to build the <b><i>sender.dll</i></b> module using provided configuration file (<b><i>sender.dlm</i></b>) or <i><b>BuildSC.do</b></i> script.</font><br>
+
+<br>
+
+Sample demonstration schedule:<br>
+
+<ol>
+
+  <li>Open and review <b><i>top.bde</i></b> diagram. Briefly explain function of the blocks. Push into the VHDL, Verilog or FSM blocks if interested.</li><li>If PSL properties/assertions and coverage are presented, open <i><b>fifo.vhd</b></i> and <i><b>counter.v</b></i> to demonstrate highlighted embedded PSL.</li><li>Open <b><i>sender.h</i></b> and notice declarations of <b><i>f</i></b> (input file handle), <b><i>snd</i></b> (synchronizing event), <b><i>prc_readsend</i></b> (<i>thread process</i> reading lines/sending characters) and <b><i>prc_synch</i></b> (<i>method process</i> synchronizing reads/writes with control signals). Observe how processes are registered in the constructor <i>SC_CTOR</i> and their static sensitivities are specified <b><small><font color="#006600">[this step is optional if other verification techniques are the focus of presentation]</font></small></b>.</li>
+
+  <li>Open <b><i>sender.cpp</i></b> and have a look at the implementations of both processes. Notice how <b><i>prc_readsend</i></b> opens text file upon activation of <i>CLR</i> and starts reading it when <i>CLR</i> goes inactive. File is read line-by-line into the <b><i>buffer</i></b>. When <b><i>prc_synch</i></b> notifies <b><i>snd</i></b> event, it triggers sending one character from the buffer <b><small><font color="#006600">[this step is optional if other verification techniques are the focus of presentation]</font></small></b>.</li>
+
+  <li>If &nbsp;SystemC sources are modified (or right after restoring the design), build <b><i>sender.dll</i></b> using provided configuration file (<b><i>sender.dlm</i></b>) or <i><b>BuildSC.do</b></i> script.</li><li>Open the text file that is read by the <i><b>sender</b> </i>block: <b><i>text.txt</i></b> -- it should contain Hamlet monologue.</li>
+
+  <li>Run <b><i>Regular_Sim.do</i></b> script to compile remaining sources, initialize simulation,
+create waveform,&nbsp;open Memory Views for the FIFO and RAM memory and <i><b>Assertion Viewer</b></i>. It
+will also run simulation for 70 ns to demonstrate initial data
+transfers.</li>
+
+  <li>Proceed with simulation using 70 ns step. Observe results in Memory Views,&nbsp; Waveform and Assertion Viewer.</li><li>When you notice that assertion in <b><i>fifo.vhd</i></b> was activated (yellow <font color="#ffcc00"><b>A</b></font> letter), you can hit <i><b>Run</b></i> button in the toolbar to see Cover message in the console.&nbsp;</li><li>Click <i><b>End Simulation</b></i> button in the toolbar to end simulation and see assertion firing.</li><li>Close all document windows and open <i><b>Combo_Debug.do</b></i> script; review contents, paying special attention to explanatory comments.</li><li>Run <i><b>Combo_Debug.do</b></i>
+script to perform complete simulation session. It will open two HTML
+reports in the Document pane (Expression Coverage and Xreace reports)
+and two standalone windows (Code Coverage and Toggle Coverage viewers).</li><li>Analyse reports from Coverage and XTrace in any convenient order.&nbsp;</li><ul><li>Remember to expand all branches of hierarchy in Coverage viewers/reports.</li><li>The best examples of Expression Coverage are in the /top_tb/UUT/U2/FREAD</li></ul>
+
+
+<br>
+
+
+
+<br>
+
+
+
+
+</body></html>
